@@ -19,23 +19,9 @@
   .hind {
     font-family: "Hind", sans-serif;
   }
-  /* Initially hide the dropdown menu */
-.dropdown-menu {
-    display: none;
+  .sodan {
+    font-family: "SoDo Sans",sans-serif;
   }
-  
-  /* Style for the arrow-down icon */
-  .dropdown-toggle::after {
-    content: "\25BC"; /* Unicode for downward arrow */
-    margin-left: 5px;
-  }
-  .dropdown-menu {
-    display: none;
-  }
-  
-  .dropdown-menu.show {
-    display: block;
-  }
-  ///
+
   
   
