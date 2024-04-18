@@ -17,7 +17,7 @@ fetch("../../components/layout/navbar.html")
       if (menuButton.classList.contains("active")) {
         menuIcon.innerHTML =
           '<img  src="../../images/layout/close.png" alt="Close">'; // Set close icon HTML
-        minMenuDropdown.style.right = "0";
+        minMenuDropdown.style.right = "0%";
       } else {
         menuIcon.innerHTML =
           '<img  src="../../images/layout/menu.png" alt="Menu">'; // Set menu icon HTML

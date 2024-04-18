@@ -1,4 +1,4 @@
-<div class=" w-full flex justify-between gap-4 bg-white shadow-lg p-4 md:justify-center outline outline-1 outline-none z-50">
+<div class=" w-full flex justify-between gap-4 bg-white shadow-lg p-4 md:justify-center outline outline-1 outline-none relative z-50">
     <a href="" class="max-w-10">
         <img src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
@@ -10,6 +10,8 @@
                 <li><a href="">GIFT CARDS</a></li>
             </ul>
         </div>
+
+
         <div>
             <ul class="flex gap-12 manrope-sans font-semibold text-sm items-center">
                 <li >
@@ -24,19 +26,20 @@
                 </li>
             </ul>
         </div>
+
     </div>
-    <button class="menu-button max-w-5 md:hidden flex items-center" id="menuButton">
+    <button class="menu-button max-w-5 flex items-center md:hidden " id="menuButton">
         <!-- Hamburger icon or menu icon -->
         <span class="menu-icon" id="menuIcon">
           <img src="../../images/layout/menu.png" alt="Menu">
         </span>
       </button>
-    <div class="invisible max-w-14 hidden 2xl:flex">
+    <a class="invisible max-w-10 hidden  2xl:flex">
         <img src="../../images/layout/starkbuck-logo.png" alt="">
-    </div>
+    </a>
     
-</div>
-<div id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-0">
+</div> 
+<div id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-40">
     <div class="flex mt-10 flex-col">
         <ul class="flex flex-col text-xl ">
             <li><a class="px-8 py-4 block" href="">Menu</a></li>
@@ -58,3 +61,5 @@
         </div>
     </div>
 </div>
+
+<!-- layout -->
