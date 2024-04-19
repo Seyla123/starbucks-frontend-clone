@@ -135,11 +135,7 @@ function createStrongParagraphElements(data, containerId) {
     container.appendChild(paragraph); // Append the paragraph to the container
   });
 }
-<<<<<<< HEAD
 let e = 0;
-=======
-
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
 // Function to create HTML elements for content
 function createContentElements(content, containerId) {
   const container = document.getElementById(containerId);
@@ -179,15 +175,10 @@ function createContentElements(content, containerId) {
             const dashIndex = sentence.indexOf(' – ');
             // Create a list item for each sentence
             const listItem = document.createElement('li');
-<<<<<<< HEAD
             listItem.setAttribute("id","id"+e);
             // Create a span element for the bold part
             const boldSpan = document.createElement('span');
             
-=======
-            // Create a span element for the bold part
-            const boldSpan = document.createElement('span');
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
             // Set the bold part including the dash
             boldSpan.textContent = sentence.substring(0, dashIndex + 2);
             boldSpan.style.fontWeight = 'bold'; // Make it bold
@@ -197,10 +188,7 @@ function createContentElements(content, containerId) {
             
   
             listElement.appendChild(listItem);
-<<<<<<< HEAD
             e++;
-=======
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
           });
         }
 
@@ -251,10 +239,7 @@ function createInformationElements(information, containerId) {
     // Loop through each item in the value array and create list item elements for them
     value.forEach(item => {
       const nestedListItem = document.createElement('li');
-<<<<<<< HEAD
       
-=======
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
       nestedListItem.textContent = item;
       nestedUl.appendChild(nestedListItem);
     });
@@ -362,11 +347,7 @@ const howWeUseYourInformation = {
 
 const olContainer5 = document.createElement('ol');
 olContainer5.setAttribute('id', 'createInformationElements');
-<<<<<<< HEAD
 olContainer5.classList.add("flex","flex-col",'gap-4',"ml-4")
-=======
-olContainer5.classList.add("flex","flex-col",'gap-4')
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
 container.appendChild(olContainer5)
 // Function to create HTML elements for the information
 // Call the function with the contentDetail object and container ID
@@ -399,7 +380,6 @@ const contentDetail7 = {
       ]
     },
   {
-<<<<<<< HEAD
     "Residents of the European Union may opt-out of online behavioral advertising served by the European Interactive Digital Advertising Alliance’s participating member organizations by visiting https://www.youronlinechoices.eu/.To ":[]
   },
   {
@@ -408,21 +388,10 @@ const contentDetail7 = {
     "Web Beacons – Web beacons are small, transparent images that are embedded in web pages, applications, and emails that are sometimes called “clear gifs,” “single pixel gifs”, “page tags” or “web bugs.” We use web beacons to track the web pages you visit, to test the effectiveness of our marketing, and to find out if an email has been opened and acted on."
   ,"avaScript – JavaScript are code snippets embedded in various parts of websites and applications that facilitate a variety of operations including accelerating the refresh speed of certain functionality or monitoring usage of various online components.",
   "Entity Tags – Entity Tags are HTTP code mechanisms that allow portions of websites to be stored or “cached” within your browser and validates these caches when the website is opened, accelerating website performance since the web server does not need to send a full response if the content has not changed.",
-=======
-    "Residents](http://optout.networkadvertising.org/?c=1.Residents) of the European Union may opt-out of online behavioral advertising served by the European Interactive Digital Advertising Alliance’s participating member organizations by visiting https://www.youronlinechoices.eu/.To ":[]
-  },
-  {
-    "opt-out of data collection for interest-based advertising across mobile applications by participating companies, download the DAA’s App Choices mobile application opt-out offering at https://youradchoices.com/appchoices.": [
-      "Adobe Flash Player Technology – We allow Adobe to set and enable special cookies that are necessary to deliver video content for Adobe Flash Player. You cannot remove Flash cookies simply by changing your browser settings. If you would like to limit the websites that can store information in Flash cookies on your device, you must visit the Adobe website : <a href='http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html'></a>",
-    "Web Beacons – Web beacons are small, transparent images that are embedded in web pages, applications, and emails that are sometimes called “clear gifs,” “single pixel gifs”, “page tags” or “web bugs.” We use web beacons to track the web pages you visit, to test the effectiveness of our marketing, and to find out if an email has been opened and acted on."
-  ,"avaScript – JavaScript are code snippets embedded in various parts of websites and applications that facilitate a variety of operations including accelerating the refresh speed of certain functionality or monitoring usage of various online components.",
-  "Entity Tags -- Entity Tags are HTTP code mechanisms that allow portions of websites to be stored or “cached” within your browser and validates these caches when the website is opened, accelerating website performance since the web server does not need to send a full response if the content has not changed.",
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
   "HTML5 Local Storage – HTML5 local storage allows data from websites to be stored or “cached” within your browser to store and retrieve data in HTML5 pages when the website is revisited. These and similar technologies are used for the following purposes:",
   "Services and Functionality – Some of these technologies are required to allow you to access and use our websites or mobile applications and the various services and functionality we offer. Without these technologies, some of the services and functionality on our websites and mobile applications would not work properly.",
   "Performance Monitoring – Some of these technologies help us analyze and estimate traffic and assess the volume of use of services and functionality on websites and mobile applications. They show us how visitors and customers interact with our digital properties, whether there are any errors, the degree to which certain web pages, applications, services or functionality are accessed and used and how they are performing or operating. When these technologies are used for performance monitoring, no directly identifiable information (e.g., your name, email address or phone number) is collected.",
   "User Convenience – Some of these technologies enhance the ease of use of our websites and mobile applications and the services and functionality they make available by accelerating load and refresh times and remembering information that you have provided on prior visits to our websites or when you last used a website or mobile application service or functionality.",
-<<<<<<< HEAD
   "Marketing – Some of these technologies are used to tailor your experience on our website, within our mobile applications, or across your applications or devices by controlling the promotions, advertisements and other marketing messages that may appear when you access or use these or other digital properties.",
   ],
   },{
@@ -580,11 +549,3 @@ aTag2.textContent = "HERE";
 aTag2.setAttribute("href", "#");
 aTag2.classList.add("underline","text-green-700","font-bold");
 strong8.appendChild(aTag2);
-=======
-  "Marketing – Some of these technologies are used to tailor your experience on our website, within our mobile applications, or across your applications or devices by controlling the promotions, advertisements and other marketing messages that may appear when you access or use these or other digital properties.Taken together, these technologies help us learn which services and functionality you are using and how you are accessing information about us. We may use this information to personalize your visit to a website or use of a mobile application or to send you relevant promotions and advertisements.",
-  ],
-  },
-]
-};
-createContentElements(contentDetail7, 'content_privacy');
->>>>>>> d9a0d27 (feature : add content 8 section into privacy page)
