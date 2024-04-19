@@ -130,7 +130,7 @@ function createStrongParagraphElements(data, containerId) {
     numberOfContent++
     const paragraph = document.createElement('p'); // Create a paragraph element
     paragraph.textContent = value; // Set the text content of the paragraph
-
+    
     container.appendChild(strong); // Append the strong element to the container
     container.appendChild(paragraph); // Append the paragraph to the container
   });
