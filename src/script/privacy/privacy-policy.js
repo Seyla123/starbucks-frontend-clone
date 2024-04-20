@@ -135,7 +135,7 @@ function createStrongParagraphElements(data, containerId) {
     container.appendChild(paragraph); // Append the paragraph to the container
   });
 }
-
+let e = 0;
 // Function to create HTML elements for content
 function createContentElements(content, containerId) {
   const container = document.getElementById(containerId);
@@ -175,8 +175,10 @@ function createContentElements(content, containerId) {
             const dashIndex = sentence.indexOf(' – ');
             // Create a list item for each sentence
             const listItem = document.createElement('li');
+            listItem.setAttribute("id","id"+e);
             // Create a span element for the bold part
             const boldSpan = document.createElement('span');
+            
             // Set the bold part including the dash
             boldSpan.textContent = sentence.substring(0, dashIndex + 2);
             boldSpan.style.fontWeight = 'bold'; // Make it bold
@@ -186,6 +188,7 @@ function createContentElements(content, containerId) {
             
   
             listElement.appendChild(listItem);
+            e++;
           });
         }
 
@@ -236,6 +239,7 @@ function createInformationElements(information, containerId) {
     // Loop through each item in the value array and create list item elements for them
     value.forEach(item => {
       const nestedListItem = document.createElement('li');
+      
       nestedListItem.textContent = item;
       nestedUl.appendChild(nestedListItem);
     });
@@ -343,7 +347,7 @@ const howWeUseYourInformation = {
 
 const olContainer5 = document.createElement('ol');
 olContainer5.setAttribute('id', 'createInformationElements');
-olContainer5.classList.add("flex","flex-col",'gap-4')
+olContainer5.classList.add("flex","flex-col",'gap-4',"ml-4")
 container.appendChild(olContainer5)
 // Function to create HTML elements for the information
 // Call the function with the contentDetail object and container ID
@@ -376,21 +380,172 @@ const contentDetail7 = {
       ]
     },
   {
-    "Residents](http://optout.networkadvertising.org/?c=1.Residents) of the European Union may opt-out of online behavioral advertising served by the European Interactive Digital Advertising Alliance’s participating member organizations by visiting https://www.youronlinechoices.eu/.To ":[]
+    "Residents of the European Union may opt-out of online behavioral advertising served by the European Interactive Digital Advertising Alliance’s participating member organizations by visiting https://www.youronlinechoices.eu/.To ":[]
   },
   {
     "opt-out of data collection for interest-based advertising across mobile applications by participating companies, download the DAA’s App Choices mobile application opt-out offering at https://youradchoices.com/appchoices.": [
-      "Adobe Flash Player Technology – We allow Adobe to set and enable special cookies that are necessary to deliver video content for Adobe Flash Player. You cannot remove Flash cookies simply by changing your browser settings. If you would like to limit the websites that can store information in Flash cookies on your device, you must visit the Adobe website : <a href='http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html'></a>",
+      "Adobe Flash Player Technology – We allow Adobe to set and enable special cookies that are necessary to deliver video content for Adobe Flash Player. You cannot remove Flash cookies simply by changing your browser settings. If you would like to limit the websites that can store information in Flash cookies on your device, you must visit the Adobe website : ",
     "Web Beacons – Web beacons are small, transparent images that are embedded in web pages, applications, and emails that are sometimes called “clear gifs,” “single pixel gifs”, “page tags” or “web bugs.” We use web beacons to track the web pages you visit, to test the effectiveness of our marketing, and to find out if an email has been opened and acted on."
   ,"avaScript – JavaScript are code snippets embedded in various parts of websites and applications that facilitate a variety of operations including accelerating the refresh speed of certain functionality or monitoring usage of various online components.",
-  "Entity Tags -- Entity Tags are HTTP code mechanisms that allow portions of websites to be stored or “cached” within your browser and validates these caches when the website is opened, accelerating website performance since the web server does not need to send a full response if the content has not changed.",
+  "Entity Tags – Entity Tags are HTTP code mechanisms that allow portions of websites to be stored or “cached” within your browser and validates these caches when the website is opened, accelerating website performance since the web server does not need to send a full response if the content has not changed.",
   "HTML5 Local Storage – HTML5 local storage allows data from websites to be stored or “cached” within your browser to store and retrieve data in HTML5 pages when the website is revisited. These and similar technologies are used for the following purposes:",
   "Services and Functionality – Some of these technologies are required to allow you to access and use our websites or mobile applications and the various services and functionality we offer. Without these technologies, some of the services and functionality on our websites and mobile applications would not work properly.",
   "Performance Monitoring – Some of these technologies help us analyze and estimate traffic and assess the volume of use of services and functionality on websites and mobile applications. They show us how visitors and customers interact with our digital properties, whether there are any errors, the degree to which certain web pages, applications, services or functionality are accessed and used and how they are performing or operating. When these technologies are used for performance monitoring, no directly identifiable information (e.g., your name, email address or phone number) is collected.",
   "User Convenience – Some of these technologies enhance the ease of use of our websites and mobile applications and the services and functionality they make available by accelerating load and refresh times and remembering information that you have provided on prior visits to our websites or when you last used a website or mobile application service or functionality.",
-  "Marketing – Some of these technologies are used to tailor your experience on our website, within our mobile applications, or across your applications or devices by controlling the promotions, advertisements and other marketing messages that may appear when you access or use these or other digital properties.Taken together, these technologies help us learn which services and functionality you are using and how you are accessing information about us. We may use this information to personalize your visit to a website or use of a mobile application or to send you relevant promotions and advertisements.",
+  "Marketing – Some of these technologies are used to tailor your experience on our website, within our mobile applications, or across your applications or devices by controlling the promotions, advertisements and other marketing messages that may appear when you access or use these or other digital properties.",
   ],
-  },
+  },{
+    "	Taken together, these technologies help us learn which services and functionality you are using and how you are accessing information about us. We may use this information to personalize your visit to a website or use of a mobile application or to send you relevant promotions and advertisements.": []
+  }
 ]
 };
+//http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html
+
 createContentElements(contentDetail7, 'content_privacy');
+const adobeFlashDetail7 = document.querySelector("#id11");
+const link7 = document.createElement("a");
+link7.textContent = "http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html";
+link7.setAttribute("href","http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html");
+link7.classList.add("underline","text-green-700")
+adobeFlashDetail7.appendChild(link7);
+
+const contentDetail8to11 = {
+  "How We Protect Your Information": "Starbucks uses reasonable technical, physical, and administrative security measures to reduce the risk of loss, misuse, unauthorized access, disclosure or modification of your information. However, no security system is perfect, and due to the inherent nature of the Internet, we cannot guarantee that data, including personal information, is absolutely safe from intrusion or other unauthorized access by others. You are responsible for protecting your password(s) and maintaining the security of your devices.",
+  "Retention": "Starbucks stores information as reasonably necessary and proportionate to accomplish the purposes identified in this Notice based on criteria such as the length of time we need to provide the services to you, and to meet legal requirements, including record retention, resolving disputes, and enforcing our agreements. Our retention of your information is governed by applicable law. The personal information that you provide us is stored and processed on servers owned by Starbucks and other companies in the United States, Canada or elsewhere around the world, including locations outside of the country or jurisdiction where you are located. Regardless of the company or person who processes your information and where it is processed, we will take steps to transfer and protect your information through appropriate safeguards in accordance with applicable data protection laws and this Notice.",
+  "Children’s Privacy": "We do not intend for our websites or online services to be used by anyone under the age of 13. We do not knowingly collect, sell, or share information of consumers between the ages of 13 – 16. If you are a parent or guardian and believe we may have collected information about your child, please contact us immediately as described in the “Contact Us” section of this Notice. For more information, please see our Terms of Use.",
+  "Starbucks Wi-Fi": "Many Starbucks stores support providing you access to wireless internet (WiFi) at no charge. For any such WiFi access, please carefully review the terms of use listed on the activation page prior to accepting and connecting."
+}
+let strongId = 0;
+let olid = 0;
+let liId = 0;
+createStrongParagraphElements(contentDetail8to11, 'content_privacy');
+
+function createContentElements12(content, containerId) {
+  const container = document.getElementById(containerId);
+
+  // Ensure the container exists
+  if (!container) {
+    console.error(`Container with id "${containerId}" not found.`);
+    return;
+  }
+
+  // Loop through each key-value pair in the content object
+  for (const [heading, paragraphs] of Object.entries(content)) {
+    // Create a heading element for each key
+    const headingElement = document.createElement('strong');
+    text = numberOfContent+". "+heading // Create a strong element
+    headingElement.textContent = text;
+    container.appendChild(headingElement);
+    numberOfContent++
+
+    // Loop through each paragraph in the value array
+    paragraphs.forEach(paragraphObj => {
+      for (const [paragraphHeading, sentences] of Object.entries(paragraphObj)) {
+        // Create a paragraph element for the heading
+        const paragraphHeadingElement = document.createElement('strong');
+        paragraphHeadingElement.textContent = paragraphHeading;
+        paragraphHeadingElement.setAttribute("id","strong"+strongId)
+        strongId++
+        container.appendChild(paragraphHeadingElement);
+
+        // Create a list element for the sentences
+        const listElement = document.createElement('ol');
+        listElement.setAttribute("id","olid"+olid)
+        // Loop through each sentence in the value array
+        
+        if (sentences!=0){
+          sentences.forEach(sentence => {
+            // Find the index of the dash
+            listElement.classList.add('list-disc',"m-6");
+            const dashIndex = sentence.indexOf(' – ');
+            // Create a list item for each sentence
+            const listItem = document.createElement('li');
+            listItem.setAttribute("id","li"+liId);
+            liId++
+            // Create a span element for the bold part
+            const boldSpan = document.createElement('span');
+            // Set the bold part including the dash
+            boldSpan.textContent = sentence.substring(0, dashIndex + 2);
+          
+            boldSpan.classList.add("font-bold") // Make it bold
+            listItem.appendChild(boldSpan); // Append the bold span
+            // Append the rest of the text after the bold part
+            listItem.appendChild(document.createTextNode(sentence.substring(dashIndex + 2)));
+            
+  
+            listElement.appendChild(listItem);
+            olid++
+
+          });
+        }
+
+        // Append the list element to the container
+        container.appendChild(listElement);
+      }
+    });
+  }
+}
+
+const contentDetail12 = {
+  "Your Choices & Rights, including State-Specific Rights" :[
+  {
+    "(a)  Your Choices" : 
+    [
+      "Location Services – In order to use certain Starbucks Services, such as mobile order and pay (“MOP”) and location-based services and technology, you must either (a) enable “location services” in the Starbucks App; and/or (b) set the permissions in your mobile device to allow communication of this information.",
+  
+    ],
+    "If you allow for location sharing, your device may communicate with us in ways that allow for us to customize your experience in and around Starbucks stores, to monitor the effectiveness of our marketing efforts, to tailor messages based on your time and location patterns, and to limit the number of times you see a promotional message or offer. Precise geolocation may be used to fulfill services and application functionality you choose to engage with. You can manage the use of that personal information at any time in your device settings.":[],
+    "For most mobile devices, you can disable the collection of geolocation information by turning off location services on your device.  If you have any questions about how to prevent Starbucks from collecting your geolocation, we recommend you contact your mobile device service provider or the device manufacturer. Certain Starbucks App features and some Starbucks Services may not work properly without information about your location. You can re-enable the collection of geolocation information, at any time, by turning on location services on your device.":[],
+    "":["Voice Ordering – In order to use certain Starbucks Services,  such as voice ordering, when available, you must (a) enable “microphone” and “speech recognition” in the Starbucks App; and/or (b) set the permissions in your mobile device to allow communication of this information."],
+    "":["Email Communications, Push Notifications, and In-App Messages – The Starbucks App allows all users to set preferences for receiving promotional email communications from Starbucks, receiving push notifications on your device, and receiving inbox messages. Please note as well that you may opt-out of receiving email communications at any time by adjusting your Starbucks online account settings or by clicking the “unsubscribe” link included within any commercial email we send you."],
+    "If you use the Starbucks App features described above, you consent to the transmission of your user information to Starbucks and/or its agents, and authorize Starbucks and/or its agents, to record, process, and store such user information as necessary for administering the Starbucks App features and for purposes described in this Notice.":[],
+    "(b)  Your Rights, including State-Specific Rights" :[],
+    "Depending on where you live (including California, Colorado, Connecticut, Nevada, Utah, Virginia, and Washington), you may be entitled to certain rights with respect to your personal information, as described below.":
+    [
+      "Right to Know – You may have the right to know what personal information the business has collected about you, including the categories of personal information, the categories of sources from which it is collected, the business or commercial purposes for collecting, selling, or sharing it, and the categories of third parties to whom we disclose it.",
+      "Access and Data Portability – Subject to certain exceptions, you may have the right to request a copy of the personal information that we collected about you during the 12 months before your request.",
+      "Deletion – You may have the right to request that we delete information that we collected from you and retained, subject to certain exceptions.",
+      "Correct Inaccurate Information – You may have the right to request that we correct inaccuracies in the personal information we maintain about you.  You may also correct information about you for Starbucks Rewards in the Starbucks App.",
+      "Targeted Advertising – We do not sell your information for monetary or valuable consideration.  You may have the right to opt-out of having your personal information shared for purposes of targeted advertising.  To opt-out, click this “Do Not Share My Personal Information” link.",
+      "Sensitive Information – Companies who collect, use, and disclose your sensitive personal information for purposes other than to provide you with goods or services are required to provide you with the right to limit the use and disclosure of your sensitive personal information by providing a “Limit the Use and Disclosure of My Sensitive Personal Information” link. Starbucks only collects, uses, and discloses your sensitive personal information to provide services to you, therefore Starbucks is not required to provide this link.",
+      "Opt-Out Preference Signals – Some web browsers allow customers to automatically exercise their right to opt-out of sale/sharing with all businesses they interact with online by initiating an opt-out preference signal. We will honor such opt-out preference signals.",
+      "Appeals – You may appeal our decision with respect to a request you have submitted by contacting us as described in the “Contact Us” section below.",
+      "Consumer Health Data Rights in Washington and Nevada – You may have additional rights relating to consumer health data. For more information, please see the",
+    ],
+    "Requests for U.S. residents should be submitted through this form ":[],
+    "Request for Canadian residents should be submitted through this form ":[],
+    "U.S. and Canadian residents may also submit request by calling 1-800-STARBUC (782-7282).  Once we receive your request, we may verify it by requesting information sufficient to confirm your identity.  You may be entitled to submit a request through an authorized agent or to appeal a refusal to take action on your request.  To designate an authorized agent to exercise your rights, we will require written proof that the authorized agent has been authorized to act on your behalf or a copy of the power-of-attorney document granting that right.":[],
+    "If you are an authorized agent or you are submitting a request on behalf a customer, please submit your request through this form":[],
+    "(c)  Other California Rights" :
+    [
+      "If you are a California resident, you can request a notice disclosing the categories of personal information we have shared with third parties for the third parties’ direct marketing purposes. To request a notice, please submit your request by postal mail to: Starbucks, P.O. Box 20430, Augusta, GA 30916",
+      "Some web browsers have a “Do Not Track” preference that transmits a “Do Not Track” header to the websites you visit with information indicating that you do not want your activity to be tracked. We currently do not respond to browser “Do Not Track” signals, as there is no standard for how online services should respond to such signals. As standards develop, we may develop policies for responding to do-not-track signals that we will describe in this Notice."
+    ]
+  }
+  ]
+}
+createContentElements12(contentDetail12, 'content_privacy');
+document.querySelector("#li11 span").classList.remove("font-bold")
+document.querySelector("#li12 span").classList.remove("font-bold")
+// 1234 6-10
+for(let i = 1; i <=10;i++){
+  if (i==5){
+    continue;
+  }else{
+    let id = "strong" + i
+    document.getElementById(id).classList.add("font-normal");
+  }
+}
+const strong7 = document.getElementById("strong7");
+
+let aTag = document.createElement("a");
+aTag.textContent = "HERE";
+aTag.setAttribute("href", "#");
+aTag.classList.add("underline","text-green-700","font-bold");
+strong7.appendChild(aTag);
+const strong8 = document.getElementById("strong8");
+let aTag2 = document.createElement("a");
+aTag2.textContent = "HERE";
+aTag2.setAttribute("href", "#");
+aTag2.classList.add("underline","text-green-700","font-bold");
+strong8.appendChild(aTag2);
