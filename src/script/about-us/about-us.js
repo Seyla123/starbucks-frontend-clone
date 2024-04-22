@@ -13,4 +13,3 @@ fetch("../../components/about-us/content-2.html")
     content_about_us_2.innerHTML = data;
   })
   .catch((error) => console.error("Error fetching included file:", error));
-
