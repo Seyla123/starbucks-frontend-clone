@@ -1,4 +1,4 @@
 import * as navbar from "./navbar.js";
 import * as footer from "./footer.js";
-import * as footerPrivacy from "./footer-privacy.js";
-import * as navbarPrivacy from "./navbar-privacy.js";
+import * as navbarFullW from "./navbar-full-w.js"
+import * as footerFullW from "./footer-full-w.js"
