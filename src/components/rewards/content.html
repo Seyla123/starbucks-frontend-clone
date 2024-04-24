@@ -1,12 +1,13 @@
-<div class="w-full sticky top-0 z-[99] bg-[#1e3932] py-4 md:px-20 px-4">
-  <div class="max-w-screen-2xl mx-auto flex justify-between items-center">
+<section class="w-full sticky top-0 z-[99] bg-[#1e3932] py-4 md:px-20 px-4">
+  <div
+    class="w-full max-w-screen-2xl mx-auto flex justify-between items-center">
     <p class="text-white">STARBUCKS® REWARDS</p>
     <button
       class="hover:opacity-80 flex md:hidden h-2 p-3 items-center justify-center outline outline-1 outline-offset-2 text-white rounded-full">
       Join in the app
     </button>
   </div>
-</div>
+</section>
 
 <!-- hero section -->
 <section
@@ -14,16 +15,18 @@
   <div class="max-w-screen-2xl mx-auto px-4 w-full">
     <!-- content -->
     <div class="flex flex-col gap-3 items-start">
-      <h2 class="uppercase">Free Coffee is a tap away</h2>
-      <p>Join now to start earning Rewards.</p>
+      <h2 class="uppercase text-[36px] font-medium">
+        Free Coffee<br />is a tap away
+      </h2>
+      <p class="text-[18px]">Join now to start earning Rewards.</p>
 
       <button class="bg-green-700 text-white px-4 py-1.5 rounded-full">
         Join now
       </button>
 
-      <p>
-        Or <span><a href="#" class="underline">Join in the app</a></span
-        >for the best experience
+      <p class="text-[18px]">
+        Or <span><a href="#" class="underline">Join in the app </a></span>for
+        the best experience
       </p>
     </div>
   </div>
@@ -35,7 +38,7 @@
 </section>
 
 <!-- responsive hero section -->
-<div class="relative flex md:hidden md:py-10 w-full">
+<section class="relative flex md:hidden md:py-10 w-full">
   <div class="w-full">
     <img src="../../images/reward/hero-mobile_2021.jpg" alt="" />
   </div>
@@ -57,17 +60,19 @@
       <p class="text-[14px]">Or join online</p>
     </div>
   </div>
-</div>
+</section>
 
+<!-- getting started is easy -->
 <section class="py-20 w-full">
   <div class="w-full max-w-screen-2xl mx-auto text-center py-12">
-    <h1 class="uppercase text-[26px] pb-4 font-medium">Getting started is easy
-    </h1>
-    <p>Earn Stars and get rewarded in a few easy steps.</p>
+    <h1 class="text-[26px] pb-4 font-medium">Getting started is easy</h1>
+    <p class="md:text-[16px] text-[14px]">
+      Earn Stars and get rewarded in a few easy steps.
+    </p>
   </div>
+
   <div
     class="max-w-screen-2xl mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-8">
-
     <!-- Card-1 -->
     <div
       class="flex md:gap-6 gap-4 md:flex-col md:items-center md:text-center md:text-[14px] text-[12px]">
@@ -77,8 +82,10 @@
         class="w-10 h-10 object-cover" />
 
       <div class="flex flex-col gap-3">
-        <h2 class="text-[16px] font-medium">Create an account</h2>
-        <p>
+        <h2 class="md:text-[20px] text-[16px] font-medium">
+          Create an account
+        </h2>
+        <p class="md:text-[16px] text-[14px]">
           To get started,
           <a class="text-green-700 hover:underline" href="#">join now</a>. You
           can also
@@ -97,13 +104,13 @@
         class="w-10 h-10 object-cover" />
 
       <div class="flex flex-col gap-3">
-        <h2 class="text-[16px] font-medium">Create an account</h2>
-        <p>
-          To get started,
-          <a class="text-green-700 hover:underline" href="#">join now</a>. You
-          can also
-          <a class="text-green-700 hover:underline" href="#">join in the app</a>
-          to get access to the full range of Starbucks® Rewards benefits.
+        <h2 class="md:text-[20px] text-[16px] font-medium">
+          Order and pay how you’d like
+        </h2>
+        <p class="md:text-[16px] text-[14px]">
+          Use cash, credit/debit card or save some time and pay right through
+          the app. You’ll collect Stars all ways.
+          <a class="text-green-700 hover:underline" href="#">Learn how</a>
         </p>
       </div>
     </div>
@@ -117,13 +124,10 @@
         class="w-10 h-10 object-cover" />
 
       <div class="flex flex-col gap-3">
-        <h2 class="text-[16px] font-medium">Create an account</h2>
+        <h2 class="text-[20px] font-medium">Earn Stars, get Rewards</h2>
         <p>
-          To get started,
-          <a class="text-green-700 hover:underline" href="#">join now</a>. You
-          can also
-          <a class="text-green-700 hover:underline" href="#">join in the app</a>
-          to get access to the full range of Starbucks® Rewards benefits.
+          As you earn Stars, you can redeem them for Rewards—like free food,
+          drinks, and more. Start redeeming with as little as 25 Stars!
         </p>
       </div>
     </div>
@@ -131,7 +135,7 @@
 </section>
 
 <!-- Get your favorites for free -->
-<div class="w-full bg-[#f1f8f5] mt-[50px]">
+<section class="w-full bg-[#f1f8f5] mt-[50px]">
   <!-- heading -->
   <div
     class="max-w-screen-2xl mx-auto bg-[#f1f8f5] h-[80px] flex items-center justify-center">
@@ -139,185 +143,216 @@
   </div>
 
   <!-- coupon-->
-  <div
-    class="gap-20 max-w-screen-2xl mx-auto h-[50px] flex items-center justify-center">
+
+  <div class="flex items-center justify-center space-x-4">
     <!-- number 25 100 200 300 400 -->
-    <button id="coupon25" class="flex text-[26px] font-medium cursor-pointer">
-      25 <img class="size-[20px]" src="../../images/reward/star.png" alt="" />
+    <button
+      id="coupon25"
+      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      25
+      <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
-    <button id="coupon100" class="flex text-[26px] font-medium cursor-pointer">
-      100 <img class="size-[20px]" src="../../images/reward/star.png" alt="" />
+    <button
+      id="coupon100"
+      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      100
+      <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
-    <button id="coupon200" class="flex text-[26px] font-medium cursor-pointer">
-      200 <img class="size-[20px]" src="../../images/reward/star.png" alt="" />
+    <button
+      id="coupon200"
+      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      200
+      <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
-    <button id="coupon300" class="flex text-[26px] font-medium cursor-pointer">
-      300 <img class="size-[20px]" src="../../images/reward/star.png" alt="" />
+    <button
+      id="coupon300"
+      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      300
+      <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
-    <button id="coupon400" class="flex text-[26px] font-medium cursor-pointer">
-      400 <img class="size-[20px]" src="../../images/reward/star.png" alt="" />
+    <button
+      id="coupon400"
+      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      400
+      <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
   </div>
-  <!-- underline -->
-  <div class="max-w-[680px] mx-auto flex items-center">
+
+  <!-- greenline -->
+  <div class="max-w-[583px] mx-auto flex items-center">
     <span id="green-underline" class="w-20 flex h-[5px] bg-green-800"></span>
   </div>
+
   <!-- content image -->
-  <div class="w-full h-[300px] bg-[#d4e9e2]">
+  <div class="w-full bg-[#d4e9e2]">
     <div
-      id="content-25"
-      class="w-full mx-auto flex items-center justify-center gap-[50px] py-[40px]">
-      <img
-        class="w-[375px] h-[210px]"
-        src="../../images/reward/25.png"
-        alt="" />
-      <div class="flex flex-col max-w-[300px]">
-        <h1 class="text-[26px] font-medium">Customize your drink</h1>
-        <p class="mt-[20px]">
-          Make your drink just right with an extra espresso shot, nondairy milk
-          or a dash of your favorite syrup.
-        </p>
+      class="max-w-screen-2xl mx-auto md:h-[300px] h-auto flex flex-col md:flex-row">
+      <div
+        id="content-25"
+        class="w-full mx-auto flex md:flex-row flex-col items-center justify-center gap-[50px] py-[40px]">
+        <img
+          class="md:w-[375px] w-full md:h-[210px] h-full"
+          src="../../images/reward/25.png"
+          alt="" />
+        <div class="flex flex-col max-w-[300px]">
+          <h1 class="text-[22px] font-medium">Customize your drink</h1>
+          <p class="mt-[20px]">
+            Make your drink just right with an extra espresso shot, nondairy
+            milk or a dash of your favorite syrup.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div
-      id="content-100"
-      class="w-full mx-auto flex items-center justify-center gap-[50px] py-[40px] hidden">
-      <img
-        class="w-[375px] h-[210px]"
-        src="../../images/reward/100.png"
-        alt="" />
-      <div class="flex flex-col max-w-[300px]">
-        <h1 class="text-[26px] font-medium">
-          Brewed hot or iced coffee or tea, bakery item, packaged snack and more
-        </h1>
-        <p class="mt-[20px]">
-          Treat yourself to an iced coffee, buttery croissant, bag of chips and
-          more.
-        </p>
+      <div
+        id="content-100"
+        class="w-full mx-auto flex md:flex-row flex-col items-center justify-center gap-[50px] py-[40px] hidden">
+        <img
+          class="md:w-[375px] w-full md:h-[210px] h-full"
+          src="../../images/reward/100.png"
+          alt="" />
+        <div class="flex flex-col max-w-[300px]">
+          <h1 class="text-[22px] font-medium">
+            Brewed hot or iced coffee or tea, bakery item, packaged snack and
+            more
+          </h1>
+          <p class="mt-[20px]">
+            Treat yourself to an iced coffee, buttery croissant, bag of chips
+            and more.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div
-      id="content-200"
-      class="w-full mx-auto items-center justify-center gap-[50px] py-[40px] flex hidden">
-      <img
-        class="w-[375px] h-[210px]"
-        src="../../images/reward/200.png"
-        alt="" />
-      <div class="flex flex-col max-w-[300px]">
-        <h1 class="text-[26px] font-medium">
-          Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
-        </h1>
-        <p class="mt-[20px]">
-          Turn good mornings great with a delicious handcrafted drink of your
-          choice, breakfast sandwich or oatmeal on us.
-        </p>
+      <div
+        id="content-200"
+        class="w-full mx-auto md:flex-row flex-col items-center justify-center gap-[50px] py-[40px] flex hidden">
+        <img
+          class="md:w-[375px] w-full md:h-[210px] h-full"
+          src="../../images/reward/200.png"
+          alt="" />
+        <div class="flex flex-col max-w-[300px]">
+          <h1 class="text-[22px] font-medium">
+            Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
+          </h1>
+          <p class="mt-[20px]">
+            Turn good mornings great with a delicious handcrafted drink of your
+            choice, breakfast sandwich or oatmeal on us.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div
-      id="content-300"
-      class="w-full mx-auto flex items-center justify-center gap-[50px] py-[40px] hidden">
-      <img
-        class="w-[375px] h-[210px]"
-        src="../../images/reward/300.png"
-        alt="" />
-      <div class="flex flex-col max-w-[300px]">
-        <h1 class="text-[26px] font-medium">
-          Sandwich, protein box or at-home coffee
-        </h1>
-        <p class="mt-[20px]">
-          Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of
-          coffee—including Starbucks VIA Instant®.
-        </p>
+      <div
+        id="content-300"
+        class="w-full md:flex-row flex-col mx-auto flex items-center justify-center gap-[50px] py-[40px] hidden">
+        <img
+          class="md:w-[375px] w-full md:h-[210px] h-full"
+          src="../../images/reward/300.png"
+          alt="" />
+        <div class="flex flex-col max-w-[300px]">
+          <h1 class="text-[22px] font-medium">
+            Sandwich, protein box or at-home coffee
+          </h1>
+          <p class="mt-[20px]">
+            Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of
+            coffee—including Starbucks VIA Instant®.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div
-      id="content-400"
-      class="w-full mx-auto items-center justify-center gap-[50px] py-[40px] flex hidden">
-      <img
-        class="w-[375px] h-[210px]"
-        src="../../images/reward/400.png"
-        alt="" />
-      <div class="flex flex-col max-w-[300px]">
-        <h1 class="text-[26px] font-medium">Select Starbucks® merchandise</h1>
-        <p class="mt-[20px]">
-          Take home a signature cup, drink tumbler or your choice of coffee
-          merch up to $20.
-        </p>
+      <div
+        id="content-400"
+        class="w-full md:flex-row flex-col mx-auto items-center justify-center gap-[50px] py-[40px] flex hidden">
+        <img
+          class="md:w-[375px] w-full md:h-[210px] h-full"
+          src="../../images/reward/400.png"
+          alt="" />
+        <div class="flex flex-col max-w-[300px]">
+          <h1 class="text-[22px] font-medium">Select Starbucks® merchandise</h1>
+          <p class="mt-[20px]">
+            Take home a signature cup, drink tumbler or your choice of coffee
+            merch up to $20.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Endless Extras -->
-<div class="w-full mt-[100px]">
-  <div class="max-w-screen-2xl mx-auto">
-    <!-- heading -->
-    <div class="max-w-screen-sm mx-auto flex-col text-center">
-      <h3 class="text-[26px] font-medium pb-[15px]">Endless Extras</h3>
-      <p>
+<section class="py-10 w-full">
+  <div class="w-full max-w-screen-2xl mx-auto text-center py-12">
+    <div class="max-w-screen-sm mx-auto">
+      <h1 class="text-[26px] pb-4 font-medium">Endless Extras</h1>
+      <p class="md:text-[16px] text-[14px] text-center">
         Joining Starbucks® Rewards means unlocking access to exclusive benefits.
         Say hello to easy ordering, tasty Rewards and—yes, free coffee.
       </p>
     </div>
+  </div>
+  <div
+    class="max-w-screen-2xl mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-8">
+    <!-- Card-1 -->
+    <div
+      class="flex md:gap-6 gap-4 md:flex-col md:items-center md:text-center md:text-[14px] text-[12px]">
+      <img
+        src="../../images/reward/1-fun-freebies.jpg"
+        alt=""
+        class="w-[112px] h-[112px] object-cover" />
 
-    <!-- three cards -->
-    <div class="max-w-screen-xl mx-auto flex justify-between mt-[50px]">
-      <!-- card-1 -->
-      <div class="w-[390px] mt-auto flex flex-col items-center justify-center">
-        <img
-          class="w-[112px] h-[112px] rounded-full"
-          src="../../images/reward/1-fun-freebies.jpg"
-          alt="" />
-        <h4 class="text-[20px] font-medium py-[20px]">Fun freebies</h4>
-        <p class="text-center">
+      <div class="flex flex-col gap-3">
+        <h2 class="md:text-[20px] text-[16px] font-medium">Fun freebies</h2>
+        <p class="flex flex-col md:text-[16px] text-[14px]">
           Not only can you earn free coffee, look forward to a birthday treat
           plus coffee and tea refills.
+          <a class="text-green-700 hover:underline pt-3" href="#">Learn more</a>
         </p>
-        <div class="my-[10px]">
-          <a class="text-green-700 hover:underline" href="#">Learn more</a>
-        </div>
       </div>
-      <!-- card-2 -->
-      <div class="w-[390px] mt-auto flex flex-col items-center justify-center">
-        <img
-          class="w-[112px] h-[112px] rounded-full"
-          src="../../images/reward/2-order-and-pay-ahead.jpg"
-          alt="" />
-        <h4 class="text-[20px] font-medium py-[20px]">Order & pay ahead</h4>
-        <p class="text-center">
+    </div>
+
+    <!-- Card-2 -->
+    <div
+      class="flex md:gap-6 gap-4 md:flex-col md:items-center md:text-center md:text-[14px] text-[12px]">
+      <img
+        src="../../images/reward/2-order-and-pay-ahead.jpg"
+        alt=""
+        class="w-[112px] h-[112px] object-cover" />
+
+      <div class="flex flex-col gap-3">
+        <h2 class="md:text-[20px] text-[16px] font-medium">
+          Order & pay ahead
+        </h2>
+        <p class="flex flex-col md:text-[16px] text-[14px]">
           Enjoy the convenience of in-store, curbside or drive-thru pickup at
           select stores.
+          <a class="text-green-700 hover:underline pt-4" href="#">Learn more</a>
         </p>
-        <div class="my-[10px]">
-          <a class="text-green-700 hover:underline" href="#">Learn more</a>
-        </div>
       </div>
-      <!-- card-3 -->
-      <div class="w-[390px] mt-auto flex flex-col items-center justify-center">
-        <img
-          class="w-[112px] h-[112px] rounded-full"
-          src="../../images/reward/3-get-to-free-faster.jpg"
-          alt="" />
-        <h4 class="text-[20px] font-medium py-[20px]">Get to free faster</h4>
-        <p class="text-center">
+    </div>
+
+    <!-- Card-3 -->
+    <div
+      class="flex md:gap-6 gap-4 md:flex-col md:items-center md:text-center md:text-[14px] text-[12px]">
+      <img
+        src="../../images/reward/3-get-to-free-faster.jpg"
+        alt=""
+        class="w-[112px] h-[112px] object-cover" />
+
+      <div class="flex flex-col gap-3">
+        <h2 class="md:text-[20px] text-[16px] font-medium">
+          Get to free faster
+        </h2>
+        <p class="flex flex-col md:text-[16px] text-[14px]">
           Earn Stars even quicker with Bonus Star challenges, Double Star Days
           and exciting games.
+          <a class="text-green-700 hover:underline pt-4" href="#">Learn more</a>
         </p>
-        <div class="my-[10px]">
-          <a class="text-green-700 hover:underline" href="#">Learn more</a>
-        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Cash or card, you earn Stars -->
 <!--  -->
-<div class="w-full bg-[#f2f0eb] mt-[100px] p-6 2xl:px-0">
+<section class="w-full bg-[#f2f0eb] mt-[100px] p-6 2xl:px-0">
   <div class="max-w-screen-2xl mx-auto h-full py-[40px]">
     <!-- heading -->
     <div class="max-w-screen-sm mx-auto flex-col text-center">
@@ -329,10 +364,11 @@
         Those Stars add up to (really delicious) Rewards.
       </p>
     </div>
-
+    
     <!-- instruction 1 -->
-    <div class="w-full mt-[50px] flex justify-between gap-2">
-      <div class="w-[480px]">
+    <div
+      class="w-full mt-[50px] flex flex-col md:flex-row justify-between gap-2 px-4">
+      <div class="w-[480px] md:pb-0 pb-6">
         <h4 class="text-[20px] font-medium flex items-center">
           1
           <span class="pr-2"
@@ -343,10 +379,10 @@
           /></span>
           per dollar
         </h4>
-        <p>Pay as you go</p>
+        <p class="md:text-[16px] text-[14px]">Pay as you go</p>
       </div>
 
-      <div class="w-[480px] flex gap-4">
+      <div class="max-w-[480px] flex gap-4 md:pb-0 pb-10">
         <div>
           <img
             class="w-[112px] h-[158px]"
@@ -354,13 +390,15 @@
             alt="" />
         </div>
         <div class="w-[305px] h-[158px]">
-          <h4 class="text-[20px] font-medium">Save payment in the app</h4>
-          <p class="my-[10px]">
+          <h4 class="md:text-[20px] text-[16px] font-medium">
+            Scan and pay separately
+          </h4>
+          <p class="my-[10px] md:text-[16px] text-[14px]">
             Use cash or credit/debit card at the register.
           </p>
         </div>
       </div>
-      <div class="w-[480px] flex gap-4">
+      <div class="max-w-[480px] flex gap-4">
         <div>
           <img
             class="w-[112px] h-[158px]"
@@ -368,8 +406,10 @@
             alt="" />
         </div>
         <div class="w-[305px] h-[158px]">
-          <h4 class="text-[20px] font-medium">Scan and pay serparately</h4>
-          <p class="my-[10px]">
+          <h4 class="md:text-[20px] text-[16px] font-medium">
+            Save payment in the app
+          </h4>
+          <p class="my-[10px] md:text-[16px] text-[14px]">
             Check-out faster by saving a credit/debit card or PayPal to your
             account. You’ll be able to order ahead or scan and pay at the
             register in one step.
@@ -381,8 +421,9 @@
     <hr
       class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-300 flex items-center justify-between gap-2" />
     <!-- instruction 2 -->
-    <div class="w-full flex justify-between gap-2">
-      <div class="w-[480px]">
+    <div
+      class="w-full mt-[50px] flex flex-col md:flex-row justify-between gap-2 px-4">
+      <div class="w-[480px] md:pb-0 pb-6">
         <h4 class="text-[20px] font-medium flex items-center">
           2
           <span class="pr-2"
@@ -393,10 +434,10 @@
           /></span>
           per dollar
         </h4>
-        <p>Add funds in the app</p>
+        <p class="md:text-[16px] text-[14px]">Add funds in the app</p>
       </div>
 
-      <div class="w-[480px] flex gap-4">
+      <div class="max-w-[480px] flex gap-4 md:pb-0 pb-10">
         <div>
           <img
             class="w-[112px] h-[158px]"
@@ -404,15 +445,15 @@
             alt="" />
         </div>
         <div class="w-[305px] h-[158px]">
-          <h4 class="text-[20px] font-medium">Preload</h4>
-          <p class="my-[10px]">
+          <h4 class="md:text-[20px] text-[16px] font-medium">Preload</h4>
+          <p class="my-[10px] md:text-[16px] text-[14px]">
             To save time and earn Stars twice as fast, add money to your digital
             Starbucks Card using any payment option. Scan and pay in one step or
             order ahead in the app.
           </p>
         </div>
       </div>
-      <div class="w-[480px] flex gap-4">
+      <div class="max-w-[480px] flex gap-4">
         <div>
           <img
             class="w-[112px] h-[158px]"
@@ -420,27 +461,36 @@
             alt="" />
         </div>
         <div class="w-[305px] h-[158px]">
-          <h4 class="text-[20px] font-medium">Register your gift card</h4>
-          <p class="my-[10px]">
-            Then use it to pay through the app. You can even consolidate
-            balances from multiple cards in one place.
+          <h4 class="md:text-[20px] text-[16px] font-medium">
+            Register your gift card
+          </h4>
+          <p class="my-[10px] md:text-[16px] text-[14px]">
+            Register your gift card Then use it to pay through the app. You can
+            even consolidate balances from multiple cards in one place.
           </p>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- keep the Rewards Coming -->
-<div
-  class="p-10 w-full bg-[url('../../images/reward/reward-bg.webp')] flex justify-center items-center">
+<section
+  class="remove-bg md:p-10 p-0 w-full bg-[url('../../images/reward/reward-bg.webp')] flex justify-center items-center">
   <div class="w-full flex justify-center bg-[#d4e9e2]">
     <!-- inner box -->
     <div
-      class="p-6 2xl:px-0 my-[50px] max-w-screen-2xl w-full flex items-center justify-center">
+      class="2xl:px-0 my-[50px] w-full md:max-w-screen-2xl flex items-center justify-center flex-col md:flex-row">
       <!-- star left -->
-      <div class="flex items-center justify-center">
-        <img src="../../images/reward/stars.png" alt="" />
+      <div class="flex justify-start w-full">
+        <img
+          class="hidden md:flex md:w-auto w-20"
+          src="../../images/reward/stars.png"
+          alt="" />
+        <img
+          class="flex md:hidden md:w-auto w-20"
+          src="../../images/reward/stars.png"
+          alt="" />
       </div>
       <!-- heading -->
       <div class="bg-[#d4e9e2] pt-[20px]">
@@ -455,19 +505,19 @@
           </p>
         </div>
         <!-- content 2 boxes -->
-        <div class="flex items-center justify-center gap-6 py-[50px]">
+        <div class="flex flex-col md:flex-row justify-between gap-6 p-[50px]">
           <!-- box 1 -->
-          <div class="">
+          <div class="w-full flex justify-center items-center flex-row md:flex-col md:gap-0 gap-8">
             <!-- image -->
-            <div class="flex justify-center">
+            <div class="flex w-[350px] md:w-[190px] h-auto justify-center">
               <img
-                class="w-[190px] h-[85px]"
+                class="w-full h-full object-contain"
                 src="../../images/reward/delta-skymiles.webp"
                 alt="" />
             </div>
             <!-- text -->
             <div class="pt-6">
-              <p class="text-center">
+              <p class="md:text-center text-left pl-4">
                 <a class="text-green-700 hover:underline" href=""
                   >Link your Delta SkyMiles®</a
                 >
@@ -477,17 +527,17 @@
             </div>
           </div>
           <!-- box 2 -->
-          <div class="">
+          <div class="w-full flex justify-center items-center flex-row md:flex-col md:gap-0 gap-8">
             <!-- image -->
-            <div class="flex justify-center">
+            <div class="w-[350px] md:w-[190px] h-auto">
               <img
-                class="w-[190px] h-[85px]"
+                class="w-full h-full object-contain"
                 src="../../images/reward/bank-of-america.png"
                 alt="" />
             </div>
             <!-- text -->
             <div class="pt-6">
-              <p class="text-center">
+              <p class="md:text-center text-left pl-4">
                 <a class="text-green-700 hover:underline" href=""
                   >Link your Bank of America</a
                 >
@@ -498,7 +548,7 @@
           </div>
         </div>
         <!-- join btn -->
-        <div class="flex justify-center items-center mt-[35px]">
+        <div class="flex justify-center items-center md:mt-[35px] mt-0">
           <button
             class="hover:opacity-90 h-3 p-4 my-4 items-center flex justify-center text-white bg-green-700 rounded-full">
             Join Startbuck® Rewards
@@ -506,38 +556,46 @@
         </div>
       </div>
       <!-- star right -->
-      <div class="flex items-center justify-center w-[280px] h-[518px]">
-        <img src="../../images/reward/starsright.png" alt="" />
+      <div class="flex justify-end w-full">
+        <img
+          class="hidden md:flex md:w-auto w-20"
+          src="../../images/reward/starsright.png"
+          alt="" />
+        <img
+          class="flex md:hidden md:w-auto w-20"
+          src="../../images/reward/starsright.png"
+          alt="" />
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- question -->
-<div class="w-full">
+<section class="w-full">
   <div
     class="max-w-screen-2xl mx-auto my-[100px] flex-col flex justify-center items-center">
-    <h4 class="text-[26px]">Questions?</h4>
-    <p class="pt-[10px]">
-      We want to help in any way we can. You can ask your barista anytime or
-      we’ve answered the <br />
-      most commonly asked questions
-      <span class="inline-block">
-        <a
-          href="#"
-          class="text-green-700 hover:underline flex items-center gap-1">
-          right over here<img
-            class="size-[15px]"
-            src="../../images/reward/external-link.png"
-            alt="" />
-        </a> </span
-      >.
-    </p>
+    <div class="max-w-screen-sm px-4">
+      <h4 class="text-[26px]">Questions?</h4>
+      <p class="pt-[10px]">
+        We want to help in any way we can. You can ask your barista anytime or
+        we’ve answered the most commonly asked questions
+        <span class="inline-block">
+          <a
+            href="#"
+            class="text-green-700 hover:underline flex items-center gap-1">
+            right over here<img
+              class="size-[15px]"
+              src="../../images/reward/external-link.png"
+              alt="" />
+          </a> </span
+        >.
+      </p>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- instruction -->
-<div class="w-full py-[50px] bg-[#f9f9f9]">
+<section class="w-full bg-[#f9f9f9]">
   <!-- paragraph -->
   <div class="max-w-screen-2xl mx-auto text-[14px] p-6 2xl:px-0">
     <!-- paragraph -->
@@ -560,7 +618,7 @@
           </a>
         </span>
       </p>
-      <p class="">
+      <p class="pt-[10px]">
         2At participating stores only. Some restrictions apply. Linked Card
         members will earn 2% Cash Back on the full purchase price of every
         Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may
@@ -583,9 +641,9 @@
     <!-- paragrap section -->
     <div class="pt-4">
       <!-- paragraph top -->
-      <div class="flex justify-between">
+      <div class="flex justify-between flex-col md:flex-row">
         <!-- head-text-1 -->
-        <div class="flex flex-col w-[50%]">
+        <div class="flex flex-col md:w-[50%] w-auto">
           <h4 class="text-[#8f8f8f]">EARNING STARS</h4>
           <p class="py-[10px]">
             Stars cannot be earned on purchases of alcohol, Starbucks Cards or
@@ -607,19 +665,21 @@
           </p>
         </div>
         <!-- head-text-2 -->
-        <div class="w-[50%]">
+        <div class="md:w-[50%] w-auto">
           <h4 class="text-[#8f8f8f]">TERMS OF USE</h4>
-          <p class="py-[10px] flex gap-1">
+          <p class="py-[10px]">
             For full program details visit
-            <span class="flex items-center gap-1">
-              <a href="#" class="text-green-700 hover:underline">
-                starbucks.com/rewards/terms</a
-              >
-              <img
-                class="size-[15px]"
-                src="../../images/reward/external-link.png"
-                alt=""
-            /></span>
+            <span class="inline-block">
+              <a
+                href="#"
+                class="text-green-700 hover:underline flex items-center gap-1">
+                starbucks.com/rewards/terms
+                <img
+                  class="size-[15px]"
+                  src="../../images/reward/external-link.png"
+                  alt=""
+              /></a>
+            </span>
           </p>
           <p>
             Starbucks® Rewards benefits are available at participating Starbucks
@@ -641,9 +701,9 @@
         </div>
       </div>
       <!-- paragraph-bottom -->
-      <div class="flex justify-between items-center">
-        <div class="flex flex-col w-[50%]">
-          <h4 class="text-[#8f8f8f]">BENEFITS</h4>
+      <div class="flex justify-between flex-col md:flex-row">
+        <div class="flex flex-col md:w-[50%] w-auto">
+          <h4 class="text-[#8f8f8f] md:pt-0 pt-[10px]">BENEFITS</h4>
           <p class="py-[10px]">
             Free refills available during same in-store visit only. To qualify
             for the Birthday Reward, you must have made at least one
@@ -651,7 +711,7 @@
           </p>
         </div>
         <!-- head-text-2 -->
-        <div class="w-[50%]">
+        <div class="md:w-[50%] w-auto">
           <h4 class="text-[#8f8f8f]">REDEEMING REWARDS</h4>
           <p class="py-[10px]">
             Rewards cannot be redeemed for alcoholic beverages or multi-serve
@@ -664,4 +724,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>
