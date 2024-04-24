@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rewards</title>
+    <!-- css link -->
     <link rel="stylesheet" href="../../styles/output.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="navbar-layout"></div>
-    <div class="content1"></div>
-    <div class="content2"></div>
-    <div class="content3"></div>
-    <div class="footer-layout"></div>
+<!--call navbar from component layout by class-->
+<navbar-layout class="navbar-layout" ></navbar-layout>
+<!-- body write here -->
+<content-reward-layout class="content-reward-layout" ></content-reward-layout>
+<!-- call footer from component layout by class--> 
+<!-- <footer-layout class="footer-layout"></footer-layout> -->
+<footer-layout class="footer-layout"></footer-layout>
 </body>
-<script src="../../script/layout/layout.js"></script>
-<script src="../../script/find-a-store/find.js"></script>
+
+<!-- script link component home page -->
+<script type="module" src="../../script/layout/layout.js"></script>
+<script type="module" src="../../script/rewards/reward.js"></script>
 </html>

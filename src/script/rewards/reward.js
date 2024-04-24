@@ -76,24 +76,25 @@ fetch("../../components/rewards/content.html")
     const couponWidth = couPon25.offsetWidth;
     underLine.style.transition = "transform 0.5s ease";
     // // function action
+    
     couPon25.addEventListener("click", () => {
       moveUnderline(0);
     });
 
     couPon100.addEventListener("click", () => {
-      moveUnderline(7.45);
+      moveUnderline(6.5);
     });
 
     couPon200.addEventListener("click", () => {
-      moveUnderline(15.2);
+      moveUnderline(13.12);
     });
 
     couPon300.addEventListener("click", () => {
-      moveUnderline(23);
+      moveUnderline(19.6);
     });
 
     couPon400.addEventListener("click", () => {
-      moveUnderline(30.9);
+      moveUnderline(26.2);
     });
 
     function moveUnderline(index) {
