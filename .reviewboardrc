@@ -1,2 +1,5 @@
-REVIEWBOARD_URL = 'https://review.clp.kr/'
-REPOSITORY = 'Hexcode'
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "Hexcode"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/order-issue1"
+LAND_DEST_BRANCH = "feature/order-issue1"
