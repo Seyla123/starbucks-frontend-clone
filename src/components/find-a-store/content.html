@@ -1,9 +1,9 @@
 <section class=".find-content-layout w-full">
   <div class="w-full flex flex-col lg:flex-row justify-between">
     <!-- find a store -->
-    <div class="pl-8 lg:py-6 py-0 w-[40%]">
+    <div class=" lg:py-6 py-0 w-[40%]">
       <!-- after lg -->
-      <div class="sticky top-0 pb-4 pr-8">
+      <div class=" sticky top-0 pb-4 pl-8 pr-8">
         <div
           class="relative justify-between items-center w-full hidden lg:flex">
           <input
@@ -23,10 +23,10 @@
         </div>
       </div>
       <!-- list location -->
-      <div class="h-screen overflow-y-scroll w-full flex flex-col gap-1">
+      <div class="h-screen overflow-y-auto w-full flex flex-col gap-1">
         <!-- Original cards design-->
         <div
-          class="border-[#00754a] bg-[#e9f0ee] hover:bg-gray-100 border-2 rounded-xl py-[20px] flex justify-between items-center">
+          class="card-location border-[#00754a] bg-[#e9f0ee] hover:bg-gray-100 border-2 rounded-lg py-[20px] flex justify-between items-center">
           <!-- content -->
           <div class="pl-10">
             <h1 class="font-bold text-[14px]">Olympia Mall</h1>
@@ -49,13 +49,14 @@
             <div class="pt-2">
               <button
                 id="order-btn"
-                class="hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
+                class="order-btn hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
                 Order Here
               </button>
             </div>
           </div>
         </div>
         <!-- Calling component from JS -->
+        <card-component></card-component>
         <card-component></card-component>
         <card-component></card-component>
       </div>
@@ -83,7 +84,7 @@
     <!-- list location -->
 
     <!-- Google map -->
-    <div class="h-[100vh] w-[60%]">
+    <div class="h-[106vh] w-[60%]">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.42198261587!2d104.89018675!3d11.57936425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1713955136091!5m2!1sen!2skh"
         width="600"

@@ -64,7 +64,8 @@ fetch("../../components/find-a-store/content.html")
       },
       {
         location: "Toul Tom Pong",
-        direction: "Street 155 at Street 468, Toul Tom Pong I Commune, Phnom Penh",
+        direction:
+          "Street 155 at Street 468, Toul Tom Pong I Commune, Phnom Penh",
         distance: "4.1 miles away",
       },
       {
@@ -124,7 +125,8 @@ fetch("../../components/find-a-store/content.html")
       },
       {
         location: "Toul Tom Pong",
-        direction: "Street 155 at Street 468, Toul Tom Pong I Commune, Phnom Penh",
+        direction:
+          "Street 155 at Street 468, Toul Tom Pong I Commune, Phnom Penh",
         distance: "4.1 miles away",
       },
       {
@@ -147,17 +149,17 @@ fetch("../../components/find-a-store/content.html")
         direction: "3 Samdech Sothearos Blvd, Phnom Penh",
         distance: "3.3 miles away",
       },
-
     ];
 
     // create cards function to loop over the listlocation
     const createCardComponent = () => {
       return `
-      <div id="card-location" class="flex flex-col gap-1">
-      ${listCards.map((card)=> {
-        return `
-        <div 
-        class=" hover:bg-gray-100 rounded-xl py-[20px] flex justify-between items-center">
+      <div class="flex flex-col gap-1">
+      ${listCards
+        .map((card) => {
+          return `
+        <div
+        class="card-location hover:bg-gray-100 rounded-lg py-[20px] flex justify-between items-center">
         <!-- content -->
         <div class="pl-10">
           <h1 class="font-bold text-[14px]">${card.location}</h1>
@@ -180,18 +182,19 @@ fetch("../../components/find-a-store/content.html")
           <div class="pt-2">
             <button
               id="order-btn"
-              class="hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
+              class="order-btn hidden hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
               Order Here
             </button>
           </div>
         </div>
       </div>
 
-        `
-      }).join("")}
+        `;
+        })
+        .join("")}
 
       </div>
-    `
+    `;
     };
 
     // create class to link the component in HTML
@@ -202,9 +205,35 @@ fetch("../../components/find-a-store/content.html")
     }
     customElements.define("card-component", CardComponent);
 
-    // Create function action
-    const cardStyle = document.querySelectorAll("#card-location")
-    
+    // Select all card elements
+    const cards = document.querySelectorAll(".card-location");
+
+    // Function to remove styles from all cards and hide "Order Here" button
+    const resetCardsAndButton = () => {
+      cards.forEach((card) => {
+        card.classList.remove("border-[#00754a]", "bg-[#e9f0ee]", "border-2");
+      });
+      // Hide "Order Here" button
+      const orderButtons = document.querySelectorAll(".order-btn");
+      orderButtons.forEach((button) => {
+        button.classList.add("hidden");
+      });
+    };
+
+    // Loop through each card and add event listener
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        // Reset styles and hide "Order Here" button for all cards
+        resetCardsAndButton();
+
+        // Toggle the classes to change the style for the clicked card
+        card.classList.add("border-[#00754a]", "bg-[#e9f0ee]", "border-2");
+
+        // Show "Order Here" button for the clicked card
+        const orderButton = card.querySelector(".order-btn");
+        orderButton.classList.remove("hidden");
+      });
+    });
 
   })
   .catch((error) => console.error("Error fetching included file:", error));
