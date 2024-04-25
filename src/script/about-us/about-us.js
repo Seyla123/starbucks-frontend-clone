@@ -13,3 +13,12 @@ fetch("../../components/about-us/content-2.html")
     content_about_us_2.innerHTML = data;
   })
   .catch((error) => console.error("Error fetching included file:", error));
+
+const contactUs = document.querySelector(".contact-us-about-us-layout");
+fetch("../../components/about-us/contact-us.html")
+  .then((res) => res.text())
+  .then((data) => {
+    contactUs.innerHTML = data;
+  })
+  .catch((error) => console.error("Error fetching included file:", error));
+  
