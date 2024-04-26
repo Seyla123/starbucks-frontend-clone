@@ -158,7 +158,7 @@ fetch("../../components/find-a-store/content.html")
       ${listCards
         .map((card) => {
           return `
-        <div
+        <div id="button-up"
         class="card-location hover:bg-gray-100 rounded-lg py-[20px] flex justify-between items-center">
         <!-- content -->
         <div class="pl-10">
@@ -188,12 +188,12 @@ fetch("../../components/find-a-store/content.html")
           </div>
         </div>
       </div>
-
         `;
         })
         .join("")}
 
       </div>
+      
     `;
     };
 
@@ -234,6 +234,26 @@ fetch("../../components/find-a-store/content.html")
         orderButton.classList.remove("hidden");
       });
     });
+
+    // Scrolling action
+    const section = document.querySelector(".overflow-y-auto"); // Update class name
+    const buttons = document.querySelectorAll("#button-up");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const buttonHeight = button.offsetHeight; // Get the height of the clicked button
+        const currentScrollHeight = section.scrollTop; // Get the current scroll height
+        const newScrollHeight = currentScrollHeight + buttonHeight; // Calculate the new scroll height
+        section.scrollTo({
+          top: newScrollHeight,
+          behavior: "smooth",
+        });
+      });
+    });
+
+    // click and show filter
+    
+
 
   })
   .catch((error) => console.error("Error fetching included file:", error));
