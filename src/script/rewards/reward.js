@@ -23,60 +23,49 @@ fetch("../../components/rewards/content.html")
 
     // function action
     couPon25.addEventListener("click", () => {
-      // underLine.classList.toggle("ml-[295px]")
       conTent25.classList.remove("hidden");
       conTent100.classList.add("hidden");
       conTent200.classList.add("hidden");
       conTent300.classList.add("hidden");
       conTent400.classList.add("hidden");
-      // alert("hi")
     });
 
     couPon100.addEventListener("click", () => {
-      // underLine.classList.toggle("ml-[435px]")
       conTent25.classList.add("hidden");
       conTent100.classList.remove("hidden");
       conTent200.classList.add("hidden");
       conTent300.classList.add("hidden");
       conTent400.classList.add("hidden");
-      // alert("hi")
     });
 
     couPon200.addEventListener("click", () => {
-      // underLine.classList.toggle("ml-[575px]")
       conTent25.classList.add("hidden");
       conTent100.classList.add("hidden");
       conTent200.classList.remove("hidden");
       conTent200.classList.add("duration-200");
       conTent300.classList.add("hidden");
       conTent400.classList.add("hidden");
-      // alert("hi")
     });
     couPon300.addEventListener("click", () => {
-      // underLine.classList.toggle("ml-[725px]")
       conTent25.classList.add("hidden");
       conTent100.classList.add("hidden");
       conTent200.classList.add("hidden");
       conTent300.classList.remove("hidden");
       conTent400.classList.add("hidden");
-      // alert("hi")
     });
     couPon400.addEventListener("click", () => {
-      // underLine.classList.toggle("ml-[875px]")
       conTent25.classList.add("hidden");
       conTent100.classList.add("hidden");
       conTent200.classList.add("hidden");
       conTent300.classList.add("hidden");
       conTent400.classList.remove("hidden");
-      // alert("hi")
     });
 
     // move the underline
     // Calculate the width of each coupon element
     const couponWidth = couPon25.offsetWidth;
     underLine.style.transition = "transform 0.5s ease";
-    // // function action
-    
+
     couPon25.addEventListener("click", () => {
       moveUnderline(0);
     });
@@ -97,6 +86,7 @@ fetch("../../components/rewards/content.html")
       moveUnderline(26.2);
     });
 
+    // move according to the width of the coupon
     function moveUnderline(index) {
       const offset = index * couponWidth;
       underLine.style.transform = `translateX(${offset}px)`;
