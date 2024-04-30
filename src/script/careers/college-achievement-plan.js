@@ -3,21 +3,21 @@ fetch("../../components/careers/college-content.html")
   .then((res) => res.text())
   .then((data) => {
     content.innerHTML = data;
-    const btn1 = document.querySelectorAll(".btn1");
-    const drop1 = document.querySelectorAll(".drop1");
-    const imgArrow = document.querySelectorAll(".imgArrow");
+    const buttonHead = document.querySelectorAll(".buttonHead");
+    const contentDropdown = document.querySelectorAll(".contentDropdown");
+    const chevron = document.querySelectorAll(".chevron");
   
-    for (let i = 0; i < btn1.length; i++) {
-      btn1[i].addEventListener("click", () => {
-        btn1[i].classList.toggle("active");
-        if (btn1[i].classList.contains("active")) {
-          drop1[i].classList.add("max-h-screen");
-          drop1[i].classList.remove("max-h-0");
-          imgArrow[i].classList.add("rotate-180");
+    for (let i = 0; i < buttonHead.length; i++) {
+      buttonHead[i].addEventListener("click", () => {
+        buttonHead[i].classList.toggle("active");
+        if (buttonHead[i].classList.contains("active")) {
+          contentDropdown[i].classList.add("max-h-screen");
+          contentDropdown[i].classList.remove("max-h-0");
+          chevron[i].classList.add("rotate-180");
         } else {
-          drop1[i].classList.remove("max-h-screen");
-          drop1[i].classList.add("max-h-0");
-          imgArrow[i].classList.remove("rotate-180");
+          contentDropdown[i].classList.remove("max-h-screen");
+          contentDropdown[i].classList.add("max-h-0");
+          chevron[i].classList.remove("rotate-180");
         }
       });
     }    
