@@ -1,0 +1,137 @@
+<section class=".find-content-layout w-full">
+  <!-- search bar -->
+  <div
+    class="w-full h-[92vh] flex flex-col-reverse lg:flex-row justify-between">
+    <!-- find a store -->
+    <div class="overflow-y-hidden relative lg:py-6 py-0 lg:w-[40%]">
+      <!-- after lg -->
+      <div class="lg:flex hidden sticky top-0 pb-4 pl-8 pr-8">
+        <div
+          class="relative justify-between items-center w-full flex pt-5 lg:pt-0">
+          <input
+            class="pb-2 w-full outline-none text-[18px] border-b-[1px] border-black"
+            type="text"
+            placeholder="Find a store" />
+          <img
+            class="cursor-pointer absolute right-20 size-[35px]"
+            src="../../images/reward/search.png"
+            alt="" />
+          <!-- filter button -->
+          <button
+            id="filter-btn"
+            class="hover:bg-[#e9f0ee] px-[18px] py-[5px] text-green-700 font-medium border-[1px] border-green-700 rounded-full">
+            Filter
+          </button>
+        </div>
+      </div>
+      <!-- list location (Card) -->
+      <div class="h-screen overflow-y-auto w-full flex flex-col gap-1">
+        <!-- Original cards design-->
+        <div
+          id="button-up"
+          class="card-location border-[#00754a] bg-[#e9f0ee] hover:bg-gray-100 border-2 rounded-lg py-[20px] flex justify-between items-center">
+          <!-- content -->
+          <div class="pl-10">
+            <h1 class="font-bold text-[14px]">Olympia Mall</h1>
+            <p class="text-[13px]">Shop 1, G/F, Sampovmeas Road, Phnom Penh</p>
+            <p class="text-[13px]">2.5 miles away</p>
+          </div>
+          <!-- button -->
+          <div class="pr-4 pl-10">
+            <!-- heart and problem mark -->
+            <div class="flex justify-end px-2 gap-4">
+              <img
+                class="size-[20px] cursor-pointer"
+                src="../../images/reward/heart.png"
+                alt="" />
+              <img
+                class="rotate-180 size-[20px] cursor-pointer"
+                src="../../images/reward/problem.png"
+                alt="" />
+            </div>
+            <div class="pt-2">
+              <button
+                id="order-btn"
+                class="order-btn hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
+                Order Here
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Calling component from JS -->
+        <card-component></card-component>
+        <card-component></card-component>
+      </div>
+
+      <!-- external link -->
+      <div
+        class="hidden lg:flex absolute bottom-0 w-full bg-white px-10 py-8 flex-col">
+        <a href="#"
+          ><h1 class="flex text-[16px] hover:opacity-90 text-green-700 gap-2">
+            Privacy Notice
+            <img
+              class="size-[20px]"
+              src="../../images/reward/external-link.png"
+              alt="" /></h1
+        ></a>
+        <a href="#"
+          ><h1
+            class="flex text-[16px] hover:opacity-90 text-green-700 gap-2 py-4">
+            Terms of Use
+            <img
+              class="size-[20px]"
+              src="../../images/reward/external-link.png"
+              alt="" /></h1
+        ></a>
+        <a href="#"
+          ><h1 class="flex text-[16px] hover:opacity-90 text-green-700 gap-2">
+            Do Not Share My Personal Information
+            <img
+              class="size-[20px]"
+              src="../../images/reward/external-link.png"
+              alt="" /></h1
+        ></a>
+      </div>
+
+    </div>
+
+    <!-- Google map -->
+    <div class="lg:h-full lg:w-[60%] w-full">
+      <div class="lg:hidden sticky top-0 pb-4 pl-8 pr-8">
+        <div
+          class="relative justify-between items-center w-full flex pt-5 lg:pt-0">
+          <input
+            class="pb-2 w-full outline-none text-[18px] border-b-[1px] border-black"
+            type="text"
+            placeholder="Find a store" />
+          <img
+            class="cursor-pointer absolute right-20 size-[35px]"
+            src="../../images/reward/search.png"
+            alt="" />
+
+          <button
+            id="find-btn"
+            class="hover:bg-[#e9f0ee] px-[18px] py-[5px] text-green-700 font-medium border-[1px] border-green-700 rounded-full">
+            Filter
+          </button>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.42198261587!2d104.89018675!3d11.57936425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1713955136091!5m2!1sen!2skh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="lg:h-full h-[40vh] w-full"></iframe>
+    </div>
+
+    <!-- click filter JS -->
+    <div class="hidden">
+      <div></div>
+    </div>
+
+
+  </div>
+</section>
