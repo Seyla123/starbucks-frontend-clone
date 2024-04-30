@@ -2,7 +2,6 @@
 const find = document.querySelector(".find-content-layout");
 fetch("../../components/find-a-store/content.html")
   .then((res) => res.text())
-
   .then((data) => {
     find.innerHTML = data;
     // Create array objects
@@ -252,10 +251,61 @@ fetch("../../components/find-a-store/content.html")
     });
 
     // click and show filter
-    
+    const filterBTN = document.querySelector("#filter-btn");
+    const closeBTN = document.querySelector("#close-btn");
+    const filterContent = document.querySelector("#filter-content");
+    const externalContent = document.querySelector("#external-content");
+    const componentHide = document.querySelector("#component-hide");
+    const findBTN = document.querySelector("#find-btn");
+
+    filterBTN.addEventListener("click", () => {
+      filterContent.classList.remove("scale-[120%]");
+      filterContent.classList.remove("opacity-0");
+      filterContent.classList.remove("pointer-events-none");
+      componentHide.classList.add("hidden");
+      externalContent.classList.add("hidden");
+
+      filterContent.classList.add("scale-[100%]");
+      filterContent.classList.add("opacity-100");
+      filterContent.classList.add("pointer-events-auto");
+    });
+
+    closeBTN.addEventListener("click", () => {
+      filterContent.classList.add("scale-[120%]");
+      filterContent.classList.add("opacity-0");
+      filterContent.classList.add("pointer-events-none");
+
+      filterContent.classList.remove("scale-[100%]");
+      filterContent.classList.remove("opacity-100");
+      filterContent.classList.remove("pointer-events-auto");
+      componentHide.classList.remove("hidden");
+      externalContent.classList.remove("hidden");
+    });
+
+    findBTN.addEventListener("click", () => {
+      filterContent.classList.remove("scale-[120%]");
+      filterContent.classList.remove("opacity-0");
+      filterContent.classList.remove("pointer-events-none");
+      componentHide.classList.add("hidden");
+      externalContent.classList.add("hidden");
+
+      filterContent.classList.add("scale-[100%]");
+      filterContent.classList.add("opacity-100");
+      filterContent.classList.add("pointer-events-auto");
+    });
+
+    closeBTN.addEventListener("click", () => {
+      filterContent.classList.add("scale-[120%]");
+      filterContent.classList.add("opacity-0");
+      filterContent.classList.add("pointer-events-none");
+
+      filterContent.classList.remove("scale-[100%]");
+      filterContent.classList.remove("opacity-100");
+      filterContent.classList.remove("pointer-events-auto");
+      componentHide.classList.remove("hidden");
+      externalContent.classList.remove("hidden");
+    });
 
 
   })
   .catch((error) => console.error("Error fetching included file:", error));
-// modify card option
-// border-[#00754a] bg-[#e9f0ee] border-2

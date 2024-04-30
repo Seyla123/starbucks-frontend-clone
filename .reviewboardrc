@@ -1,5 +1,5 @@
 REVIEWBOARD_URL = "https://review.clp.kr/"
-REPOSITORY = "Hexcode"
+REPOSITORY = "HexCode/Team-Projects/Starbucks-Clone"
 REPOSITORY_TYPE = "git"
-BRANCH = "feature/reward-page"
-LAND_DEST_BRANCH = "feature/reward-page"
+BRANCH = "feature/find-a-store-page"
+LAND_DEST_BRANCH = "feature/find-a-store-page"
