@@ -1,6 +1,6 @@
 const content_reward = document.querySelector(".content-reward-layout");
 
-fetch("../../components/rewards/content.html")
+fetch(".../components/rewards/content.html")
   .then((res) => res.text())
   .then((data) => {
     content_reward.innerHTML = data;
