@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Featured menu: Starbucks Coffee Company</title>
@@ -8,43 +9,39 @@
     <link rel="stylesheet" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../styles/wave.css" />
     <!-- font -->
-    <link
-      href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
-      rel="stylesheet"
-    />
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
+        rel="stylesheet" />
     <!-- google icon -->
-    <script
-      src="https://kit.fontawesome.com/cc39ea921b.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet" />
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body onload="test()" >
+</head>
+
+<body onload="test()">
     <!--call navbar from component layout by class-->
     <navbar-full-w-layout class="navbar-full-w-layout"></navbar-full-w-layout>
 
     <!-- header -->
-    <div
-      class="bg-[#F9F9F9] w-full flex justify-center border sticky top-0 z-30 to-black"
-    >
-      <div class="w-full md:ml-[78px] pl-6 text-sm">
-        <p class="py-4">Menu / Starbucks Refreshers® Beverages / <span class="font-semibold">Spicy Dragonfruit</span></p>
-      </div>
+    <div class="bg-[#F9F9F9] w-full flex justify-center border sticky top-0 z-30 to-black">
+        <div class="w-full md:ml-[78px] pl-6 text-sm">
+            <p class="py-4">Menu / Starbucks Refreshers® Beverages / <span class="font-semibold">Spicy
+                    Dragonfruit</span></p>
+        </div>
     </div>
     <!-- body write here -->
 
     <div class="bg-[#1e3932]   w-full">
         <div class=" h-full p-6 md:ml-[78px] bg-[#1e3932] flex ">
             <div class="bg-[#1e3932] flex items-center justify-center w-full max-w-[420px]">
-                <img class="max-w-[300px]" src="https://globalassets.starbucks.com/digitalassets/products/bev/SpicyMango.jpg?impolicy=1by1_wide_topcrop_630" alt="">
+                <img class="max-w-[300px]"
+                    src="https://globalassets.starbucks.com/digitalassets/products/bev/SpicyMango.jpg?impolicy=1by1_wide_topcrop_630"
+                    alt="">
             </div>
             <div class="bg-[#1e3932] flex p-8 items-start gap-4 w-full flex-col justify-center max-w-[420px]">
                 <h2 class="text-4xl font-semibold text-white">Spicy Dragonfruit</h2>
@@ -56,75 +53,83 @@
         <div class=" h-full p-6 py-20 md:ml-[78px]  flex ">
             <div class="w-full max-w-[420px]">
                 <div class="bg-red-500 h-10 w-full">
-                    
+
                 </div>
                 <hr>
                 <div class="bg-blue-500 h-10 w-full"></div>
                 <div class="bg-red-500 h-10 w-full"></div>
             </div>
             <div class="pl-8  w-full flex flex-col gap-2 max-w-[420px]">
-   
-                    <div class="pl-4 text-2xl font-semibold w-full">
-                        What's included
+
+                <div class="pl-4 text-2xl font-semibold w-full">
+                    What's included
+                </div>
+                <hr>
+                <div class="bt w-full  min-w-max overflow-hidden relative  ">
+                    <div class=" w-full relative p-2" id="flavorsDiv">
+                        <select type="text"
+                            class="w-full pl-4 rounded-lg h-[48px] border-solid border-[1px] border-gray-500 outline-none ">
+                            <option value="">Extra Spicy Chili Powder Blend</option>
+                            <option value="">Light Spicy Chili Powder Blend</option>
+                            <option value="">Spicy Chili Powder Blend</option>
+                        </select>
+                        <span
+                            class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Flavors</span>
                     </div>
-                    <hr>
-                    <div class="bt w-full  min-w-max overflow-hidden relative  ">
-                        <div class=" w-full relative p-2" id="flavorsDiv">
-                            <select type="text" class="w-full pl-4 rounded-lg h-[48px] border-solid border-[1px] border-gray-500 outline-none ">
-                                <option value="">Extra Spicy Chili Powder Blend</option>
-                                <option value="">Light Spicy Chili Powder Blend</option>
-                                <option value="">Spicy Chili Powder Blend</option>
-                            </select>
-                            <span class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Flavors</span>
-                        </div>
-                    </div>  
+                </div>
 
 
-                    <div class="bt w-full  min-w-max overflow-hidden relative  ">
-                        <div class=" w-full relative p-2" id="addInDiv">
-                            <select type="text" class="w-full pl-4 rounded-lg h-[48px] border-solid border-[1px] border-gray-500 outline-none ">
-                                <option value="">Extra Ice</option>
-                                <option value="">Light Ice</option>
-                                <option value="">No Ice</option>
-                                <option value="">Ice</option>
-                            </select>
-                            <span class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
-                        </div>
-                    </div>  
-
-
-
-                    <div class="bt w-full  min-w-max overflow-hidden relative  ">
-                        <div class=" w-full relative p-2" id="flavorsDiv">
-                            <div type="text" class="w-full pl-4  rounded-lg h-[48px] border-solid border-2 border-[#00754A] outline-none ">
-                                
-                            </div>
-                            
-                            <span class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
-                            <div class="justify-between absolute w-[90%] top-5 left-5 flex">
-                                <span class="">Dragonfruit Inclusion scoop</span>
-                                <div class="flex gap-2 text-white justify-center items-center">
-                                    <button class="w-6 h-6 text-center bg-[#00754A] rounded-full">-</button>
-                                    <span id="numberOfAddIn" class="text-black">2</span>
-                                    <button class="w-6 h-6 text-center bg-[#00754A] rounded-full">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="bt w-full  min-w-max overflow-hidden relative  ">
-                        <div class=" w-full relative p-2" id="flavorsDiv">
-                            <select type="text" class="w-full pl-4 rounded-lg h-[48px] border-solid border-2 border-[#00754A] outline-none ">
-                                <option value="">Extra Lemonade</option>
-                                <option value="">Light Lemonade</option>
-                                <option value="">No Lemonade</option>
-                                <option value="">Lemonade</option>
-                            </select>
-                            <span class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Flavors</span>
-                        </div>
-                    </div>  
-                    <div>
-                        <button>button</button>
+                <div class="bt w-full  min-w-max overflow-hidden relative  ">
+                    <div class=" w-full relative p-2" id="addInDiv">
+                        <select type="text"
+                            class="w-full pl-4 rounded-lg h-[48px] border-solid border-[1px] border-gray-500 outline-none ">
+                            <option value="">Extra Ice</option>
+                            <option value="">Light Ice</option>
+                            <option value="">No Ice</option>
+                            <option value="">Ice</option>
+                        </select>
+                        <span
+                            class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
                     </div>
+                </div>
+
+
+
+                <div class="bt w-full  min-w-max overflow-hidden relative  ">
+                    <div class=" w-full relative p-2" id="flavorsDiv">
+                        <div type="text"
+                            class="w-full pl-4  rounded-lg h-[48px] border-solid border-2 border-[#00754A] outline-none ">
+
+                        </div>
+
+                        <span
+                            class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
+                        <div class="justify-between absolute w-[90%] top-5 left-5 flex">
+                            <span class="">Dragonfruit Inclusion scoop</span>
+                            <div class="flex gap-2 text-white justify-center items-center">
+                                <button class="w-6 h-6 text-center bg-[#00754A] rounded-full">-</button>
+                                <span id="numberOfAddIn" class="text-black">2</span>
+                                <button class="w-6 h-6 text-center bg-[#00754A] rounded-full">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bt w-full  min-w-max overflow-hidden relative  ">
+                    <div class=" w-full relative p-2" id="flavorsDiv">
+                        <select type="text"
+                            class="w-full pl-4 rounded-lg h-[48px] border-solid border-2 border-[#00754A] outline-none ">
+                            <option value="">Extra Lemonade</option>
+                            <option value="">Light Lemonade</option>
+                            <option value="">No Lemonade</option>
+                            <option value="">Lemonade</option>
+                        </select>
+                        <span
+                            class="spanInput absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Flavors</span>
+                    </div>
+                </div>
+                <div>
+                    <button>button</button>
+                </div>
 
 
             </div>
@@ -133,11 +138,13 @@
     <div class="bg-[#1e3932] w-full p text-white">
         <div class="  pl-8 p-6 md:ml-[78px]  gap-1 w-full  max-w-[420px]">
             <p>Lorem ipsum dolor sit .</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum eligendi vitae, laboriosam unde fuga. Enim rem dignissimos cupiditate sequi veniam at pariatur quaerat adipisci. Pariatur exercitationem ipsa qui dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum eligendi vitae, laboriosam unde
+                fuga. Enim rem dignissimos cupiditate sequi veniam at pariatur quaerat adipisci. Pariatur exercitationem
+                ipsa qui dolores.</p>
             <p>kasdfkasdk</p>
             <button>buttom</button>
         </div>
-        
+
     </div>
 
 
@@ -146,15 +153,14 @@
     <!--  -->
     <!-- call footer from component layout by class-->
     <div class="md:ml-[78px]">
-      <footer-full-w-layout class="footer-full-w-layout"></footer-full-w-layout>
+        <footer-full-w-layout class="footer-full-w-layout"></footer-full-w-layout>
     </div>
-    <choose-store-content-layout
-      class="choose-store-content-layout"
-    ></choose-store-content-layout>
-  </body>
+    <choose-store-content-layout class="choose-store-content-layout"></choose-store-content-layout>
+</body>
 
-  <!-- script link component home page -->
-  <script type="module" src="../../script/menu/previous-menu.js"></script>
-  <script src="../../script/product/product-detail.js"></script>
-  <script type="module" src="../../script/layout/layout.js"></script>
+<!-- script link component home page -->
+<script type="module" src="../../script/menu/previous-menu.js"></script>
+<script src="../../script/product/product-detail.js"></script>
+<script type="module" src="../../script/layout/layout.js"></script>
+
 </html>
