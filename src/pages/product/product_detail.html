@@ -27,13 +27,13 @@
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body onload="test()">
+  <body onload="test()" >
     <!--call navbar from component layout by class-->
     <navbar-full-w-layout class="navbar-full-w-layout"></navbar-full-w-layout>
 
     <!-- header -->
     <div
-      class="bg-[#F9F9F9] w-full flex justify-center border sticky top-0 to-black"
+      class="bg-[#F9F9F9] w-full flex justify-center border sticky top-0 z-30 to-black"
     >
       <div class="w-full md:ml-[78px] pl-6 text-sm">
         <p class="py-4">Menu / Starbucks Refreshers® Beverages / <span class="font-semibold">Spicy Dragonfruit</span></p>
@@ -41,7 +41,7 @@
     </div>
     <!-- body write here -->
 
-    <div class="bg-[#1e3932]  w-full">
+    <div class="bg-[#1e3932]   w-full">
         <div class=" h-full p-6 md:ml-[78px] bg-[#1e3932] flex ">
             <div class="bg-[#1e3932] flex items-center justify-center w-full max-w-[420px]">
                 <img class="max-w-[300px]" src="https://globalassets.starbucks.com/digitalassets/products/bev/SpicyMango.jpg?impolicy=1by1_wide_topcrop_630" alt="">

@@ -18,10 +18,12 @@ fetch("../../components/layout/navbar-full-w.html")
         menuIcon.innerHTML =
           '<img  src="../../images/layout/close.png" alt="Close">'; // Set close icon HTML
         minMenuDropdown.style.right = "0%";
+        document.body.classList.add("fixed")
       } else {
         menuIcon.innerHTML =
           '<img  src="../../images/layout/menu.png" alt="Menu">'; // Set menu icon HTML
         minMenuDropdown.style.right = "-100%";
+        document.body.classList.remove("fixed")
       }
     });
 
