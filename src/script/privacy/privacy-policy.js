@@ -406,7 +406,7 @@ const adobeFlashDetail7 = document.querySelector("#id11");
 const link7 = document.createElement("a");
 link7.textContent = "http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html";
 link7.setAttribute("href", "http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html");
-link7.classList.add("underline", "text-green-700")
+link7.classList.add("underline", "text-green-700","break-words")
 adobeFlashDetail7.appendChild(link7);
 
 const contentDetail8to11 = {
