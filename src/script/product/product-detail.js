@@ -33,13 +33,35 @@ function rippleEffect(event) {
   for (i=0;i<btn.length;i++){
     btn[i].addEventListener("click", rippleEffect);
   }
-
+//slide size 
   const trentabtn = document.querySelector("#trentaBtn");
-  const sizeBg = document.querySelector("#sizeBg");
+  const trentaIcon = document.querySelector("#trentaIcon");
+  
+  const ventiBtn = document.querySelector("#ventiBtn");
+  const ventiIcon = document.querySelector("#ventiIcon");
 
-  trentabtn.addEventListener("click",function(){
-    const trentaDot = document.querySelector("#trentaDot");
-    const trentaIcon = document.querySelector("#trentaIcon");
-    sizeBg.classList.add("right-[44px]");
-    trentaIcon.classList.add("opacity-100")
-  });
+  
+  //slideSizeBg(trentabtn,trentaIcon,"right-[44px]");
+  slideSizeBg(ventiBtn,ventiIcon,"108px");
+  slideSizeBg(trentabtn,trentaIcon,"44px");
+
+
+
+  // trentabtn.addEventListener("click",function(){
+  //   sizeBg.classList.add("right-[44px]");
+  //   trentaIcon.classList.add("opacity-100")
+  // });
+
+
+  function slideSizeBg(btn,icon,right){
+      const sizeBg = document.querySelector("#sizeBg");
+      btn.addEventListener("click",function(){
+      sizeBg.style.right=right;
+      icon.classList.add("opacity-100")
+    });
+  }
+
+  // <!-- right-[240px] -->
+  // <!-- right-[173px] -->
+  // <!-- right-[108px] -->
+  // <!-- right-[44px] top-8  -->
