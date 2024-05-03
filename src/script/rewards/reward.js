@@ -72,19 +72,19 @@ fetch("../../components/rewards/content.html")
     });
 
     couPon100.addEventListener("click", () => {
-      moveUnderline(6.5);
+      moveUnderline(4);
     });
 
     couPon200.addEventListener("click", () => {
-      moveUnderline(13.12);
+      moveUnderline(8.5);
     });
 
     couPon300.addEventListener("click", () => {
-      moveUnderline(19.6);
+      moveUnderline(13);
     });
 
     couPon400.addEventListener("click", () => {
-      moveUnderline(26.2);
+      moveUnderline(17.5);
     });
 
     // move according to the width of the coupon
