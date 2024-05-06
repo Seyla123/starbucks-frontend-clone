@@ -1,4 +1,4 @@
-![git-flow](/uploads/7f0a0dfb6bab17b6620fee1156c9c4ae/git-flow.png)
+https://github-production-user-asset-6210df.s3.amazonaws.com/89925541/324228564-6be663ee-6f13-4466-92af-33aa549eb189.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240506%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240506T075533Z&X-Amz-Expires=300&X-Amz-Signature=592d39b0b9460af7ea6508b722d81dbdac641a75e63df167fd442c0f5e712ddd&X-Amz-SignedHeaders=host&actor_id=89925541&key_id=0&repo_id=777100563
 
 1. **Understanding Git-Flow**
 
