@@ -1,4 +1,4 @@
-![Git-flow-strategy](/uploads/23d07c043450555bcd052e89a1916906/Git-flow-strategy.png)
+![git-flow](/uploads/7f0a0dfb6bab17b6620fee1156c9c4ae/git-flow.png)
 
 1. **Understanding Git-Flow**
 
