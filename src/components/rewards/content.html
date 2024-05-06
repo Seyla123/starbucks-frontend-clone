@@ -2,17 +2,17 @@
   <div
     class="w-full max-w-screen-2xl mx-auto flex justify-between items-center">
     <p class="text-white">STARBUCKS® REWARDS</p>
-    <button
-      class="hover:opacity-80 flex md:hidden h-2 p-3 items-center justify-center outline outline-1 outline-offset-2 text-white rounded-full">
-      Join in the app
-    </button>
+   <a href="../../pages/join-now/join-now.html"> <button
+    class="hover:opacity-80 flex md:hidden h-2 p-3 items-center justify-center outline outline-1 outline-offset-2 text-white rounded-full">
+    Join in the app
+  </button></a>
   </div>
 </section>
 
 <!-- hero section -->
 <section
   class="md:flex relative w-full bg-[#d4e9e2] xl:h-[50vh] h-[35vh] hidden items-center justify-start">
-  <div class="max-w-screen-2xl mx-auto px-4 w-full">
+  <div class="max-w-screen-2xl z-50 mx-auto px-4 w-full">
     <!-- content -->
     <div class="flex flex-col gap-3 items-start">
       <h2 class="uppercase text-[36px] font-medium">
@@ -20,12 +20,12 @@
       </h2>
       <p class="text-[18px]">Join now to start earning Rewards.</p>
 
-      <a href="../../pages/join-now/join-now.html" class="bg-green-700 cursor-pointer pointer-events-none text-white px-4 py-1.5 rounded-full">
+      <a href="../../pages/join-now/join-now.html" class="bg-green-700 hover:opacity-90 cursor-pointer text-white px-4 py-1.5 rounded-full">
         Join now
       </a>
 
       <p class="text-[18px]">
-        Or <span><a href="../../pages/order/order.html" class="underline cursor-pointer">Join in the app </a></span>for
+        Or <span><a href="../../pages/order/order.html" class="underline cursor-pointer hover:no-underline">Join in the app </a></span>for
         the best experience
       </p>
     </div>
@@ -52,12 +52,12 @@
       </h1>
       <p class="mt-2 text-[14px]">Join now to start earning Rewards.</p>
       <div class="flex items-center justify-center">
-        <button
+        <a href="../../pages/join-now/join-now.html"><button
           class="hover:opacity-90 h-3 p-4 my-4 items-center flex text-white bg-green-700 rounded-full">
           Join the app
-        </button>
+        </button></a>
       </div>
-      <p class="text-[14px]">Or join online</p>
+       <a class="underline hover:no-underline" href="../../pages/join-now/join-now.html">Or join online</a>
     </div>
   </div>
 </section>
@@ -144,42 +144,42 @@
 
   <!-- coupon-->
 
-  <div class="flex items-center justify-center space-x-4">
+  <div class="flex items-center justify-center space-x-6">
     <!-- number 25 100 200 300 400 -->
     <button
       id="coupon25"
-      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      class="py-2 max-w-[108px] text-[20px] font-medium justify-center cursor-pointer flex">
       25
       <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
     <button
       id="coupon100"
-      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      class="py-2 max-w-[108px] text-[20px] font-medium justify-center cursor-pointer flex">
       100
       <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
     <button
       id="coupon200"
-      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      class="py-2 max-w-[108px] text-[20px] font-medium justify-center cursor-pointer flex">
       200
       <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
     <button
       id="coupon300"
-      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      class="py-2 max-w-[108px] text-[20px] font-medium justify-center cursor-pointer flex">
       300
       <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
     <button
       id="coupon400"
-      class="py-2 w-[108px] text-[26px] font-medium justify-center cursor-pointer flex">
+      class="py-2 max-w-[108px] text-[20px] font-medium justify-center cursor-pointer flex">
       400
       <img class="w-6" src="../../images/reward/star.png" alt="" />
     </button>
   </div>
 
   <!-- greenline -->
-  <div class="max-w-[583px] mx-auto flex items-center">
+  <div class="max-w-[430px] mx-auto flex items-center">
     <span id="green-underline" class="w-20 flex h-[5px] bg-green-800"></span>
   </div>
 
@@ -368,7 +368,7 @@
     <!-- instruction 1 -->
     <div
       class="w-full mt-[50px] flex flex-col md:flex-row justify-between gap-2 px-4">
-      <div class="w-[480px] md:pb-0 pb-6">
+      <div class="max-w-[480px] md:pb-0 pb-6">
         <h4 class="text-[20px] font-medium flex items-center">
           1
           <span class="pr-2"
@@ -385,7 +385,7 @@
       <div class="max-w-[480px] flex gap-4 md:pb-0 pb-10">
         <div>
           <img
-            class="w-[112px] h-[158px]"
+            class="w-[112px] h-[158px] object-contain"
             src="../../images/reward/1A.png"
             alt="" />
         </div>
@@ -401,7 +401,7 @@
       <div class="max-w-[480px] flex gap-4">
         <div>
           <img
-            class="w-[112px] h-[158px]"
+            class="w-[112px] h-[158px] object-contain"
             src="../../images/reward/1B.png"
             alt="" />
         </div>
@@ -423,7 +423,7 @@
     <!-- instruction 2 -->
     <div
       class="w-full mt-[50px] flex flex-col md:flex-row justify-between gap-2 px-4">
-      <div class="w-[480px] md:pb-0 pb-6">
+      <div class="max-w-[480px] md:pb-0 pb-6">
         <h4 class="text-[20px] font-medium flex items-center">
           2
           <span class="pr-2"
@@ -440,7 +440,7 @@
       <div class="max-w-[480px] flex gap-4 md:pb-0 pb-10">
         <div>
           <img
-            class="w-[112px] h-[158px]"
+            class="w-[112px] h-[158px] object-contain"
             src="../../images/reward/2A.png"
             alt="" />
         </div>
@@ -456,7 +456,7 @@
       <div class="max-w-[480px] flex gap-4">
         <div>
           <img
-            class="w-[112px] h-[158px]"
+            class="w-[112px] h-[158px] object-contain"
             src="../../images/reward/2B.png"
             alt="" />
         </div>
@@ -509,7 +509,7 @@
           <!-- box 1 -->
           <div class="w-full flex justify-center items-center flex-row md:flex-col md:gap-0 gap-8">
             <!-- image -->
-            <div class="flex w-[350px] md:w-[190px] h-auto justify-center">
+            <div class="flex max-w-[350px] md:max-w-[190px] h-auto justify-center">
               <img
                 class="w-full h-full object-contain"
                 src="../../images/reward/delta-skymiles.webp"
@@ -529,7 +529,7 @@
           <!-- box 2 -->
           <div class="w-full flex justify-center items-center flex-row md:flex-col md:gap-0 gap-8">
             <!-- image -->
-            <div class="w-[350px] md:w-[190px] h-auto">
+            <div class="max-w-[350px] md:max-w-[190px] h-auto">
               <img
                 class="w-full h-full object-contain"
                 src="../../images/reward/bank-of-america.png"
