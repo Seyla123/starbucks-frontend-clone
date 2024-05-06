@@ -77,6 +77,8 @@ function unfocused(input,label,labelText,rep) {
     const reqPass = document.querySelector("#reqPass");
     required(passInput,passLabel,passLabelText,reqPass);
     
+
+    
     let isOpen = false;
     const showPassBtn = document.querySelector("#showPass");
     const openEye = document.querySelector(".openEye");
