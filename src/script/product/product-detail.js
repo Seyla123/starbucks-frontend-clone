@@ -391,7 +391,7 @@ function rippleEffect(event) {
 }
 
 const btn = document.querySelectorAll(".bt");
-for (i = 0; i < btn.length; i++) {
+for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", rippleEffect);
 }
 //slide size
