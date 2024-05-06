@@ -4,4 +4,5 @@ logs
 DS_store
 .DS_store
 node_modules
+.reviewboardrc
 .vscode
