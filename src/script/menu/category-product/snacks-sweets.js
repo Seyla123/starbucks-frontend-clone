@@ -145,7 +145,7 @@ const createSnacksSweetsProduct = (title) => {
 																			const imgSrc = `../../images/menu/snacks-img/p${productCount++}.jpg`;
 
 																			return `
-                                             <a href="" class="h-full w-full flex flex-col items-center gap-4">
+                                             <a href="../../pages/product/product_detail.html?0" class="h-full w-full flex flex-col items-center gap-4">
                                                 <div class="w-36 h-36 rounded-full overflow-hidden">
                                                       <img class="w-full h-full object-cover" src="${imgSrc}" alt="" />
                                                 </div>
