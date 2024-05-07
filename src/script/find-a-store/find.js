@@ -179,11 +179,13 @@ fetch("../../components/find-a-store/content.html")
               alt="" />
           </div>
           <div class="pt-2">
-            <button
-              id="order-btn"
-              class="order-btn hidden hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
-              Order Here
-            </button>
+          <a href="../../pages/menu/menu.html">
+          <button
+          id="order-btn"
+          class="order-btn hidden hover:bg-opacity-90 px-[18px] py-[5px] text-[14px] text-white bg-[#00754a] font-medium border-[1px] rounded-full">
+          Order Here
+        </button>
+        </a>
           </div>
         </div>
       </div>
