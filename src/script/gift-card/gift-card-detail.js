@@ -1,3 +1,8 @@
+let giftCard = window.location.href.split("?");
+giftCard = giftCard[1];
+const giftCardImg = document.querySelector("#giftCardImg");
+giftCardImg.setAttribute("src",giftCard)
+
 const spanInput = document.querySelectorAll(".spanInput");
 function test() {
     for (i = 0; i < spanInput.length; i++) {

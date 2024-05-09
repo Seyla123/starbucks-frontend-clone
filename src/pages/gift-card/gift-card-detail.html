@@ -25,7 +25,7 @@
             <p class="text-[#00000094] ">Gift /Create eGift</p>
             <h2 class="text-black text-2xl font-semibold ">Create eGift</h2>
             <div class="rounded-lg md:rounded-2xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ">
-                <img src="../../images/gift-card/image copy 29.png" alt="">
+                <img id="giftCardImg" class="rounded-lg" src="../../images/gift-card/image copy 29.png" alt="">
             </div>
             <p class="text-md"><span class="color-greenAccent">* </span>indicates required field</p>
 
@@ -114,17 +114,19 @@
         </section>
         <div class="bg-[#EDEBE9] grid grid-rows-2 justify-center">
             <div class="w-full">
-                <p class="flex gap-2 p-4"><span><svg aria-hidden="true" class="valign-middle color-gold mr2" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;"><path d="M7.47714 13.9773C6.63694 11.5535 6.51852 10.4481 5.91446 9.75016C5.33202 9.03409 4.26395 8.72551 2.0229 7.47715C4.44667 6.63695 5.5521 6.51852 6.25004 5.91451C6.96612 5.33202 7.2747 4.26395 8.52301 2.02293C9.3632 4.44667 9.48167 5.5521 10.0857 6.25009C10.6681 6.96612 11.7362 7.2747 13.9772 8.52301C11.5535 9.36326 10.448 9.48168 9.7501 10.0857C9.03407 10.6682 8.72544 11.7363 7.47714 13.9773Z"></path><path d="M17.9945 17.1446C16.9153 15.5518 16.6149 14.774 16.0419 14.3856C15.4809 13.9799 14.6472 13.9637 12.7814 13.4944C14.3742 12.4152 15.152 12.1148 15.5404 11.5418C15.9461 10.9808 15.9623 10.1471 16.4316 8.28133C17.5108 9.87409 17.8112 10.6519 18.3843 11.0403C18.9452 11.446 19.7789 11.4622 21.6447 11.9315C20.0519 13.0107 19.2741 13.3111 18.8857 13.8842C18.48 14.4451 18.4638 15.2788 17.9945 17.1446Z"></path><path d="M10.3953 20.9983C9.91234 19.81 9.82428 19.2612 9.5044 18.9285C9.19484 18.5862 8.65346 18.4601 7.50181 17.8954C8.69005 17.4124 9.2389 17.3244 9.57159 17.0045C9.91389 16.6949 10.04 16.1536 10.6047 15.0019C11.0876 16.1901 11.1757 16.739 11.4956 17.0717C11.8051 17.414 12.3465 17.5401 13.4982 18.1048C12.3099 18.5877 11.7611 18.6758 11.4284 18.9957C11.0861 19.3052 10.9599 19.8466 10.3953 20.9983Z"></path></svg></span>
+                <p class="flex gap-2 p-4"><span><svg class="text-[#CBA258]" aria-hidden="true" class="valign-middle color-gold mr2" focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;"><path d="M7.47714 13.9773C6.63694 11.5535 6.51852 10.4481 5.91446 9.75016C5.33202 9.03409 4.26395 8.72551 2.0229 7.47715C4.44667 6.63695 5.5521 6.51852 6.25004 5.91451C6.96612 5.33202 7.2747 4.26395 8.52301 2.02293C9.3632 4.44667 9.48167 5.5521 10.0857 6.25009C10.6681 6.96612 11.7362 7.2747 13.9772 8.52301C11.5535 9.36326 10.448 9.48168 9.7501 10.0857C9.03407 10.6682 8.72544 11.7363 7.47714 13.9773Z"></path><path d="M17.9945 17.1446C16.9153 15.5518 16.6149 14.774 16.0419 14.3856C15.4809 13.9799 14.6472 13.9637 12.7814 13.4944C14.3742 12.4152 15.152 12.1148 15.5404 11.5418C15.9461 10.9808 15.9623 10.1471 16.4316 8.28133C17.5108 9.87409 17.8112 10.6519 18.3843 11.0403C18.9452 11.446 19.7789 11.4622 21.6447 11.9315C20.0519 13.0107 19.2741 13.3111 18.8857 13.8842C18.48 14.4451 18.4638 15.2788 17.9945 17.1446Z"></path><path d="M10.3953 20.9983C9.91234 19.81 9.82428 19.2612 9.5044 18.9285C9.19484 18.5862 8.65346 18.4601 7.50181 17.8954C8.69005 17.4124 9.2389 17.3244 9.57159 17.0045C9.91389 16.6949 10.04 16.1536 10.6047 15.0019C11.0876 16.1901 11.1757 16.739 11.4956 17.0717C11.8051 17.414 12.3465 17.5401 13.4982 18.1048C12.3099 18.5877 11.7611 18.6758 11.4284 18.9957C11.0861 19.3052 10.9599 19.8466 10.3953 20.9983Z"></path></svg></span>
                     By purchasing this eGift, I have read and agree to the Starbucks Card Terms & Conditions.
                 </p>
-                <button class="rounded-full py-1 md:py-2 px-2 sm:px-4 mx-6 sm:mx-12 border-black border">
-                    <span class="flex">
-                        Card Terms & Conditions
-                        <span>
-                            <svg aria-hidden="true" class="valign-middle " focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;"><path d="M14.75 18H7.875C6.84 18 6 17.16 6 16.125V9.25c0-1.036.84-1.875 1.875-1.875h5.11c.276 0 .5.224.5.5s-.224.5-.5.5h-5.11c-.483 0-.875.392-.875.875v6.875c0 .483.392.875.875.875h6.875c.483 0 .875-.392.875-.875V11c0-.276.224-.5.5-.5s.5.224.5.5v5.125c0 1.035-.84 1.875-1.875 1.875zM14 6.5c0-.276.224-.5.5-.5h3c.276 0 .5.224.5.5v3c0 .276-.224.5-.5.5s-.5-.224-.5-.5V7.72l-4.66 4.74c-.19.196-.507.2-.704.005-.197-.193-.2-.51-.006-.707L16.307 7H14.5c-.276 0-.5-.224-.5-.5z"></path></svg>
+                <a href="../../pages/privacy/term.html">
+                    <button class="rounded-full py-1 md:py-2 px-2 sm:px-4 mx-6 sm:mx-12 border-black border">
+                        <span class="flex">
+                            Card Terms & Conditions
+                            <span>
+                                <svg aria-hidden="true" class="valign-middle " focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="width: 24px; height: 24px; overflow: visible; fill: currentcolor;"><path d="M14.75 18H7.875C6.84 18 6 17.16 6 16.125V9.25c0-1.036.84-1.875 1.875-1.875h5.11c.276 0 .5.224.5.5s-.224.5-.5.5h-5.11c-.483 0-.875.392-.875.875v6.875c0 .483.392.875.875.875h6.875c.483 0 .875-.392.875-.875V11c0-.276.224-.5.5-.5s.5.224.5.5v5.125c0 1.035-.84 1.875-1.875 1.875zM14 6.5c0-.276.224-.5.5-.5h3c.276 0 .5.224.5.5v3c0 .276-.224.5-.5.5s-.5-.224-.5-.5V7.72l-4.66 4.74c-.19.196-.507.2-.704.005-.197-.193-.2-.51-.006-.707L16.307 7H14.5c-.276 0-.5-.224-.5-.5z"></path></svg>
+                            </span>
                         </span>
-                    </span>
-                </button>
+                    </button>
+                </a>
             </div>
             <div class=" w-full">
 
