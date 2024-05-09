@@ -1,3 +1,4 @@
+import * as chooseStore from "./choose-store.js"
 const menuHeader = document.querySelector('.menu-header-layout');
 fetch('../../components/menu/menu-header.html')
 	.then((res) => res.text())
