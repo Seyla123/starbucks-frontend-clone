@@ -49,7 +49,7 @@ function unfocused(input,label,labelText,rep) {
     focued(input,label,labelText,rep);
     input.addEventListener("input", () => {
         if(input.value.length !==0){
-            console.log('00000');
+    
             label.classList.add("left-3","top-[-18%]","text-sm","text-[#00754a]");
             label.classList.remove("text-red-500");
             labelText.classList.remove("text-red-500");
