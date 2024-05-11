@@ -2,7 +2,7 @@
 const createButton = (title,btnColor,textColor,hoverColor,btnLink) => {
     return  `
     <a href="${btnLink}">
-        <button class="h-3 p-4   flex justify-center items-center  ${btnColor} rounded-full outline outline-1 ${textColor} hover:${hoverColor}">
+        <button class="h-3 p-4   flex justify-center items-center duration-300  ${btnColor} rounded-full outline outline-1 ${textColor} hover:${hoverColor}">
             ${title}
         </button>
     </a>

@@ -18,20 +18,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<!--call navbar from component layout by class-->
-<navbar-full-w-layout class="navbar-full-w-layout" ></navbar-full-w-layout>
-<!--favorites header -->
-<favorites-header-layout class="favorites-header-layout"></favorites-header-layout>
-<!-- body write here -->
-<favorites-content-layout class="favorites-content-layout" ></favorites-content-layout>
-<hr class="m-8">
+    <!--call navbar component-->
+    <navbar-component
+	isMenuPage = "true"
+	></navbar-component>
+    <!--favorites header -->
+    <favorites-header-layout class="favorites-header-layout"></favorites-header-layout>
+    <!-- body write here -->
+    <favorites-content-layout class="favorites-content-layout" ></favorites-content-layout>
+    <hr class="m-8">
 
-<div class="md:ml-[78px]">
-    <!-- call footer from component layout by class--> 
-    <footer-full-w-layout class="footer-full-w-layout"></footer-full-w-layout>
-</div>
-<!-- call choose store content -->
-<choose-store-content-layout class="choose-store-content-layout"></choose-store-content-layout>
+    <div class="md:ml-[78px]">
+        <!-- call footer from component layout by class--> 
+        <footer-full-w-layout class="footer-full-w-layout"></footer-full-w-layout>
+    </div>
+    <!-- call choose store content -->
+    <choose-store-content-layout class="choose-store-content-layout"></choose-store-content-layout>
 
 </body>
 
