@@ -1,4 +1,5 @@
 import './layout.js'; 
+
 const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
     <a href="../home/home.html" class="max-w-14">
@@ -57,29 +58,33 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
 
 export class navbar extends HTMLElement {
     connectedCallback() {
+        // to get value from attribute 
         const maxWidth = this.getAttribute("maxWidth") === 'true';
         const isMenuHidden = this.getAttribute("isMenuHidden") === 'true';
         const isRewardPage = this.getAttribute("isRewardPage") === 'true';
         const isGiftCardPage = this.getAttribute("isGiftCardPage") === 'true';
         const isMenuPage = this.getAttribute("isMenuPage") === 'true';
-        this.innerHTML = createNavbar(maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage);
+        // Set the inner HTML of the component to the navbar created by createNavbar function
+        this.innerHTML = createNavbar(maxWidth, isMenuHidden, isRewardPage, isGiftCardPage, isMenuPage);
+        // Append a new 'sidebar-component' to this component
         this.appendChild(document.createElement('sidebar-component'));
+        //call addMenuButtonListener
         this.addMenuButtonListener();
     }
-
-
+    
+     //Adds a click event listener to the menu button to toggle the sidebar and menu icon.
+     
     addMenuButtonListener() {
         const menuButton = this.querySelector('#menuButton');
         const minMenuDropdown = this.querySelector("#minMenuDropdown");
-
         menuButton?.addEventListener("click", () => {
             const isActive = menuButton.classList.toggle("active");
             this.querySelector('#menuIcon').innerHTML = isActive ? '<img src="../../images/layout/close.png" alt="Close">' :'<img src="../../images/layout/menu.png" alt="Menu">';
             minMenuDropdown.style.right = isActive ? "0%" : "-100%";
+            isActive ? this.querySelector('#menuIcon').classList.add("rotate-90") : this.querySelector('#menuIcon').classList.remove("rotate-90");
             document.body.classList.toggle("overflow-hidden", isActive);
         });
     }
 }
-
 customElements.define('navbar-component', navbar);
 
