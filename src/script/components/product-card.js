@@ -9,7 +9,8 @@ const createProductCard = (img,isRevers=false,backgroundColor,textColor,title,de
       <img
         class="max-w-full h-auto"
         src="${img}"
-        alt=""
+        alt="${title}"
+        loading="lazy"
       />
     </div>
     <div
@@ -31,17 +32,18 @@ const createProductCard = (img,isRevers=false,backgroundColor,textColor,title,de
 
 export class ProductCard extends HTMLElement {
 	connectedCallback() {
-		const img = this.getAttribute('img');
-		const isRevers = this.getAttribute('isRevers');
-		const backgroundColor = this.getAttribute('backgroundColor');
-		const textColor = this.getAttribute('textColor');
-		const title = this.getAttribute('title');
-		const description = this.getAttribute('description');
-		const buttonTitle = this.getAttribute('buttonTitle');
-		const buttonLink = this.getAttribute('buttonLink');
+		const img = this.getAttribute('img') || '../../images/home/home (1).jpg';
+    const isRevers = this.getAttribute('isRevers') === 'true';
+    const backgroundColor = this.getAttribute('backgroundColor') || 'bg-white';
+    const textColor = this.getAttribute('textColor') || 'text-black';
+    const title = this.getAttribute('title') || 'No Title';
+    const description = this.getAttribute('description') || 'No description provided.';
+    const buttonTitle = this.getAttribute('buttonTitle') || 'Click Me';
+    const buttonLink = this.getAttribute('buttonLink') || '#';
 		this.innerHTML = createProductCard(img,isRevers,backgroundColor,textColor,title,description,buttonTitle,buttonLink);
 	}
 }
 
 customElements.define('product-card-component', ProductCard);
+
 
