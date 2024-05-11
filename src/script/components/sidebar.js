@@ -1,4 +1,4 @@
-class Sidebar extends HTMLElement {
+export class sidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<div id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-40">
         <div class="flex mt-10 flex-col">
@@ -18,6 +18,7 @@ class Sidebar extends HTMLElement {
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Find a Store</p>
                         </a>
+                        
                 </div>
             </div>
         </div>
@@ -26,4 +27,4 @@ class Sidebar extends HTMLElement {
     }
 }
 
-customElements.define('sidebar-component', Sidebar);
+customElements.define('sidebar-component', sidebar);

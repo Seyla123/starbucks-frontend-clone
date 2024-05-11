@@ -1,4 +1,4 @@
-import './sidebar.js'; 
+import './layout.js'; 
 const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
     <a href="../home/home.html" class="max-w-14">
@@ -25,9 +25,17 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
                         </a>
                 </li>
                 <li class="flex gap-4 items-center">
-                    <a href="../../pages/log-in/log-in.html" class="h-3 p-4 items-center flex justify-center rounded-full outline outline-1 hover:bg-gray-200 ">Sign in</a>
-                    <a href="../../pages/join-now/join-now.html" class="h-3 p-4 items-center flex justify-center text-white  bg-black hover:bg-gray-600 rounded-full">Join now</a>
-                </li>
+
+                    <button-component
+                    btnLink = "../../pages/log-in/log-in.html"
+                    ></button-component>   
+                    <button-component
+                    title = "Join now"
+                    btnColor = "bg-black"
+                    hoverColor = "bg-gray-600"
+                    textColor = "text-white"
+                    btnLink = "../../pages/join-now/join-now.html"
+                    ></button-component>                </li>
             </ul>
         </div>
 
@@ -54,7 +62,6 @@ class navbar extends HTMLElement {
         const isRewardPage = this.getAttribute("isRewardPage") === 'true';
         const isGiftCardPage = this.getAttribute("isGiftCardPage") === 'true';
         const isMenuPage = this.getAttribute("isMenuPage") === 'true';
-
         this.innerHTML = createNavbar(maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage);
         this.appendChild(document.createElement('sidebar-component'));
         this.addMenuButtonListener();
