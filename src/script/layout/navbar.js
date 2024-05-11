@@ -1,4 +1,4 @@
-const navbar = document.querySelector(".navbar-layout");
+export const navbar = document.querySelector(".navbar-layout");
 fetch("../../components/layout/navbar.html")
   .then((res) => res.text())
   .then((data) => {
