@@ -1,17 +1,19 @@
 import './sidebar.js'; 
-const createNavbar = (maxWidth, isMenuHidden) => {
+const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
     <a href="../home/home.html" class="max-w-14">
         <img src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
-    <div class="w-full ${maxWidth ?  "max-w-screen-2xl" : ""} justify-between items-center hidden ${isMenuHidden ? "md:hidden" : "md:flex"} ">
+    <div class="w-full ${maxWidth ?  "max-w-screen-2xl" : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
         <div>
             <ul class="flex gap-4 sodan font-bold tracking-widest text-sm">
                 <li><a class="hover:text-green-700"  href="../../pages/menu/menu.html">MENU</a></li>
                 <li><a class="hover:text-green-700"  href="../../pages/reward/reward.html">REWARDS</a></li>
                 <li><a class="hover:text-green-700"  href="../../pages/gift-card/gift-card.html">GIFT CARDS</a></li>
             </ul>
-
+            <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] absolute  left-[63px] ${!isRewardPage ? "hidden" : ""}"></span>
+            <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] left-[160px] absolute ${!isGiftCardPage ? "hidden" : ""}"></span>
+            <span class="w-12 bottom-[-17px] bg-green-700 h-[6px]  absolute ${!isMenuPage ? "hidden" : ""}"></span>
         </div>
 
         <div>
@@ -39,9 +41,8 @@ const createNavbar = (maxWidth, isMenuHidden) => {
     <a class="invisible  max-w-14 hidden  2xl:${maxWidth ? "flex" : "invisible"} ${isMenuHidden ? "2xl:hidden" : ""}">
         <img src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
-    
 </nav> 
-<!-- sidebar -->
+<!-- sidebar will be append below -->
 
     `;
 }
@@ -50,7 +51,11 @@ class navbar extends HTMLElement {
     connectedCallback() {
         const maxWidth = this.getAttribute("maxWidth") === 'true';
         const isMenuHidden = this.getAttribute("isMenuHidden") === 'true';
-        this.innerHTML = createNavbar(maxWidth, isMenuHidden);
+        const isRewardPage = this.getAttribute("isRewardPage") === 'true';
+        const isGiftCardPage = this.getAttribute("isGiftCardPage") === 'true';
+        const isMenuPage = this.getAttribute("isMenuPage") === 'true';
+
+        this.innerHTML = createNavbar(maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage);
         this.appendChild(document.createElement('sidebar-component'));
         this.addMenuButtonListener();
     }
