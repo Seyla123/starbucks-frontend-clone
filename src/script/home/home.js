@@ -1,6 +1,5 @@
+import "../../script/components/layout.js"
 // object of product in home page
-import * as productCard from "../../script/components/product-card.js";
-import { navbar } from "../layout/navbar.js";
 import { footer } from "../layout/footer.js";
 const product = [{
   title: "Hope into half of",
