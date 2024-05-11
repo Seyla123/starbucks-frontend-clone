@@ -1,5 +1,5 @@
-
-productDetail = [
+import "../../script/components/layout.js"
+const productDetail = [
   {
     name: "Spicy Dragonfruit",
     addIn: "Dragonfruit Inclusion scoop",
