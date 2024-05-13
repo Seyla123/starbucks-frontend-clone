@@ -5,7 +5,7 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
     <a href="../home/home.html" class="max-w-14">
         <img src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
-    <div class="w-full ${maxWidth ?  "max-w-screen-2xl" : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
+    <div class="w-full ${maxWidth ? maxWidth  : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
         <div>
             <ul class="flex gap-4 sodan font-bold tracking-widest text-sm">
                 <li><a class="hover:text-green-700"  href="../../pages/menu/menu.html">MENU</a></li>
@@ -59,8 +59,8 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
 export class navbar extends HTMLElement {
     connectedCallback() {
         // to get value from attribute 
-        const maxWidth = this.getAttribute("maxWidth") === 'true';
-        const isMenuHidden = this.getAttribute("isMenuHidden") === 'true';
+        const maxWidth = this.getAttribute("maxWidth");
+        const isMenuHidden = this.getAttribute("isMenuHidden") === 'true'
         const isRewardPage = this.getAttribute("isRewardPage") === 'true';
         const isGiftCardPage = this.getAttribute("isGiftCardPage") === 'true';
         const isMenuPage = this.getAttribute("isMenuPage") === 'true';
