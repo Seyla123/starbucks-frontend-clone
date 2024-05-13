@@ -1,4 +1,5 @@
 import * as chooseStore from "./choose-store.js"
+import "../../script/components/layout.js"
 // previous header
 const favoritesHeader = document.querySelector(".favorites-header-layout");
 fetch("../../components/menu/favorites-header.html")

@@ -1,5 +1,5 @@
 // Footer
-const footer = document.querySelector(".footer-layout");
+export const footer = document.querySelector(".footer-layout");
 fetch("../../components/layout/footer.html")
   .then((res) => res.text())
   .then((data) => {
