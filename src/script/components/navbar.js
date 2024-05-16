@@ -57,6 +57,9 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
 }
 
 export class navbar extends HTMLElement {
+    constructor(){
+        super()
+    }
     connectedCallback() {
         // to get value from attribute 
         const maxWidth = this.getAttribute("maxWidth");

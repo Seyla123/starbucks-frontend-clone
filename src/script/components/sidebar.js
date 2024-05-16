@@ -1,7 +1,6 @@
-export class sidebar extends HTMLElement {
-    connectedCallback() {
-        // Set the inner HTML of the sidebar component
-        this.innerHTML = `<div id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-40">
+const createSidebar = ()=>{
+    return `
+    <div id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-40">
         <div class="flex mt-10 flex-col">
             <ul class="flex flex-col text-xl ">
                 <li><a class="px-8 py-4 block" href="../../pages/menu/menu.html">Menu</a></li>
@@ -24,8 +23,16 @@ export class sidebar extends HTMLElement {
             </div>
         </div>
     </div>
-        `;
+    `;
+}
+export class Sidebar extends HTMLElement {
+    constructor(){
+        super()
+    }
+    connectedCallback() {
+        // Set the inner HTML of the sidebar component
+        this.innerHTML = createSidebar();
     }
 }
 // Define a custom element named 'sidebar-component'
-customElements.define('sidebar-component', sidebar);
+customElements.define('sidebar-component', Sidebar);

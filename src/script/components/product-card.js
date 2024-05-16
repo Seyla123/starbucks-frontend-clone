@@ -28,6 +28,9 @@ const createProductCard = (img, isRevers = false, backgroundColor, textColor, ti
 };
 
 export class ProductCard extends HTMLElement {
+  constructor(){
+    super()
+}
     // Lifecycle method called when the element is added to the DOM
     connectedCallback() {
         // Retrieve attributes or set default values

@@ -11,6 +11,9 @@ const createButton = (title, btnColor, textColor, hoverColor, btnLink) => {
 
 // Define a custom button element that inherits from HTMLElement
 export class button extends HTMLElement {
+    constructor(){
+        super()
+    }
     connectedCallback() {
         const title = this.getAttribute("title") || 'Sign in';
         const btnColor = this.getAttribute("btnColor") || '';
