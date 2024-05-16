@@ -1,8 +1,12 @@
-const createFooter = () => {
+const createFooter = (maxWidth, dropdown) => {
+    //full career  p-6 2xl:px-0 w-full 
+    //full p-6 2xl:px-0 w-full
+    //privacy 2xl:px-0 py-8  w-full max-w-screen-2xl mx-auto
+    // p-6 2xl:px-0 w-full max-w-screen-2xl mx-auto
     return `
-    <div class="p-6 2xl:px-0 w-full max-w-screen-2xl mx-auto">
+    <div class="p-6 2xl:px-0 w-full ${maxWidth ? maxWidth : ''} mx-auto">
         <!-- screen phone lg -->
-        <div class="block lg:hidden">
+        <div class="block ${dropdown ? 'block' : 'lg:hidden'}">
             <div>
                 <button class="btn1 w-full flex justify-between items-center py-4 text-xl cursor-pointer">
                     <h2 class="sodan">About Us</h2>
@@ -144,33 +148,33 @@ const createFooter = () => {
         </div>
     
         <!-- screen greater than lg -->
-        <div class="hidden lg:flex justify-start">
-        <div class="">
-            <h2 class="sodan text-xl">About Us</h2>
-            <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
-            <li>
-                <a class="hover:text-black" href="../../pages/about-us/our-comapany.html">Our Company</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="../../pages/about-us/our-coffee.html">Our Coffee</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Stories and News</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Starbucks Archive</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Investor Relations</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Customer Service</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="../../pages/about-us/contact-us.html">Contact Us</a>
-            </li>
-            </ul>
-        </div>
+        <div class="hidden lg:${dropdown ? dropdown : 'flex'} justify-start">
+            <div class="">
+                <h2 class="sodan text-xl">About Us</h2>
+                <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
+                <li>
+                    <a class="hover:text-black" href="../../pages/about-us/our-comapany.html">Our Company</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="../../pages/about-us/our-coffee.html">Our Coffee</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="">Stories and News</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="">Starbucks Archive</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="">Investor Relations</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="">Customer Service</a>
+                </li>
+                <li>
+                    <a class="hover:text-black" href="../../pages/about-us/contact-us.html">Contact Us</a>
+                </li>
+                </ul>
+            </div>
         <div class="mr-8">
             <h2 class="sodan text-xl">Careers</h2>
             <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
@@ -544,7 +548,9 @@ export class Footer extends HTMLElement {
         super()
     }
     connectedCallback() {
-        this.innerHTML = createFooter();
+        const dropdown = this.getAttribute('dropdown');
+        const maxWitdh = this.getAttribute('maxWidth');
+        this.innerHTML = createFooter(maxWitdh,dropdown);
         this.setupDropdownListeners()
     }
     setupDropdownListeners() {
