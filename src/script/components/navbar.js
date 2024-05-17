@@ -56,7 +56,10 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
     `;
 }
 
-export class navbar extends HTMLElement {
+export class Navbar extends HTMLElement {
+    constructor(){
+        super()
+    }
     connectedCallback() {
         // to get value from attribute 
         const maxWidth = this.getAttribute("maxWidth");
@@ -86,5 +89,5 @@ export class navbar extends HTMLElement {
         });
     }
 }
-customElements.define('navbar-component', navbar);
+customElements.define('navbar-component', Navbar);
 

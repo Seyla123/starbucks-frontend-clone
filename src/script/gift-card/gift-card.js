@@ -1,5 +1,5 @@
 
-const createCarousel = (title, imgUrlArray, glide) => {
+export const createCarousel = (title, imgUrlArray, glide) => {
    
 	return `
     <div class="relative mt-10">
@@ -45,7 +45,7 @@ const createCarousel = (title, imgUrlArray, glide) => {
 
 };
 let i = 0
-class CarouselComponent extends HTMLElement {
+export class CarouselComponent extends HTMLElement {
 	connectedCallback() {
 		const title = this.getAttribute('title');
 		const glide = this.getAttribute('glide');
@@ -58,5 +58,16 @@ class CarouselComponent extends HTMLElement {
 }
 
 customElements.define('carousel-component', CarouselComponent);
+
+const giftArr = ["../../images/gift-card/feature-1.jpg", "../../images/gift-card/feature-2.jpg", "../../images/gift-card/feature-3.jpg", "../../images/gift-card/feature-4.jpg",
+"../../images/gift-card/feature-5.png", "../../images/gift-card/feature-6.jpg", "../../images/gift-card/feature-7.jpg", "../../images/gift-card/feature-8.png",
+"../../images/gift-card/feature-9.jpg", "../../images/gift-card/feature-10.png", "../../images/gift-card/feature-11.png", "../../images/gift-card/feature-12.jpg",
+"../../images/gift-card/feature-13.png", "../../images/gift-card/feature-14.png", "../../images/gift-card/feature-15.png", "../../images/gift-card/feature-16.jpg",
+"../../images/gift-card/feature-17.png", "../../images/gift-card/feature-18.png", "../../images/gift-card/feature-19.png", "../../images/gift-card/feature-20.jpg"];
+const giftArr2 = ["../../images/gift-card/feature-1.jpg", "../../images/gift-card/feature-2.jpg", "../../images/gift-card/feature-3.jpg", "../../images/gift-card/feature-4.jpg",
+"../../images/gift-card/feature-5.png", "../../images/gift-card/feature-6.jpg", "../../images/gift-card/feature-7.jpg", "../../images/gift-card/feature-8.png",
+"../../images/gift-card/feature-9.jpg", "../../images/gift-card/feature-10.png", "../../images/gift-card/feature-11.png", "../../images/gift-card/feature-12.jpg",
+"../../images/gift-card/feature-13.png", "../../images/gift-card/feature-14.png", "../../images/gift-card/feature-15.png", "../../images/gift-card/feature-16.jpg",
+"../../images/gift-card/feature-17.png", "../../images/gift-card/feature-18.png", "../../images/gift-card/feature-19.png", "../../images/gift-card/feature-20.jpg"];
 
 

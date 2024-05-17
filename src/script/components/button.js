@@ -1,5 +1,5 @@
 // Function to create a button element with customizable properties
-const createButton = (title, btnColor, textColor, hoverColor, btnLink) => {
+export const createButton = (title, btnColor, textColor, hoverColor, btnLink) => {
     return  `
     <a href="${btnLink}">
         <button class="h-3 p-4 flex justify-center items-center duration-300 ${btnColor} rounded-full outline outline-1 ${textColor} hover:${hoverColor}">
@@ -10,7 +10,10 @@ const createButton = (title, btnColor, textColor, hoverColor, btnLink) => {
 }
 
 // Define a custom button element that inherits from HTMLElement
-export class button extends HTMLElement {
+export class Button extends HTMLElement {
+    constructor(){
+        super()
+    }
     connectedCallback() {
         const title = this.getAttribute("title") || 'Sign in';
         const btnColor = this.getAttribute("btnColor") || '';
@@ -21,4 +24,4 @@ export class button extends HTMLElement {
     }
 }
 
-customElements.define('button-component', button);
+customElements.define('button-component', Button);
