@@ -4,7 +4,7 @@ import * as Layout from '../../script/components/layout.js';
 // Array containing product details for the feature menu page
 const product = [{
     id:0,
-    title: "New Spicy Dragonfruit Lemonade Refreshers",
+    title: "New Spicy Dragonfruit Lemonade Refreshers<sup class='text-xl'>®</sup>",
     img: "../../images/menu/feature-menu-6.jpg",
     description: "Zesty lemonade and real dragonfruit pieces shaken with a three-pepper chili blend.",
     backgroundColor: "bg-[#fe7bbf]",
@@ -12,7 +12,7 @@ const product = [{
 },
 {
     id:1,
-    title: "New Spicy Strawberry Lemonade Refreshersas®",
+    title: "New Spicy Strawberry Lemonade Refreshersas<sup class='text-base'>®</sup>",
     img: "../../images/menu/feature-menu-7.jpg",
     description: "Refreshingly sweet with strawberry pieces and a spicy twist.",
     backgroundColor: "bg-[#ffbd03]",
@@ -20,7 +20,7 @@ const product = [{
 },
 {
     id:2,
-    title: "New Spicy Pineapple Lemonade Refreshers®",
+    title: "New Spicy Pineapple Lemonade Refreshers<sup class='text-base'>®</sup>",
     img: "../../images/menu/feature-menu-1.jpg",
     description: "Real pieces of pineapple shaken with lemonade and our three-pepper chili blend for a spicy-meets-sweet kick.",
     backgroundColor: "bg-[#ffbd03]",
@@ -28,7 +28,7 @@ const product = [{
 },
 {
     id:3,
-    title: "New Lavender Crème Frappuccino® blended beverage",
+    title: "New Lavender Crème Frappuccino<sup class='text-base'>®</sup> blended beverage",
     img: "../../images/menu/feature-menu-2.jpg",
     description: "Refreshingly sweet with strawberry pieces and a spicy twist.",
     backgroundColor: "bg-[#d5d0ea]",
@@ -46,7 +46,7 @@ const product = [{
     id:5,
     title: "New Iced Lavender Oatmilk Latte",
     img: "../../images/menu/feature-menu-4.jpg",
-    description: "Starbucks® Blonde espresso and oatmilk with subtle floral accents and sweetness served over ice.",
+    description: "Starbucks<sup class='text-base'>®</sup> Blonde espresso and oatmilk with subtle floral accents and sweetness served over ice.",
     backgroundColor: "bg-[#d5d0ea]",
     textColor: "text-[#1e3932]"
 },

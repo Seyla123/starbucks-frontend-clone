@@ -70,7 +70,7 @@ class loopProductCard extends HTMLElement {
       const backgroundColor = element.backgroundColor;
       const textColor = element.textColor
       const title = element.title
-      const customTitle =  i == 5  ? 'lg:text-[24px] text-[24px]' :" " ;
+      const customTitle =  i == 5  ? 'lg:text-[24px] text-[24px]' : " " ;
       const customDesc = i == 5 ? "lg:text-xl" : " " ;
       const description = element.description
       const buttonTitle = element.buttonTitle;
