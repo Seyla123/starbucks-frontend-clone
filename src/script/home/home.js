@@ -1,6 +1,7 @@
+// Importing the layout component
 import "../../script/components/layout.js"
-// object of product in home page
-import { footer } from "../layout/footer.js";
+
+// Array containing product details for the home page
 const product = [{
   title: "Hope into half of",
   img:"../../images/home/home (1).jpg",
@@ -56,16 +57,17 @@ const product = [{
   textColor : "text-[#1e3932]"
 }
 ]
-// create compent product using object product
+
+// Custom web component that loops through product data to create product cards
 class loopProductCard extends HTMLElement {
 connectedCallback() {
       let isTrue = false;
       product.forEach(element => {
-          
+          // Append product card component to the DOM
           this.innerHTML += `<product-card-component
           title = "${element.title}"
           backgroundColor = "${element.backgroundColor}"
-          isRevers = ${isTrue}
+          isRevers = ${isTrue ? 'flex-row-reverse' : 'flex-row'}
           textColor = "${element.textColor}"
           img = "${element.img}"
           description = "${element.description}"
@@ -73,14 +75,11 @@ connectedCallback() {
           buttonLink = "${element.buttonLink}"
           ></product-card-component>
           `
-          if(isTrue) {
-              isTrue = false;
-          }else{
-              isTrue = true;
-          }
+          // Toggle isTrue to alternate card styles (revers or not )
+          isTrue = !isTrue;
       });
 
 }
 }
-
+// Define the custom element
 customElements.define('home-content-product-card', loopProductCard);
