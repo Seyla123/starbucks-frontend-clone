@@ -1,6 +1,6 @@
 const createFooter = (maxWidth, dropdown) => {
     return `
-    <div class="p-6 2xl:px-0 w-full ${maxWidth ? maxWidth : ''} mx-auto">
+    <footer class="p-6 2xl:px-0 w-full ${maxWidth ? maxWidth : ''} mx-auto">
         <!-- screen phone lg -->
         <div class="block ${dropdown ? 'block' : 'lg:hidden'}">
             <div>
@@ -312,7 +312,7 @@ const createFooter = (maxWidth, dropdown) => {
         <p class="text-md text-gray-600">
         © 2024 Starbucks Coffee Company. All rights reserved.
         </p>
-    </div>
+    </footer>
 
     `
 }
