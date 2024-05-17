@@ -1,8 +1,7 @@
-
-// Importing the layout component
+// Importing the layout component from the components directory
 import * as Layout from '../../script/components/layout.js';
 
-// Array containing product details for the home page
+// Array containing product details for the feature menu page
 const product = [{
     id:0,
     title: "New Spicy Dragonfruit Lemonade Refreshers",
@@ -66,10 +65,8 @@ class loopProductCard extends HTMLElement {
     connectedCallback() {
         let html= ''
 
-        
+        // Loop through each product and generate HTML for product cards
         for (let i = 0; i < product.length; i++) {
-
-
             const img = product[i].img;
             const isRevers = i == 0 ? 'flex-row' :'';
             const backgroundColor = product[i].backgroundColor;
@@ -81,14 +78,13 @@ class loopProductCard extends HTMLElement {
             const buttonTitle = 'Order Now';
             const buttonLink =  `../../pages/product/product_detail.html?${product[i].id}`;
 
-
+            // Use the layout component to create the product card
             html += Layout.createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
             html += i == 0 ? '<section class=" gap-4 my-5 grid grid-cols-1 md:grid-cols-2">' : '';
         }
         html += '</section>'
         this.innerHTML = html;
-
     }
 }
-// Define the custom element
+// Define the custom element for the feature content product card
 customElements.define('feature-content-product-card', loopProductCard);
