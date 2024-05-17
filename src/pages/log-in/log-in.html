@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account sign in: Starbucks Coffee Company</title>
     <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
-
+    <!-- Linking CSS files -->
     <link rel="stylesheet" href="../../styles/output.css">
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/wave.css">
-    <!-- font and icon-->
-    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold"
-        rel="stylesheet">
+    <!-- font -->
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <!-- google font  -->
     <script src="https://kit.fontawesome.com/cc39ea921b.js" crossorigin="anonymous"></script>
+    <!-- Preconnecting to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-=======
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
-        rel="stylesheet">
->>>>>>> 0f15d6c (fix : fixed join now page , login page)
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <navbar-component isMenuHidden="true"></navbar-component>
-    <section class="w-full max-w-screen-2xl mx-auto">
+<!--call navbar from component layout by class-->
+
+<navbar-login-layout class="navbar-login-layout"></navbar-login-layout>
+<!-- body write here -->
+<navbar-login-layout class=""></navbar-login-layout>
+<section class="w-full max-w-screen-2xl mx-auto">
         <!-- create account -->
         <div>
             <div class="flex flex-col items-center">
@@ -60,13 +60,7 @@
                         <a class="underline hover:no-underline" href="">Forgot your username?</a>
                         <a class="underline hover:no-underline" href="">Forgot your password?</a>
                     </div>
-                    <div class="w-full flex justify-end ">
-                        <a href="../../pages/home/home.html">
-                            <button class=" bg-[#00754a]  px-6 py-4  rounded-full text-white shadow-lg text-lg font-medium tracking-[1px]">
-                                Sign in
-                            </button>
-                        </a>
-                    </div>
+                    <a href="../../pages/home/home.html" class="float-end bg-[#00754a] px-6 py-4 rounded-full text-white shadow-lg mt-12 text-lg font-medium tracking-[1px]">Sign in</a>
                 </div>
             </div>
         </div>
@@ -84,9 +78,15 @@
             <hr>
         </div>
 
-    </section>
+</section>
+
+<!-- call footer from component layout by class--> 
+<footer-layout class="footer-layout"></footer-layout>
+
 </body>
-<script type="module" src="../../script/components/inputTextField.js"></script>
-<script type="module" src="../../script/components/layout.js"></script>
+
+<!-- script link component home page -->
+<script type="module" src="../../script/log-in/log-in.js"></script>
+<script type="module" src="../../script/layout/layout.js"></script>
 
 </html>
