@@ -1,5 +1,5 @@
-
-productDetail = [
+import "../../script/components/layout.js"
+const productDetail = [
   {
     name: "Spicy Dragonfruit",
     addIn: "Dragonfruit Inclusion scoop",
@@ -363,7 +363,7 @@ contentProductDetail.innerHTML = `
 // window.onload = console.log(localStorage.getItem("productImg"));
 const spanInput = document.querySelectorAll(".spanInput");
 function test() {
-  for (i = 0; i < spanInput.length; i++) {
+  for (let i = 0; i < spanInput.length; i++) {
     spanInput[i].classList.remove("left-3", "top-[14px]");
     spanInput[i].classList.add("bg-white");
   }
@@ -460,6 +460,5 @@ increaseBtn.addEventListener("click", function () {
     numberOfAddIn.classList.remove("hidden");
     discreaseBtn.classList.remove("hidden");
     numberOfAddIn.innerHTML = number;
-    
   }
 });
