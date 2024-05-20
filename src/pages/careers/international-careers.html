@@ -30,10 +30,13 @@
 </head>
 
 <body>
-    <navbar-layout class="navbar-full-w-layout"></navbar-layout>
+    <!-- navbar component -->
+    <navbar-component></navbar-component>
+    <!-- careers header -->
     <careers-head class="careers-head-careers"></careers-head>
 
     <section class="flex lg:flex-row flex-col">
+        <!-- left side contents -->
         <div class="lg:w-[40%] w-[60%] hidden lg:flex lg:flex-col-reverse">
             <div class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[99vh] h-[80vh] flex items-end">
                 <div class="bg-white flex justify-start pl-32 items-center w-full h-full shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
@@ -48,16 +51,20 @@
         </div>
 
         <div class="lg:w-[60%] w-full">
+            <!-- right side contents -->
             <international-careers class="international-careers"></international-careers>
+            <!-- careers footer -->
             <careers-footer-careers class="careers-footer-careers"></careers-footer-careers>
-            <footer-full-w-careers-layout class="footer-full-w-careers-layout"></footer-full-w-careers-layout>
+            <!-- accordion footer -->
+            <footer-component dropdown="true"></footer-component>
         </div>
     </section>
 
 </body>
-<script type="module" src="../../script/layout/layout.js"></script>
+<!-- script to links contents -->
 <script src="../../script/careers/international-careers.js"></script>
 <script src="../../script/careers/careers-head.js"></script>
 <script src="../../script/careers/careers-footer.js"></script>
-
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
 </html>
