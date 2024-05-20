@@ -1,5 +1,4 @@
 import { giftCardDatas } from './data.js';
-console.log(giftCardDatas);
 export const createCarousel = (title, giftCardData, glide) => {
 	return `
     <div class="relative mt-10">
