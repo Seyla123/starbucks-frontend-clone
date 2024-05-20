@@ -24,10 +24,15 @@
 </head>
 
 <body>
-  <navbar-full-w-layout class="navbar-full-w-layout"></navbar-full-w-layout>
-  <careers-head class="careers-head-careers"></careers-head>
+  <!-- navbar component -->
+  <navbar-component></navbar-component>
 
+  <!-- careers header -->
+  <careers-head class="careers-head-careers"></careers-head>
+   
   <section class="flex lg:flex-row flex-col">
+
+      <!-- left side contents -->
     <div class="lg:w-[40%] flex">
       <div
         class="lg:fixed relative lg:top-10 lg:w-[40%] w-full lg:h-[97vh] h-[80vh] flex items-end"><img src="../../images/careers/college.webp" class="w-full h-full object-cover"/>
@@ -52,16 +57,27 @@
         </div>
       </div>
     </div>
+
     <div class="lg:w-[60%] w-full">
+
+      <!-- right side contents -->
       <content-careers class="content-careers"></content-careers>
+
+      <!-- careers footer -->
       <careers-footer-careers class="careers-footer-careers"></careers-footer-careers>
-      <footer-full-w-careers-layout class="footer-full-w-careers-layout"></footer-full-w-careers-layout>
+
+      <!-- accordion footer -->
+      <footer-component dropdown="true"></footer-component>
     </div>
   </section>
 </body>
-<script type="module" src="../../script/layout/layout.js"></script>
+
+<!-- script links -->
 <script src="../../script/careers/college-achievement-plan.js"></script>
 <script src="../../script/careers/careers-head.js"></script>
 <script src="../../script/careers/careers-footer.js"></script>
+
+<!-- script to link navbar and accordion footer -->
+<script type="module" src="../../script/components/layout.js"></script>
 
 </html>
