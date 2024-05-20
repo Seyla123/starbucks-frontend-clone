@@ -1,4 +1,6 @@
-<div class="bg-[#1e3932] w-full h-[74px] lg:h-[94px] sticky bottom-0 flex justify-center mt-10">
+const createChooseStore = ()=>{
+    return `
+    <div class="bg-[#1e3932] w-full h-[74px] lg:h-[94px] sticky bottom-0 flex justify-center mt-10">
   <div class="w-full p-6 md:p-0 md:w-[80%] h-full flex justify-center">
     <div class="flex  justify-between gap-2 w-full h-full items-center">
       <a href="../../pages/find-a-store/find-a-store.html" class="hidden  md:flex flex-col gap-2 lg:ml-40">
@@ -49,3 +51,16 @@
     </div>
   </div>
 </div>
+
+    `
+}
+
+export class ChooseStore extends HTMLElement{
+    constructor(){
+        super()
+    }
+    connectedCallback(){
+        this.innerHTML = createChooseStore();
+    }
+}
+customElements.define('choose-store-component', ChooseStore);
