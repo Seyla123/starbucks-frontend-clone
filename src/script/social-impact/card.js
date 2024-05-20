@@ -5,19 +5,19 @@ const cardArray = [
     },
     {
         imgURL: "../../images/social-impact/planet-cup.png",
-        text: `Expanding <span class="font-extrabold text-xl">plant-based menu options</span>`
+        text: `Shifting away from single-use to <span class="font-extrabold text-xl">reusable packaging</span>`
     },
     {
         imgURL: "../../images/social-impact/planet-plants.png",
-        text: `Expanding <span class="font-extrabold text-xl">plant-based menu options</span>`
+        text: `Investing in <span class="font-extrabold text-xl"> regenerative agriculture, reforestation, forest conservation and water replenishment</span> in our supply chain`
     },
     {
         imgURL: "../../images/social-impact/planet-trash.png",
-        text: `Expanding <span class="font-extrabold text-xl">plant-based menu options</span>`
+        text: `Working on better ways to <span class="font-extrabold text-xl">manage our waste</span>`
     },
     {
         imgURL: "../../images/social-impact/planet-store.png",
-        text: `Expanding <span class="font-extrabold text-xl">plant-based menu options</span>`
+        text: `Innovating with more <span class="font-extrabold text-xl">plant-based menu options</span>operations, manufacturing and delivery`
     }
 ];
 
