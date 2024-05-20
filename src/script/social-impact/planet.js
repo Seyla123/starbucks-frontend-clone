@@ -44,71 +44,7 @@ const createPlanetContent = ()=>{
         <h1 class="text-wrap tracking-[0.06em] my-7 text-lg">We're driving innovation at scale to achieve our 2030 targets through these five focus areas:</h1>
     </div>
 </div>
-<!-- hamburger -->
-<div>
-    <div class="text-[#1f3932] my-12">
-        <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
-            <div class="w-[100%] md:w-[50%]">
-                <a chref=""><img class="w-full" src="../../images/social-impact/planet-hamburger.png" alt=""></a>
-            </div>
-            <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                <h1 class=" font-normal text-xl tracking-[0.04em]">Expanding <span class="font-extrabold text-xl">plant-based menu options</span></h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- cup -->
-<div>
-    <div class="text-[#1f3932] my-12">
-        <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
-            <div class="w-[100%] md:w-[50%]">
-                <a chref=""><img class="w-full" src="../../images/social-impact/planet-cup.png" alt=""></a>
-            </div>
-            <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                <h1 class=" font-normal text-xl tracking-[0.04em]">Shifting away from single-use to <span class="font-extrabold text-xl">reusable packaging</span></h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- plants -->
-<div>
-    <div class="text-[#1f3932] my-12">
-        <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
-            <div class="w-[100%] md:w-[50%]">
-                <a chref=""><img class="w-full" src="../../images/social-impact/planet-plants.png" alt=""></a>
-            </div>
-            <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                <h1 class=" font-normal text-xl tracking-[0.04em]">Investing in <span class="font-extrabold text-xl"> regenerative agriculture, reforestation, forest conservation and water replenishment</span> in our supply chain</h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- trash -->
-<div>
-    <div class="text-[#1f3932] my-12">
-        <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
-            <div class="w-[100%] md:w-[50%]">
-                <a chref=""><img class="w-full" src="../../images/social-impact/planet-trash.png" alt=""></a>
-            </div>
-            <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                <h1 class=" font-normal text-xl tracking-[0.04em]">Working on better ways to <span class="font-extrabold text-xl">manage our waste</span></h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- store -->
-<div>
-    <div class="text-[#1f3932] my-12">
-        <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
-            <div class="w-[100%] md:w-[50%]">
-                <a chref=""><img class="w-full" src="../../images/social-impact/planet-store.png" alt=""></a>
-            </div>
-            <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                <h1 class=" font-normal text-xl tracking-[0.04em]">Innovating with more <span class="font-extrabold text-xl">plant-based menu options</span>operations, manufacturing and delivery</h1>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Learn Mores -->
 <div class="lg:px-[10%] px-auto flex flex-col gap-10">
     <div class="mt-2 text-center">
