@@ -1,13 +1,3 @@
-<<<<<<< HEAD:src/script/menu/feature-menu.js
-const featureContent = document.querySelector(".feature-content-layout");
-fetch("../../components/menu/feature-content.html")
-.then((res) => res.text())
-
-.then((data) => {
-    featureContent.innerHTML = data;
-})
-.catch((error) => console.error("Error fetching included file:", error));
-=======
 import { createProductCard } from "../../script/components/product-card.js";
 
 // Array containing product details for the feature menu page
@@ -89,6 +79,7 @@ class loopProductCard extends HTMLElement {
 
             // Use the layout component to create the product card
             html += createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
+            html += createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
             html += i == 0 ? '<section class=" gap-4 my-5 grid grid-cols-1 md:grid-cols-2">' : '';
         }
         html += '</section>'
@@ -97,4 +88,3 @@ class loopProductCard extends HTMLElement {
 }
 // Define the custom element for the feature content product card
 customElements.define('feature-content-product-card', loopProductCard);
->>>>>>> af180c4 (fix : fixed component featured page):src/pages/featured/index.js
