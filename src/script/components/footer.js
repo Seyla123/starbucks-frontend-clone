@@ -1,6 +1,6 @@
 const createFooter = (maxWidth, dropdown) => {
     return `
-    <footer class="p-6 2xl:px-0 w-full ${maxWidth ? maxWidth : ''} mx-auto">
+    <footer class="p-6 2xl:px-8 w-full ${maxWidth ? maxWidth : ''} mx-auto">
         <!-- screen phone lg -->
         <div class="block ${dropdown ? 'block' : 'lg:hidden'}">
             <div>
@@ -13,10 +13,10 @@ const createFooter = (maxWidth, dropdown) => {
                 <div class="drop1 overflow-hidden max-h-0 transition-max-height duration-500">
                     <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                         <li>
-                        <a class="hover:text-black" href="../../pages/about-us/our-comapany.html">Our Company</a>
+                        <a class="hover:text-black" href="../../pages/our-company/our-comapany.html">Our Company</a>
                         </li>
                         <li>
-                        <a class="hover:text-black" href="../../pages/about-us/our-coffee.html">Our Coffee</a>
+                        <a class="hover:text-black" href="../../pages/our-coffee/our-coffee.html">Our Coffee</a>
                         </li>
                         <li>
                         <a class="hover:text-black" href="">Stories and News</a>
@@ -31,7 +31,7 @@ const createFooter = (maxWidth, dropdown) => {
                         <a class="hover:text-black" href="">Customer Service</a>
                         </li>
                         <li>
-                        <a class="hover:text-black" href="../../pages/about-us/contact-us.html">Contact Us</a>
+                        <a class="hover:text-black" href="../../pages/contact-us/contact-us.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -124,19 +124,19 @@ const createFooter = (maxWidth, dropdown) => {
             <div class="drop1 overflow-hidden max-h-0 transition-max-height duration-500">
                 <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                     <li>
-                        <a class="hover:text-black" href="../../pages/order/order.html">Order on the App</a>
+                        <a class="hover:text-black" href="../../pages/order-vai-app/order.html">Order on the App</a>
                     </li>
                     <li>
-                    <a class="hover:text-black" href="">Order on the Web</a>
+                    <a class="hover:text-black" href="../../pages/menu/menu.html">Order on the Web</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/order/delivery.html">Delivery</a>
+                        <a class="hover:text-black" href="../../pages/delivery/delivery.html">Delivery</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/order/pickup.html">Order and Pick Up Options</a>
+                        <a class="hover:text-black" href="../../pages/pickup/pickup.html">Order and Pick Up Options</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="">Explore and Find Coffee for Home</a>
+                        <a class="hover:text-black" href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a>
                     </li>
                 </ul>
             </div>
@@ -149,25 +149,25 @@ const createFooter = (maxWidth, dropdown) => {
                 <h2 class="sodan text-xl">About Us</h2>
                 <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                 <li>
-                    <a class="hover:text-black" href="../../pages/about-us/our-comapany.html">Our Company</a>
+                <a class="hover:text-black" href="../../pages/our-company/our-comapany.html">Our Company</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="../../pages/about-us/our-coffee.html">Our Coffee</a>
+                <a class="hover:text-black" href="../../pages/our-coffee/our-coffee.html">Our Coffee</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="">Stories and News</a>
+                <a class="hover:text-black" href="">Stories and News</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="">Starbucks Archive</a>
+                <a class="hover:text-black" href="">Starbucks Archive</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="">Investor Relations</a>
+                <a class="hover:text-black" href="">Investor Relations</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="">Customer Service</a>
+                <a class="hover:text-black" href="">Customer Service</a>
                 </li>
                 <li>
-                    <a class="hover:text-black" href="../../pages/about-us/contact-us.html">Contact Us</a>
+                <a class="hover:text-black" href="../../pages/contact-us/contact-us.html">Contact Us</a>
                 </li>
                 </ul>
             </div>
@@ -234,19 +234,19 @@ const createFooter = (maxWidth, dropdown) => {
             <h2 class="sodan text-xl"">Order and Pick Up</h2>
             <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
             <li>
-                <a class="hover:text-black" href="../../pages/order/order.html">Order on the App</a>
+                <a class="hover:text-black" href="../../pages/order-vai-app/order.html">Order on the App</a>
             </li>
             <li>
-                <a class="hover:text-black" href="">Order on the Web</a>
+            <a class="hover:text-black" href="../../pages/menu/menu.html">Order on the Web</a>
             </li>
             <li>
-                <a class="hover:text-black" href="../../pages/order/delivery.html">Delivery</a>
+                <a class="hover:text-black" href="../../pages/delivery/delivery.html">Delivery</a>
             </li>
             <li>
-                <a class="hover:text-black" href="../../pages/order/pickup.html">Order and Pick Up Options</a>
+                <a class="hover:text-black" href="../../pages/pickup/pickup.html">Order and Pick Up Options</a>
             </li>
             <li>
-                <a class="hover:text-black" href="">Explore and Find Coffee for Home</a>
+                <a class="hover:text-black" href="https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer">Explore and Find Coffee for Home</a>
             </li>
             </ul>
         </div>
