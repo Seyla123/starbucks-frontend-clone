@@ -1,4 +1,4 @@
-import "../../script/components/layout.js";
+
 import "./hero.js";
 import "./getting.js";
 import "./endless.js";
