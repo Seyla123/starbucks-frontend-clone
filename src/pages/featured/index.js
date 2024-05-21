@@ -1,5 +1,4 @@
-// Importing the layout component from the components directory
-import * as Layout from '../../script/components/layout.js';
+import { createProductCard } from "../../script/components/product-card.js";
 
 // Array containing product details for the feature menu page
 const product = [{
@@ -79,7 +78,7 @@ class loopProductCard extends HTMLElement {
             const buttonLink =  `../../pages/product/product_detail.html?${product[i].id}`;
 
             // Use the layout component to create the product card
-            html += Layout.createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
+            html += createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
             html += i == 0 ? '<section class=" gap-4 my-5 grid grid-cols-1 md:grid-cols-2">' : '';
         }
         html += '</section>'
