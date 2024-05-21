@@ -1,4 +1,6 @@
 import * as chooseStore from "./choose-store.js"
+import "../../script/components/layout.js"
+
 // previous header
 const previousHeader = document.querySelector(".previous-header-layout");
 fetch("../../components/menu/previous-header.html")

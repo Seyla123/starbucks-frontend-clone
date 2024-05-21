@@ -20,9 +20,7 @@
   transition: transform 0.3s ease; /* Smooth transform animation */
 }
 
-.menu-button.active .menu-icon {
-  transform: rotate(90deg); /* Rotate the icon for close button appearance */
-}
+
 .hind {
   font-family: "Hind", sans-serif;
 }

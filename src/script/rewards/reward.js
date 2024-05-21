@@ -1,3 +1,4 @@
+import "../../script/components/layout.js"
 const content_reward = document.querySelector(".content-reward-layout");
 
 fetch("../../components/rewards/content.html")
