@@ -108,7 +108,7 @@ function rippleEffect(event) {
 }
 
 // Display error styling when input requirements are not met
-export function req(input, label, labelText, rep) {
+function req(input, label, labelText, rep) {
     label.classList.remove(
         "left-3",
         "top-[-18%]",
@@ -122,7 +122,7 @@ export function req(input, label, labelText, rep) {
 }
 
 // Reset styling when input is not focused
-export function unfocused(input, label, labelText, rep) {
+function unfocused(input, label, labelText, rep) {
     label.classList.add("left-3", "top-[-18%]", "md:text-sm", "text-[#00754a]");
     label.classList.remove("text-red-500");
     labelText.classList.remove("text-red-500");
@@ -131,7 +131,7 @@ export function unfocused(input, label, labelText, rep) {
 }
 
 // Handle focus and focusout events
-export function focused(input, label, labelText, rep) {
+function focused(input, label, labelText, rep) {
     input.addEventListener("focus", () => {
         label.classList.add(
             "left-3",
@@ -150,7 +150,7 @@ export function focused(input, label, labelText, rep) {
 }
 
 // Check input requirements on user input
-export function required(input, label, labelText, rep) {
+function required(input, label, labelText, rep) {
     this.focused(input, label, labelText, rep);
     input.addEventListener("input", () => {
         if (input.value.length !== 0) {
