@@ -1,4 +1,5 @@
 // Create array objects
+import "../../script/components/layout.js";
 const listCards = [
   {
     location: "Eden Garden",
@@ -282,7 +283,6 @@ findBTN.addEventListener("click", () => {
   filterContent.classList.remove("pointer-events-none");
   componentHide.classList.add("hidden");
   externalContent.classList.add("hidden");
-
   filterContent.classList.add("scale-[100%]");
   filterContent.classList.add("opacity-100");
   filterContent.classList.add("pointer-events-auto");
