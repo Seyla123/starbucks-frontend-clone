@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+import "../../script/components/layout.js"
+>>>>>>> 6830163 (file : add some change)
 const productDetail = [
   {
     name: "Spicy Dragonfruit",
@@ -53,7 +57,10 @@ const productDetail = [
 ];
 let productId = window.location.href.split("?");
 productId = productId[1];
+<<<<<<< HEAD
 console.log(productId)
+=======
+>>>>>>> 6830163 (file : add some change)
 const  addInText = productDetail[productId].addIn;
 const noAddInText = productDetail[productId].noAddIn;
 const textAddIn = document.querySelector("#addInText");
@@ -179,6 +186,10 @@ contentProductDetail.innerHTML = `
                             </svg>
                                 
                         </span>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6830163 (file : add some change)
                         <!-- after clicked change to this -->
                         <span class="relative fill-black z-10 opacity-0 duration-1000" id="ventiIcon">
                             <svg width="24" height="40" >
@@ -189,8 +200,17 @@ contentProductDetail.innerHTML = `
                                     
                                 </div>      
                         </span>
+<<<<<<< HEAD
                     </div>
                    </button>
+=======
+                        
+                       
+                        
+                    </div>
+                   </button>
+                    
+>>>>>>> 6830163 (file : add some change)
                     <h3 class="text-base font-medium">Venti</h3>
                     <p class="text-sm text-gray-700">24 fl oz</p>
                 </div>
@@ -209,6 +229,10 @@ contentProductDetail.innerHTML = `
                                 </clipPath>
                                 </defs>
                                 </svg>
+<<<<<<< HEAD
+=======
+                                
+>>>>>>> 6830163 (file : add some change)
                         </span>
                          <!-- after clicked change to this -->
                          <span class="relative fill-black z-10 opacity-0 duration-1000" id="trentaIcon">
@@ -218,6 +242,7 @@ contentProductDetail.innerHTML = `
                                 </svg>
                                 <div id="trentaDot" class="bg-[#00754A]   top-3 absolute size-[12px] left-[6px] z-[-1] rounded-full"></div>      
                         </span>
+<<<<<<< HEAD
                      </div>
                     </button>
                     <h3 class="text-base font-medium">Trenta</h3>
@@ -226,6 +251,27 @@ contentProductDetail.innerHTML = `
                  <div id="sizeBg" class="bg-[#D4E9E2] duration-500  absolute z-[-1] right-[135px] top-8 border-2 border-[#026442] size-14 rounded-full">
                  </div>
                 </div>
+=======
+                         
+                        
+                         
+                     </div>
+                    </button>
+                     
+                    <h3 class="text-base font-medium">Trenta</h3>
+
+                    <p class="text-sm text-gray-700">30 fl oz</p>
+
+                 </div>
+                 <div id="sizeBg" class="bg-[#D4E9E2] duration-500  absolute z-[-1] right-[135px] top-8 border-2 border-[#026442] size-14 rounded-full">
+                    
+                 </div>
+                </div>
+            
+           
+
+            
+>>>>>>> 6830163 (file : add some change)
         </div>
         <div class="w-full flex gap-4 items-center">
             <div class="max-w-4">
@@ -235,7 +281,13 @@ contentProductDetail.innerHTML = `
         </div>
     </div>
     <div class="lg:pl-8  w-full flex flex-col gap-2 max-w-[420px]">
+<<<<<<< HEAD
         <div class="lg:pl-4 text-2xl font-semibold w-full space-y-3">
+=======
+
+        <div class="lg:pl-4 text-2xl font-semibold w-full space-y-3">
+            
+>>>>>>> 6830163 (file : add some change)
             <h3>What's included</h3>
             <hr class=" bg-[#D4E9E2] h-[4px] rounded-sm">
         </div>
@@ -255,6 +307,11 @@ contentProductDetail.innerHTML = `
                     class="spanInput  absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Flavors</span>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6830163 (file : add some change)
         <div class="bt w-full  min-w-max overflow-hidden relative  ">
             <div class=" w-full relative p-2" id="addInDiv">
                 <select type="text"
@@ -271,12 +328,22 @@ contentProductDetail.innerHTML = `
                     class="spanInput  absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 6830163 (file : add some change)
         <div class="bt w-full  min-w-max overflow-hidden relative  ">
             <div class=" w-full relative p-2" id="flavorsDiv">
                 <div type="text"
                     class="w-full pl-4  rounded-lg h-[48px] border-solid border-2 border-[#00754A] outline-none ">
 
                 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6830163 (file : add some change)
                 <span
                     class="spanInput  absolute top-[-5%] left-[4%] left-3 top-[14px]  duration-500 px-1 text-sm text-gray-400 pointer-events-none">Add-ins</span>
                 <div class="justify-between absolute w-[90%] top-5 left-5 flex cursor-pointer">
@@ -311,14 +378,27 @@ contentProductDetail.innerHTML = `
         </div>
         <div class="mt-8">
             <a class=" bg-[#1e3932] flex w-40 items-center cursor-pointer justify-center px-4 py-4 rounded-full gap-2">
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 6830163 (file : add some change)
                     <svg aria-hidden="true" class="size-6 text-[#cba258] focusable="false" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style=" overflow: visible; fill: currentcolor;"><path d="M9.818 3.166a.55.55 0 0 0-.271.572l.914 5.377-4.908 2.895a.55.55 0 0 0 .174 1.013l5.587 1.112.913 5.377a.55.55 0 0 0 1.02.183l2.806-4.867 5.59.524a.55.55 0 0 0 .449-.928l-3.856-4.049 2.301-5.094a.55.55 0 0 0-.73-.726l-5.102 2.34-4.258-3.666a.55.55 0 0 0-.629-.063zm1.069 1.893 3.367 2.9a.55.55 0 0 0 .588.082l4.088-1.875-1.848 4.094a.55.55 0 0 0 .102.607l3.097 3.252-4.476-.42a.55.55 0 0 0-.53.274l-2.218 3.847-.723-4.244a.55.55 0 0 0-.434-.447l-4.545-.904 3.99-2.354a.55.55 0 0 0 .264-.566ZM17.375.848a.25.25 0 0 0-.25.148c-.247.566-.334.828-.395.893a.25.25 0 0 0-.005.006c-.03.034-.072.062-.186.113-.114.05-.288.117-.521.23a.25.25 0 0 0-.036.428c.21.151.368.247.471.316.103.07.139.102.162.141a.25.25 0 0 0 .004.008c.047.073.087.345.23.943a.25.25 0 0 0 .473.043c.248-.565.335-.827.395-.892a.25.25 0 0 0 .004-.006c.03-.035.073-.063.187-.114.114-.05.286-.118.52-.232a.25.25 0 0 0 .037-.428c-.21-.15-.368-.245-.47-.314-.104-.07-.142-.104-.165-.143a.25.25 0 0 0-.004-.006c-.047-.073-.087-.346-.23-.945a.25.25 0 0 0-.221-.19Zm-.086.972c.03.122.052.328.117.43.08.13.19.215.309.295.023.016.062.044.088.06a8.775 8.775 0 0 0-.098.043.988.988 0 0 0-.357.239c-.082.09-.138.29-.19.406-.03-.123-.051-.33-.117-.432a.974.974 0 0 0-.31-.295l-.088-.058.1-.045a.971.971 0 0 0 .357-.238c.081-.09.137-.29.19-.405zm.805 16.998a.25.25 0 0 0-.235.143c-.373.782-.477 1.131-.615 1.26a.25.25 0 0 0-.006.004c-.134.132-.479.212-1.265.54a.25.25 0 0 0-.016.456c.763.384 1.099.488 1.225.63a.25.25 0 0 0 .005.006c.13.139.21.494.53 1.301a.25.25 0 0 0 .457.016c.373-.782.477-1.132.615-1.26a.25.25 0 0 0 .006-.006c.134-.133.477-.213 1.264-.54a.25.25 0 0 0 .017-.454c-.762-.384-1.099-.488-1.224-.63a.25.25 0 0 0-.006-.007c-.13-.138-.21-.493-.53-1.3a.25.25 0 0 0-.222-.159Zm-.03.836c.121.358.227.76.415.961.186.21.573.348.925.502-.361.129-.757.237-.957.434-.2.187-.334.58-.478.928-.121-.36-.227-.762-.416-.963-.186-.209-.572-.345-.922-.498.36-.129.755-.24.955-.436.2-.187.334-.58.478-.928zM22.5 8.75a.754.754 0 0 0-.75.75c0 .411.339.75.75.75s.75-.339.75-.75a.754.754 0 0 0-.75-.75zm0 .5c.141 0 .25.109.25.25 0 .141-.109.25-.25.25a.246.246 0 0 1-.25-.25c0-.141.109-.25.25-.25zm-19 6.5a.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75.75.75 0 0 1 .75-.75.75.75 0 0 1 .75.75Zm1.5-10c-.687 0-1.25.563-1.25 1.25S4.313 8.25 5 8.25 6.25 7.687 6.25 7 5.687 5.75 5 5.75Zm0 .5c.417 0 .75.333.75.75s-.333.75-.75.75A.746.746 0 0 1 4.25 7c0-.417.333-.75.75-.75Zm5.746 7.771-8.41 8.41a.55.55 0 0 0 .777.78l8.328-8.328-.127-.748z"></path></svg>
                 <span class="text-white text-lg">Customize</span>
           
             </a>
         </div>
+<<<<<<< HEAD
     </div>
 </div>
 </div>
+=======
+
+
+    </div>
+</div>
+</div>
+
+>>>>>>> 6830163 (file : add some change)
 <div class="bg-[#1e3932] w-full text-white">
 <div class="  pl-8 p-6 md:ml-[78px] space-y-4 w-full sodan text-sm max-w-[420px]">
     <span>
@@ -326,6 +406,10 @@ contentProductDetail.innerHTML = `
     </span>
     <p class=" text-gray-400">Sweet meets Heat. Sweet flavors of mango and exotic dragonfruit shaken with ice, dragonfruit inclusions and lemonade, and kicked up a notch with our NEW Spicy Chili Powder Blend that unleashes spicy goodness and awakens the senses - a tropical escape with plenty of heat!</p>
     <p>200 calories, 42g sugar, 0.5g fat
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6830163 (file : add some change)
     </p>
     <button class="border rounded-full px-3 py-1 font-semibold text-base
     ">Full nutrition & ingredients list</button>
@@ -333,14 +417,23 @@ contentProductDetail.innerHTML = `
 </div>`;
 // window.onload = console.log(localStorage.getItem("productImg"));
 const spanInput = document.querySelectorAll(".spanInput");
+<<<<<<< HEAD
 function loaded() {
   for (let i = 0; i < spanInput.length; i++) {
     spanInput[i].classList.add("transition", "delay-700", "duration-300" ,"ease-in-out");
+=======
+function test() {
+  for (let i = 0; i < spanInput.length; i++) {
+>>>>>>> 6830163 (file : add some change)
     spanInput[i].classList.remove("left-3", "top-[14px]");
     spanInput[i].classList.add("bg-white");
   }
 }
+<<<<<<< HEAD
 contentProductDetail.addEventListener('onload',loaded())
+=======
+
+>>>>>>> 6830163 (file : add some change)
 function rippleEffect(event) {
   const btn = event.currentTarget;
 
