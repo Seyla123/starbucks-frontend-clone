@@ -21,24 +21,28 @@ const cardArray = [
     }
 ];
 
-const cardPlanet = () => {
-    return `${cardArray.map((card) => `
+const cardPlanet = (imgURL,text) => {
+    return `
         <div class="text-[#1f3932] my-12">
             <div class="flex flex-col md:flex-row md:h-auto mx-auto items-center h-90">
                 <div class="w-[100%] md:w-[50%]">
-                    <a href=""><img class="w-full" src="${card.imgURL}" alt=""></a>
+                    <a href=""><img class="w-full" src="${imgURL}" alt=""></a>
                 </div>
                 <div class="max-w-[90%] md:w-[40%] flex flex-col items-start justify-center py-8">
-                    <h1 class="font-normal text-xl tracking-[0.04em]">${card.text}</h1>
+                    <h1 class="font-normal text-xl tracking-[0.04em]">${text}</h1>
                 </div>
             </div>
         </div>
-    `).join('')}`;
+    `;
 };
 
 class CardPlanet extends HTMLElement {
     connectedCallback(){
-        this.innerHTML = cardPlanet();
+        cardArray.map((item)=>{
+            this.innerHTML += cardPlanet(item.imgURL,item.text);
+        })
+
+
     }
 }
 
