@@ -1,6 +1,6 @@
 const createFooter = (maxWidth, dropdown) => {
     return `
-    <footer class="p-6 2xl:px-8 w-full ${maxWidth ? maxWidth : ''} mx-auto">
+    <footer class="p-6  w-full ${maxWidth ?  `${maxWidth} 2xl:px-0` : '2xl:px-8'} mx-auto">
         <!-- screen phone lg -->
         <div class="block ${dropdown ? 'block' : 'lg:hidden'}">
             <div>
@@ -13,7 +13,7 @@ const createFooter = (maxWidth, dropdown) => {
                 <div class="drop1 overflow-hidden max-h-0 transition-max-height duration-500">
                     <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                         <li>
-                        <a class="hover:text-black" href="../../pages/our-company/our-comapany.html">Our Company</a>
+                        <a class="hover:text-black" href="../../pages/our-company/our-company.html">Our Company</a>
                         </li>
                         <li>
                         <a class="hover:text-black" href="../../pages/our-coffee/our-coffee.html">Our Coffee</a>
@@ -46,22 +46,22 @@ const createFooter = (maxWidth, dropdown) => {
             <div class="drop1 overflow-hidden max-h-0 transition-max-height duration-500">
                 <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                     <li>
-                        <a class="hover:text-black" href="../../pages/careers/culture-and-values-page.html">Culture and Values</a>
+                        <a class="hover:text-black" href="../../pages/culture-and-values/culture-and-values.html">Culture and Values</a>
                     </li>
                     <li>
                         <a class="hover:text-black" href="">Inclusion, Diversity, and Equity</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/careers/college-achievement-plan.html">College Achievement Plan</a>
+                        <a class="hover:text-black" href="../../pages/college-achievement-plan/college-achievement-plan.html">College Achievement Plan</a>
                     </li>
                     <li>
                         <a class="hover:text-black" href="">Alumni Community</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/careers/u.s-careers.html">U.S. Careers</a>
+                        <a class="hover:text-black" href="../../pages/u.s. careers/u.s.-careers.html">U.S. Careers</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/careers/international-careers.html">International Careers</a>
+                        <a class="hover:text-black" href="../../pages/international-careers/international-careers.html">International Careers</a>
                     </li>
                 </ul>
             </div>
@@ -76,10 +76,10 @@ const createFooter = (maxWidth, dropdown) => {
             <div class="drop1 overflow-hidden max-h-0 transition-max-height duration-500">
                 <ul class="flex flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                     <li>
-                        <a class="hover:text-black" href="../../pages/social-impact/people.html">People</a>
+                        <a class="hover:text-black" href="../../pages/people/people.html">People</a>
                     </li>
                     <li>
-                        <a class="hover:text-black" href="../../pages/social-impact/planet.html">Planet</a>
+                        <a class="hover:text-black" href="../../pages/planet/planet.html">Planet</a>
                     </li>
                     <li>
                         <a class="hover:text-black" href="">Environmental and Social Impact Reporting</a>
@@ -149,7 +149,7 @@ const createFooter = (maxWidth, dropdown) => {
                 <h2 class="sodan text-xl">About Us</h2>
                 <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
                 <li>
-                <a class="hover:text-black" href="../../pages/our-company/our-comapany.html">Our Company</a>
+                <a class="hover:text-black" href="../../pages/our-company/our-company.html">Our Company</a>
                 </li>
                 <li>
                 <a class="hover:text-black" href="../../pages/our-coffee/our-coffee.html">Our Coffee</a>
@@ -175,23 +175,23 @@ const createFooter = (maxWidth, dropdown) => {
             <h2 class="sodan text-xl">Careers</h2>
             <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
             <li>
-                <a class="hover:text-black" href="../../pages/careers/culture-and-values-page.html">Culture and Values</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Inclusion, Diversity, and Equity</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="../../pages/careers/college-achievement-plan.html">College Achievement Plan</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="">Alumni Community</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="../../pages/careers/u.s-careers.html">U.S. Careers</a>
-            </li>
-            <li>
-                <a class="hover:text-black" href="../../pages/careers/international-careers.html">International Careers</a>
-            </li>
+            <a class="hover:text-black" href="../../pages/culture-and-values/culture-and-values.html">Culture and Values</a>
+        </li>
+        <li>
+            <a class="hover:text-black" href="">Inclusion, Diversity, and Equity</a>
+        </li>
+        <li>
+            <a class="hover:text-black" href="../../pages/college-achievement-plan/college-achievement-plan.html">College Achievement Plan</a>
+        </li>
+        <li>
+            <a class="hover:text-black" href="">Alumni Community</a>
+        </li>
+        <li>
+            <a class="hover:text-black" href="../../pages/u.s. careers/u.s.-careers.html">U.S. Careers</a>
+        </li>
+        <li>
+            <a class="hover:text-black" href="../../pages/international-careers/international-careers.html">International Careers</a>
+        </li>
     
             </ul>
         </div>
@@ -200,10 +200,10 @@ const createFooter = (maxWidth, dropdown) => {
             <h2 class="sodan text-xl">Social Impact</h2>
             <ul class="flex w-48 flex-col gap-3 my-4 manrope-sans text-gray-500 font-thin">
             <li>
-                <a class="hover:text-black" href="../../pages/social-impact/people.html">People</a>
+                <a class="hover:text-black" href="../../pages/people/people.html">People</a>
             </li>
             <li>
-                <a class="hover:text-black" href="../../pages/social-impact/planet.html">Planet</a>
+                <a class="hover:text-black" href="../../pages/planet/planet.html">Planet</a>
             </li>
             <li>
                 <a class="hover:text-black" href="">Environmental and Social Impact Reporting</a>

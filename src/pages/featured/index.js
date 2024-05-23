@@ -1,4 +1,5 @@
-import { createProductCard } from "../../script/components/product-card.js";
+
+import { createProductCard } from "../../components/product-card.js";
 
 // Array containing product details for the feature menu page
 const product = [{
