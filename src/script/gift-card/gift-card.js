@@ -1,6 +1,5 @@
-
-const createCarousel = (title, imgUrlArray, glide) => {
-   
+import { giftCardDatas } from './data.js';
+export const createCarousel = (title, giftCardData, glide) => {
 	return `
     <div class="relative mt-10">
         <!-- title -->
@@ -16,7 +15,7 @@ const createCarousel = (title, imgUrlArray, glide) => {
             <!-- Slides -->
             <div class="" data-glide-el="track">
                 <ul class="relative w-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] py-6">
-                    ${imgUrlArray
+                    ${giftCardData
 											.map((item) => {
 												return `
                             <div class="rounded-lg md:rounded-2xl overflow-hidden shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:-translate-y-4 duration-500">
@@ -42,21 +41,17 @@ const createCarousel = (title, imgUrlArray, glide) => {
         </div>
     </div>
 `;
-
 };
-let i = 0
-class CarouselComponent extends HTMLElement {
+let i = 0;
+export class CarouselComponent extends HTMLElement {
 	connectedCallback() {
 		const title = this.getAttribute('title');
 		const glide = this.getAttribute('glide');
-		// Parse the imgUrl attribute as an array
-		const imgUrlArray = JSON.parse(this.getAttribute('imgUrl'));
+		const dataIndex = parseInt(this.getAttribute('data-index'), 10); 
+		const giftCardData = giftCardDatas[dataIndex]; 
 
-		this.innerHTML = createCarousel(title, imgUrlArray, glide);
-        i++
+		this.innerHTML = createCarousel(title, giftCardData, glide);
+		i++;
 	}
 }
-
 customElements.define('carousel-component', CarouselComponent);
-
-
