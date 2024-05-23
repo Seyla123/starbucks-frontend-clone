@@ -1,4 +1,3 @@
-import './layout.js'; 
 
 const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
@@ -10,7 +9,7 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
             <ul class="flex gap-4 sodan font-bold tracking-widest text-sm">
                 <li><a class="hover:text-green-700"  href="../../pages/menu/menu.html">MENU</a></li>
                 <li><a class="hover:text-green-700"  href="../../pages/reward/reward.html">REWARDS</a></li>
-                <li><a class="hover:text-green-700"  href="../../pages/gift-card/gift-card.html">GIFT CARDS</a></li>
+                <li><a class="hover:text-green-700"  href="../..//pages/gift-card/gift-card.html">GIFT CARDS</a></li>
             </ul>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] absolute  left-[63px] ${!isRewardPage ? "hidden" : ""}"></span>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] left-[160px] absolute ${!isGiftCardPage ? "hidden" : ""}"></span>
@@ -36,7 +35,8 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
                     hoverColor = "bg-gray-600"
                     textColor = "text-white"
                     btnLink = "../../pages/join-now/join-now.html"
-                    ></button-component>                </li>
+                    ></button-component> 
+                </li>
             </ul>
         </div>
 

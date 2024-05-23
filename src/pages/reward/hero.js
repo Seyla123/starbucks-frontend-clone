@@ -1,4 +1,4 @@
-export const heroSection = () => {
+const heroSection = () => {
     return `
     <section class="w-full sticky top-0 z-[48] bg-[#1e3932] py-4 md:px-20 px-4">
         <div class="w-full max-w-screen-2xl mx-auto flex justify-between items-center">
@@ -56,7 +56,7 @@ export const heroSection = () => {
     `
 }
 
-export class Hero extends HTMLElement {
+class Hero extends HTMLElement {
     connectedCallback() {
         this.innerHTML = heroSection();
     }

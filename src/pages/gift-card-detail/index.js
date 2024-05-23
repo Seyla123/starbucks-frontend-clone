@@ -6,12 +6,8 @@ function moveSpan() {
     }
 }
 document.body.addEventListener("onload", moveSpan());
-import "../../script/components/inputTextField.js";
 
-
-const inputField = document.querySelector(".inputField");
-const label = document.querySelector(".label");
-const labelText = label.querySelector("span span");
-const req = document.querySelector(".req");
-
-required(inputField, label, labelText, req);
+let giftCard = window.location.href.split("?");
+giftCard = giftCard[1];
+const giftCardImg = document.querySelector("#giftCardImg");
+giftCardImg.setAttribute("src",giftCard)

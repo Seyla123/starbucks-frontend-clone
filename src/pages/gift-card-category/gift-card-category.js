@@ -26,18 +26,6 @@ const createCardCategory = (imgArr)=>{
         </div>`;
    
 }
-
-// class createCardCategoryComponent extends HTMLElement {
-// 	connectedCallback() {
-// 		const imgArr = this.getAttribute('imgArr');
-// 		// Parse the imgUrl attribute as an array
-
-// 		this.innerHTML = createCarousel(imgArr);
-// 	}
-// }
-
-// customElements.define('gift-card-category-component', createCardCategoryComponent);
-
 const giftCardCategory = document.querySelector("#giftCardCategory")
 
 let html = ""

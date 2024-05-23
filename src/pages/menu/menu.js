@@ -1,5 +1,4 @@
-import * as chooseStore from "./choose-store.js"
-import "../../script/components/layout.js"
+
 
 // import * as bakery from "./category-product/bakery.js"
 // import * as bottledBeverage from "./category-product/bottled-beverages.js"
@@ -21,14 +20,7 @@ import "../../script/components/layout.js"
 // import * as viaInstant from "./category-product/via-instant.js"
 // import * as wholeBean from "./category-product/whole-bean.js"
 
-const menuHeader = document.querySelector('.menu-header-layout');
-fetch('../../components/menu/menu-header.html')
-	.then((res) => res.text())
 
-	.then((data) => {
-		menuHeader.innerHTML = data;
-	})
-	.catch((error) => console.error('Error fetching included file:', error));
 
 // menuContent
 
