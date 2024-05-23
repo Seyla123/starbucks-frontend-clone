@@ -1,4 +1,3 @@
-
 const productDetail = [
   {
     name: "Spicy Dragonfruit",
