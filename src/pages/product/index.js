@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 import "../../script/components/layout.js"
->>>>>>> 6830163 (file : add some change)
 const productDetail = [
   {
     name: "Spicy Dragonfruit",
@@ -58,9 +54,12 @@ const productDetail = [
 let productId = window.location.href.split("?");
 productId = productId[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
 console.log(productId)
 =======
 >>>>>>> 6830163 (file : add some change)
+=======
+>>>>>>> f95d3e8 (file : detele console log in product index js)
 const  addInText = productDetail[productId].addIn;
 const noAddInText = productDetail[productId].noAddIn;
 const textAddIn = document.querySelector("#addInText");
