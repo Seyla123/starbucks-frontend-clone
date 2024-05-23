@@ -66,6 +66,9 @@ const corporateContentArr = [
 }
 ]
 class CorporateContent extends HTMLElement{
+    constructor(){
+        super()
+    }
     connectedCallback(){
         this.innerHTML = corporateContent(corporateContentArr);
     }
