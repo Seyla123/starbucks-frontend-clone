@@ -1,4 +1,29 @@
+<<<<<<< HEAD
 import * as chooseStore from "./choose-store.js"
+=======
+
+
+// import * as bakery from "./category-product/bakery.js"
+// import * as bottledBeverage from "./category-product/bottled-beverages.js"
+// import * as coldCoffee from "./category-product/cold-coffees.js";
+// import * as coldCup from "./category-product/cold-cups.js"
+// import * as frappuccino from "./category-product/frappuccino-blended-beverages.js"
+// import * as hotBeverage from "./category-product/hot-beverages.js"
+// import * as hotBreakfast from "./category-product/hot-breakfast.js"
+// import * as hotCoffee from "./category-product/hot-coffees.js"
+// import * as hotTea from "./category-product/hot-teas.js"
+// import * as icedTea from "./category-product/iced-teas.js"
+// import * as lunch from "./category-product/lunch.js"
+// import * as mugs from "./category-product/mugs.js"
+// import * as oatmealYogurt from "./category-product/oatmeal-yogurt.js"
+// import * as other from "./category-product/other.js"
+// import * as snackSweet from "./category-product/snacks-sweets.js"
+// import * as starbuckRefresher from "./category-product/starbucks-refresher-beverages.js"
+// import * as tumblers from "./category-product/tumblers.js"
+// import * as viaInstant from "./category-product/via-instant.js"
+// import * as wholeBean from "./category-product/whole-bean.js"
+
+>>>>>>> e0cd4fc (fix : fixed product detail page)
 const menuHeader = document.querySelector('.menu-header-layout');
 fetch('../../components/menu/menu-header.html')
 	.then((res) => res.text())
