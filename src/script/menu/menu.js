@@ -1,5 +1,4 @@
-import * as chooseStore from "./choose-store.js"
-import "../../script/components/layout.js"
+
 
 // import * as bakery from "./category-product/bakery.js"
 // import * as bottledBeverage from "./category-product/bottled-beverages.js"
