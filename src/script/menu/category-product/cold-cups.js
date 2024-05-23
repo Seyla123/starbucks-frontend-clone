@@ -31,7 +31,7 @@ const createColdCupsComponent = (title) => {
                                  ${product.products
 																		.map((item) => {
 																			const imgSrc = `../../images/menu/cold-cup-img/p${productCount++}.jpg`;
-																			console.log(imgSrc);
+																		
 
 																			return `
                                              <a href="../../pages/product/product_detail.html?2" class="h-full w-full flex flex-col items-center gap-4">

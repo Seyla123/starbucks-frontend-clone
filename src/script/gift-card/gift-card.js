@@ -6,7 +6,7 @@ export const createCarousel = (title, giftCardData, glide) => {
         <div class="md:ml-[78px] pl-6  flex items-center justify-between ">
             <h2 class="uppercase font-bold text-sm md:text-md">${title}</h2>
             <button class="pr-8">
-                <a href="../../pages/gift-card/gift-card-category.html?${i}" class="text-green-700 text-sm md:text-md font-semibold">See all</a>
+                <a href="../../pages/gift-card-category/gift-card-category.html?${i}" class="text-green-700 text-sm md:text-md font-semibold">See all</a>
             </button>
         </div>
     
@@ -19,7 +19,7 @@ export const createCarousel = (title, giftCardData, glide) => {
 											.map((item) => {
 												return `
                             <div class="rounded-lg md:rounded-2xl overflow-hidden shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:-translate-y-4 duration-500">
-                                <a href="../../pages/gift-card/gift-card-detail.html?${item}" class="w-full">
+                                <a href="../../pages/gift-card-detail/gift-card-detail.html?${item}" class="w-full">
                                     <img src="${item}" class="object-cover w-full h-full">
                                 </a>
                             </div>

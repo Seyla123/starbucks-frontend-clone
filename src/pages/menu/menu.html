@@ -38,20 +38,150 @@
 
 		<!-- body write here -->
 
-		<section
-			class="md:px-[102px] px-6 pt-10 pb-20 flex justify-start xl:gap-40 gap-20"
-		>
-			<!-- left sidebar-->
-			<aside class="max-w-[140px] flex-col gap-10 hidden lg:flex">
-				<ul class="flex flex-col gap-4 text-[#888]">
-					<h2 class="font-semibold text-lg text-black">Drinks</h2>
-					<li>
-						<button
-							class="productBtn text-start"
-							id="hotCoffeesBtn"
-							data-target="hotCoffeesComponent"
-						>
-							Hot Coffees
+<body>
+    <!--call navbar component -->
+    <navbar-component
+	isMenuPage = "true"
+	></navbar-component>
+	<!-- sub navbar -->
+	<sub-navbar-component page="menu"></sub-navbar-component>
+	<section class="md:px-[102px] px-6 pt-10 pb-20 flex justify-start xl:gap-40 gap-20">
+		<!-- left sidebar-->
+		<aside class="max-w-[140px] flex-col gap-10 hidden lg:flex">
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Drinks</h2>
+				<li>
+					<button class="productBtn text-start" id="hotCoffeesBtn" data-target="hotCoffeesComponent">
+						Hot Coffees
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="coldCoffeesBtn" data-target="coldCoffeesComponent">
+						Cold Coffees
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="starbucksRefreshersBeveragesBtn"
+						data-target="starbucksRefreshersBeveragesComponent">
+						Starbucks Refreshers Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="frappuccinoBlendedBeveragesBtn"
+						data-target="frappuccinoBlendedBeveragesComponent">
+						Frappuccino Blended Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="icedTeasBtn" data-target="icedTeasComponent">
+						Iced Teas
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="hotTeasBtn" data-target="hotTeasComponent">
+						Hot Teas
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="hotBeveragesBtn" data-target="hotBeveragesComponent">
+						Hot Beverages
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="bottledBeveragesBtn"
+						data-target="bottledBeveragesComponent">
+						Bottled Beverages
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Foods</h2>
+				<li>
+					<button class="productBtn text-start" id="hotBreakfastBtn" data-target="hotBreakfastComponent">
+						Hot Breakfast
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="oatmealYogurtBtn" data-target="oatmealYogurtComponent">
+						Oatmeal & Yogurt
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="bakeryBtn" data-target="bakeryComponent">
+						Bakery
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="lunchBtn" data-target="lunchComponent">
+						Lunch
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="snackSweetsBtn" data-target="snacksSweetsComponent">
+						Snacks & Sweets
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">At Home Coffee</h2>
+				<li>
+					<button class="productBtn text-start" id="wholeBeanBtn" data-target="wholeBeanComponent">
+						Whole Bean
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="viaInstantBtn" data-target="viaInstantComponent">
+						VIA® Instant
+					</button>
+				</li>
+			</ul>
+
+			<ul class="flex flex-col gap-4 text-[#888]">
+				<h2 class="font-semibold text-lg text-black">Merchandise</h2>
+				<li>
+					<button class="productBtn text-start" id="coldCupsBtn" data-target="coldCupsComponent">
+						Cold Cups
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="tumblersBtn" data-target="tumblersComponent">
+						Tumblers
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="mugsBtn" data-target="mugsComponent">
+						Mugs
+					</button>
+				</li>
+				<li>
+					<button class="productBtn text-start" id="otherBtn" data-target="otherComponent">
+						Other
+					</button>
+				</li>
+			</ul>
+		</aside>
+
+		<!-- Product list component -->
+		<section class="w-full">
+			<!-- Main Coffees -->
+			<div id="mainComponent" class="w-full lg:max-w-[80%] max-w-[100%] productComponent">
+				<h2 class="mt-2 font-bold text-xl lg:text-3xl">Menu</h2>
+				<!-- Drink -->
+				<div class="mt-8">
+					<h2 class="font-bold text-xl lg:text-3xl">Drink</h2>
+					<hr class="mt-4 pb-6" />
+
+					<div class="grid md:grid-cols-2 lg:gap-8 gap-4">
+						<!-- Card for Hot Coffees -->
+						<button class="productBtn flex items-center gap-4" id="hotCoffeesBtn"
+							data-target="hotCoffeesComponent">
+							<div class="flex items-center text-start gap-4">
+								<img class="lg:w-28 lg:h-28 w-20 h-20 object-cover" src="../../images/menu/1.png"
+									alt="Hot Coffees" />
+								<h4 class="text-lg lg:text-xl">Hot Coffees</h4>
+							</div>
 						</button>
 					</li>
 					<li>
