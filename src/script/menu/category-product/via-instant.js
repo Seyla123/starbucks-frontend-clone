@@ -60,7 +60,7 @@ const createViaInstantComponent = (title) => {
                                  ${product.products
 																		.map((item) => {
 																			const imgSrc = `../../images/menu/via-instant-img/p${productCount++}.jpg`;
-																			console.log(imgSrc);
+																		
 
 																			return `
                                              <a href="../../pages/product/product_detail.html?5" class="h-full w-full flex flex-col items-center gap-4">
