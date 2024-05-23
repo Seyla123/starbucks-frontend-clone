@@ -12,7 +12,7 @@ const descriptArray = [
     {
         title: "ALL THE LATEST",
         text: `Stay up to date with Starbucks commitment to environmental sustainability.`,
-        button: "Learn more"
+        button: "Get news now"
     }
 ];
 
@@ -23,7 +23,7 @@ export const textContent = (title, text, button) => {
             <h1 class="text-3xl lg:text-5xl leading-tight font-extrabold tracking-[0.20em]">${title}</h1>
             <h1 class="lg:text-xl tracking-[0.05em] my-5 font-normal leading-loose text-lg">${text}</h1>
                 <a href="https://stories.starbucks.com/stories/people/">
-                ${button? `<button class="border-emerald-950 hover:bg-gray-200 transition delay-20 border-[1px] mx-1 px-5 py-1 rounded-full">Learn more</button>`
+                ${button? `<button class="border-emerald-950 hover:bg-gray-200 transition delay-20 border-[1px] mx-1 px-5 py-1 rounded-full">${button}</button>`
                     :''
                 }
                 
