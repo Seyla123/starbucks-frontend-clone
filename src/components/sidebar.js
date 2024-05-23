@@ -4,7 +4,7 @@ const createSidebar = ()=>{
         <div class="flex mt-10 flex-col">
             <ul class="flex flex-col text-xl ">
                 <li><a class="px-8 py-4 block" href="../../pages/menu/menu.html">Menu</a></li>
-                <li><a class="px-8 py-4 block " href="../../pages/reward/reward.html">Rewards</a></li>
+                <li><a class="px-8 py-4 block " href="../../pages/reward/reward.html>Rewards</a></li>
                 <li><a class="px-8 py-4 block " href="../../pages/gift-card/gift-card.html">Gift Cards</a></li>
             </ul>
             <hr class="mx-8 my-4">

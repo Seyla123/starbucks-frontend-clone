@@ -1,5 +1,5 @@
 // Importing the layout component from the components directory
-import * as Layout from "../../script/components/layout.js"
+import * as Layout from "../../components/layout.js"
 
 // Define an array of product objects, each containing details for display on the home page
 const product = [{
@@ -16,7 +16,7 @@ const product = [{
   img: "../../images/home/home (3).jpg",
   description: "Vibe into spring with the new caffeine-free Lavender Oatmilk Chill, featuring subtle floral notes and real dragonfruit pieces. Here for a limited time.",
   buttonTitle: "Order now",
-  buttonLink: "../../pages/menu/feature-menu.html",
+  buttonLink: "../../pages/featured/feature-menu.html",
   backgroundColor: "bg-[#fdd8f7]",
   textColor: "text-[#1e3932]"
 },
@@ -34,7 +34,7 @@ const product = [{
   img: "../../images/home/home (2).jpg",
   description: "Go for a nondairy pick-me-up with 150 calories or less in a grande. Choose the new Hazelnut Oatmilk Shaken Espresso or classic Brown Sugar Oatmilk Shaken Espresso.",
   buttonTitle: "Order now",
-  buttonLink: "../../pages/menu/feature-menu.html",
+  buttonLink: "../../pages/featured/feature-menu.html",
   backgroundColor: "bg-[#cee8c9]",
   textColor: "text-[#1e3932]"
 },
@@ -52,7 +52,7 @@ const product = [{
   img: "../../images/home/home (5).jpg",
   description: "Get up? Please! Stay right where you are and enjoy 25% off Starbucks orders of $20+ on Uber Eats, 4/8-4/14. Enjoy unlimited redemptions, up to $7 off per order.*",
   buttonTitle: "Order now",
-  buttonLink: "../../pages/menu/feature-menu.html",
+  buttonLink: "../../pages/featured/feature-menu.html",
   backgroundColor: "bg-[#d4e9e2]",
   textColor: "text-[#1e3932]"
 }
