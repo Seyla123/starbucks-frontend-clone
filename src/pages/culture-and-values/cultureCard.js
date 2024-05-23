@@ -5,15 +5,15 @@ const  cultureCard = (arr) => {
         return `
         <div class="bg-white rounded-lg shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-4 flex flex-col gap-4">
             <h1 class="sodan tracking-wider text-2xl">${item.title}</h1>
-            <h2 class="text-[#757575]">
+            <p class="text-[#757575]">
                 ${item.text1}
-            </h2>
-            <h3 class="text-[#757575]">
+            </p>
+            <p class="text-[#757575]">
                 ${item.text2}
-            </h3>
-            <h4 class="text-[#757575]">
+            </p>
+            <p class="text-[#757575]">
                 ${item.text3}
-            </h4>
+            </p>
         </div>
         `
     }).join("")}
@@ -49,6 +49,9 @@ const cultureCardArr = [
 ]
 
 class CultureCard extends HTMLElement{
+    constructor(){
+        super()
+    }
 
     connectedCallback(){
         this.innerHTML = cultureCard(cultureCardArr);
