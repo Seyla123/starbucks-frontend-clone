@@ -1,8 +1,8 @@
 
 const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
-    <a href="../home/home.html" class="max-w-14">
-        <img src="../../images/layout/starkbuck-logo.png" alt="">
+    <a href="../home/home.html" class="max-w-14 flex items-center">
+        <img class="" src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
     <div class="w-full ${maxWidth ? maxWidth  : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
         <div>
