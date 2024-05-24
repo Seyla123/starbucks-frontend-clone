@@ -1,6 +1,5 @@
 
 
-
 // import * as bakery from "./category-product/bakery.js"
 // import * as bottledBeverage from "./category-product/bottled-beverages.js"
 // import * as coldCoffee from "./category-product/cold-coffees.js";
@@ -21,9 +20,6 @@
 // import * as viaInstant from "./category-product/via-instant.js"
 // import * as wholeBean from "./category-product/whole-bean.js"
 
-const menuHeader = document.querySelector('.menu-header-layout');
-fetch('../../components/menu/menu-header.html')
-	.then((res) => res.text())
 
 
 // menuContent
