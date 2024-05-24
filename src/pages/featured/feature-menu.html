@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spicy Dragonfruit: Starbucks Coffee Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured menu: Starbucks Coffee Company</title>
     <link rel="icon" href="https://www.starbucks.com/next_static/icons/favicon-16x16.png" />
     <!-- Linking CSS files -->
     <link rel="stylesheet" href="../../styles/output.css">
@@ -21,21 +20,29 @@
     <!-- Linking Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body>
+    <!-- Navbar component with maximum width constraint -->
+    <navbar-component maxWidth = "max-w-screen-2xl"></navbar-component>
 
-<body >
-    <!--call navbar component -->
-    <navbar-component></navbar-component>
-    <!-- header -->
-   <div id="contentProductDetail"></div>
-    <hr class="m-8" />
-    <!-- call footer from component layout by class-->
-    <div class="md:ml-[78px]">
-        <footer-component></footer-component>
-    </div>
-    <button class="text-[19px] fixed right-5 bottom-20 lg:bottom-28 font-semibold rounded-full py-4 px-8 bg-[#00754A] text-white">Add to Order</button>
-    <choose-store-component></choose-store-component>
+    <!-- Main content area for product cards -->
+    <section class="w-full max-w-screen-2xl mx-auto flex flex-col gap-4 ">
+        
+        <!-- Promotional banner -->
+        <div class="bg-[#fd2403] w-full h-24 lg:h-32 flex items-center justify-center">
+            <h3 class="text-white text-2xl lg:text-5xl sodan font-semibold" >Coming in hot</h3>
+        </div>
+        <!-- Product cards container -->
+        <feature-content-product-card>
+            <!-- Product cards will be rendered here -->
+        </feature-content-product-card>
+    </section>
+
+    <!-- Footer component with maximum width constraint -->
+    <footer-component maxWidth = "max-w-screen-2xl"></footer-component>
 </body>
-<!-- script link component home page -->
+
+<!-- Linking JavaScript for the feature menu page -->
 <script type="module" src="./index.js"></script>
 <script type="module" src="../../components/layout.js"></script>
+
 </html>
