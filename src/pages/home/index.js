@@ -1,5 +1,5 @@
 // Importing the layout component from the components directory
-import * as Layout from "../../components/layout.js"
+import { createProductCard } from "../../components/productCard.js";
 
 // Define an array of product objects, each containing details for display on the home page
 const product = [{
@@ -77,7 +77,7 @@ class loopProductCard extends HTMLElement {
       const buttonLink = element.buttonLink;
 
       // Generate HTML for each product card using the layout component
-      html += Layout.createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
+      html += createProductCard(img, isRevers, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc);
       // Toggle isTrue to alternate card styles (flex reverse or not)
       isTrue = !isTrue;
     });
