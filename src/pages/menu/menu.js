@@ -1,25 +1,22 @@
-
-
-// import * as bakery from "./category-product/bakery.js"
-// import * as bottledBeverage from "./category-product/bottled-beverages.js"
-// import * as coldCoffee from "./category-product/cold-coffees.js";
-// import * as coldCup from "./category-product/cold-cups.js"
-// import * as frappuccino from "./category-product/frappuccino-blended-beverages.js"
-// import * as hotBeverage from "./category-product/hot-beverages.js"
-// import * as hotBreakfast from "./category-product/hot-breakfast.js"
-// import * as hotCoffee from "./category-product/hot-coffees.js"
-// import * as hotTea from "./category-product/hot-teas.js"
-// import * as icedTea from "./category-product/iced-teas.js"
-// import * as lunch from "./category-product/lunch.js"
-// import * as mugs from "./category-product/mugs.js"
-// import * as oatmealYogurt from "./category-product/oatmeal-yogurt.js"
-// import * as other from "./category-product/other.js"
-// import * as snackSweet from "./category-product/snacks-sweets.js"
-// import * as starbuckRefresher from "./category-product/starbucks-refresher-beverages.js"
-// import * as tumblers from "./category-product/tumblers.js"
-// import * as viaInstant from "./category-product/via-instant.js"
-// import * as wholeBean from "./category-product/whole-bean.js"
-
+import './category-product/bakery.js'
+import './category-product/bottledBeverages.js'
+import './category-product/coldCoffees.js'
+import './category-product/coldCups.js'
+import './category-product/frappuccinoBlendedBeverages.js'
+import './category-product/hotBeverages.js'
+import './category-product/hotBreakfast.js'
+import './category-product/hotCoffees.js'
+import './category-product/hotTeas.js'
+import './category-product/icedTeas.js'
+import './category-product/lunch.js'
+import './category-product/mugs.js'
+import './category-product/oatmealYogurt.js'
+import './category-product/other.js'
+import './category-product/snacksSweets.js'
+import './category-product/starbucksRefresherBeverages.js'
+import './category-product/tumblers.js'
+import './category-product/viaInstant.js'
+import './category-product/wholeBean.js'
 
 
 // menuContent
@@ -45,7 +42,6 @@ productBtns.forEach((btn) => {
 
 const showProductComponent = (componentId) => {
 	const component = document.getElementById(componentId);
-	console.log(component);
 	if (component) {
 		component.style.display = 'block';
 	}
