@@ -1,4 +1,4 @@
-import * as card from './gift-card.js';
+import * as card from './giftCard.js';
 
 var glide01 = new Glide('.glide-01', {
 	type: 'carousel',
