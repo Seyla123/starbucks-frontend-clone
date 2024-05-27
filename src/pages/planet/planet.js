@@ -1,4 +1,4 @@
-import { contentPeople } from "../people/img-content.js"
+import { contentPeople } from "../people/imgContent.js"
 class CardContent extends HTMLElement{
     constructor(){
         super()
