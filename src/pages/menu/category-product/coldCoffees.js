@@ -141,6 +141,7 @@ const coldCoffeeProducts = [
 	},
 ];
 const createColdCoffeeProducts = (title) => {
+	let productCount = 1
 	return `
       <div id="hotCoffeesProduct" class="max-w-[1500px] ">
 			<p class="text-sm md:text-md text-gray-500 font-semibold">
