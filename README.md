@@ -2,15 +2,17 @@
 
 This project is a clone of several pages of the Starbuck website, built as part of a school Group project 2nd Mission. The goal is to replicate the design and some functionalities using HTML, CSS, JavaScript, and Tailwind CSS.
 
+**Starbuck Web Clone** - [Deploy Link](https://hexcode-starbuck.vercel.app/)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Contributors](#contributors)
+- [Folder Structure](#folder-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [Git Strategy](#git-strategy)
 
 ## Project Overview
@@ -61,6 +63,22 @@ This Starbucks Clone project was made by HexCode +, a team of seven members work
 - Neav RothanaSveita - sveitast7@gmail.com
 
 Each person in HexCode + helped make this project happen. We're thankful for everyone's hard work.
+## Folder Structure
+1. **Src (folder)**:
+    - Main container directory for organizing all project resources.
+    - **Images (sub folder)**:
+        - Contains various images used throughout the website, such as icons, product images, or other visual assets.
+    - **Pages (sub folder)**:
+        - Holds HTML files or templates representing different sections or pages of the website.
+        - Subdirectories like **`Home`**, **`Gift Card`**, **`Reward`**, **`Find a Store`**, **`Sign In`**, **`Sign Up`**, etc., organize pages by functionality or content type, facilitating easier navigation and management.
+    - **Component (sub folder)**:
+        - Includes JavaScript files responsible for different functionalities or components on the website.
+        - Files like **`Carousel.js`**, **`Banner.js`**, **`autoslider.js`**, and **`Find.js`** manage interactive elements or dynamic content on the site, ensuring modular code organization and maintainability.
+    - **Style (sub folder)**:
+        - Contains CSS files that style various components or sections of the website.
+        - Files such as **`Output.css`**, **`Style.css`**, **`Member.css`**, and **`Banner.css`** control the visual appearance and layout across different pages, ensuring consistency in design.
+
+![Screenshot_2024-05-26_at_12.04.12_in_the_afternoon](/uploads/22604cb705c62bea7c9ed93dfc4ed0b4/Screenshot_2024-05-26_at_12.04.12_in_the_afternoon.png)
 
 ## Installation
 
