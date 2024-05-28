@@ -1,6 +1,6 @@
 # Starbuck Web Clone
 
-This project is a clone of several pages of the Starbuck website, built as part of a school project. The goal is to replicate the design and some functionalities using HTML, CSS, JavaScript, and Tailwind CSS.
+This project is a clone of several pages of the Starbuck website, built as part of a school Group project 2nd Mission. The goal is to replicate the design and some functionalities using HTML, CSS, JavaScript, and Tailwind CSS.
 
 ## Table of Contents
 
