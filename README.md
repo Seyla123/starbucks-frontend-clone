@@ -1,4 +1,104 @@
-![git](/uploads/7d1d62aa8643ca559ad4629fde82a311/git.png)
+# Starbuck Web Clone
+
+This project is a clone of several pages of the Starbuck website, built as part of a school project. The goal is to replicate the design and some functionalities using HTML, CSS, JavaScript, and Tailwind CSS.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Contributors](#contributors)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Git Strategy](#git-strategy)
+
+## Project Overview
+
+This project includes the following pages cloned from the Starbuck website:
+
+1. Home Page
+2. Menu Page
+3. Reward Page
+4. Gift Card Page
+5. Find a Store Page
+6. Sign In Page
+7. Join Now Page
+8. Favorites Page
+9. Featured Page
+10. Previous Page
+11. Product Details Page
+12. Card Category Page
+13. Card Details Page
+14. Our Company Page
+15. Our Coffee Page
+16. Contact Us Page
+17. Culture and Value Page
+18. College Achievement plan Page
+19. US Career Page
+20. International Career Page
+21. people Page Page
+22. Planet Page
+23. Order Via App Page
+24. Delivery Page
+25. Order and Pick Up Option Page
+
+ **Convention Guide** - [Link Here](https://illustrious-peanut-457.notion.site/Starbuck-Clone-using-HTML-CSS-and-JavaScript-Convention-Guide-HexCode-8a63bb30694f4d2e9120e87fef995064)
+
+
+Each page is designed to closely mimic the layout and design of the original Starbuck website, using only front-end technologies.
+## Contributors
+
+This Starbucks Clone project was made by HexCode +, a team of seven members working together. Our aim was to make a website that looks and works like the real Starbucks site, and it works well on different devices.
+
+
+- Seav Seyla - mrrseyla.758@gmail.com
+- Sok Chan Seiha - sokchanseiha@gmail.com
+- Van Sopheaktra - sopheak1013@gmail.com
+- Seang Makaramarady - Seangdy085@gmail.com
+- Lu Channarak - channarakluy@gmail.com
+- Nem Puthiraksa - raksasparkle@gmail.com
+- Neav RothanaSveita - sveitast7@gmail.com
+
+Each person in HexCode + helped make this project happen. We're thankful for everyone's hard work.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://git.clp.kr/anbschool/2nd/hexcode/team-projects/starbucks-web-clone.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd starbucks-web-clone
+    ```
+
+3. Open the `src/page/home/index.html` file in your browser to view the project.
+
+## Usage
+
+After opening `index.html` in your browser, you can navigate through the various sections of the website. Use the navigation menu to access different pages such as the Home, Menu, Rewards, Gift Card, Product Detail, Sign Up, Sign In and other pages.
+
+## Features
+
+- Responsive design using Tailwind CSS
+- Replicated layout and styling of the original Nike website
+- Basic navigation between pages
+- Static content to demonstrate the look and feel
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Tailwind CSS
+
+
+## Git Strategy
+
+
+![image](https://github.com/Seyla123/Clone-Nike-Ind/assets/89925541/6be663ee-6f13-4466-92af-33aa549eb189)
 
 1. **Understanding Git-Flow**
 
@@ -225,10 +325,3 @@
 
     The Git-Flow branching strategy employed in this project offers a clear and organized approach to managing feature development, releases, and bug fixes. By utilizing branches such as main, develop, feature, release, bugfix, and hotfix, the project maintains a well-defined structure, enabling seamless integration of changes and ensuring the stability and reliability of the codebase.	
 
-
-
-
-
-
-
- 
