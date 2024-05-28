@@ -83,7 +83,7 @@ After opening `index.html` in your browser, you can navigate through the various
 ## Features
 
 - Responsive design using Tailwind CSS
-- Replicated layout and styling of the original Nike website
+- Replicated layout and styling of the original Starbuck website
 - Basic navigation between pages
 - Static content to demonstrate the look and feel
 
