@@ -20,6 +20,40 @@ const socialIcon = [
     link :"https://www.youtube.com/user/Starbucks"
 }
 ]
+const seeMoreArr = [
+{
+    title : "Know Your Rights: Workplace Discrimination is Illegal",
+    link : "https://www.eeoc.gov/sites/default/files/2022-10/EEOC_KnowYourRights_screen_reader_10_20.pdf",
+},
+{
+    title : "Pay Transparency Nondiscrimination Provision (PDF)",
+    link : "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-79081.pdf",
+},
+{
+    title : "Equal Employment Opportunity Policy Statement",
+    link : "https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88055.pdf",
+},
+]
+
+// Function to render social icons 
+const renderSocialIcon = ()=>{
+    return socialIcon.map((item)=>{
+        return `
+        <a href="${item.link}" class="flex items-center gap-5 mb-2">
+        <img class="w-4 h-4" src="../../images/careers/icon/${item.img}" alt="${item.title}" />
+        <h1 class="roboto text-[#2c2c2b] text-[15px]">${item.title}</h1>
+    </a>`
+    }).join("")
+}
+//function to render see more link arr 
+const renderSeeMore = ()=>{
+    return seeMoreArr.map((item)=>{
+        return `
+        <a class="inline-block text-[#1b7e58] underline hover:no-underline mb-4 sodan text-[15px]"
+        href="${item.link}">${item.title}</a>
+        `
+    }).join("")
+}
 const careerFooter = () => {
     return `
     <div class="bg-[#edebe9] lg:p-7 px-5 py-8">
@@ -43,13 +77,7 @@ const careerFooter = () => {
                 FOLLOW US TO FIND JOBS
                 </h1>
                 <div class="mt-4">
-                ${socialIcon.map((item)=>{
-                    return `
-                    <a href="${item.link}" class="flex items-center gap-5 mb-2">
-                    <img class="w-4 h-4" src="../../images/careers/icon/${item.img}" alt="${item.title}" />
-                    <h1 class="roboto text-[#2c2c2b] text-[15px]">${item.title}</h1>
-                </a>`
-                }).join("")}
+                    ${renderSocialIcon()}
                 </div>
             </div>
             </div>
@@ -71,15 +99,7 @@ const careerFooter = () => {
             See More:
             </h2>
             <div class="flex flex-col gap-2">
-            <a class="inline-block text-[#1b7e58] underline hover:no-underline mb-4 sodan text-[15px]"
-                href="https://www.eeoc.gov/sites/default/files/2022-10/EEOC_KnowYourRights_screen_reader_10_20.pdf">Know Your
-                Rights: Workplace Discrimination is Illegal</a>
-            <a class="inline-block text-[#1b7e58] underline hover:no-underline mb-4 sodan text-[15px]"
-                href="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-79081.pdf">Pay Transparency
-                Nondiscrimination Provision (PDF)</a>
-            <a class="inline-block text-[#1b7e58] underline hover:no-underline mb-4 sodan text-[15px]"
-                href="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-88055.pdf">Equal Employment Opportunity
-                Policy Statement</a>
+                ${renderSeeMore()}
             </div>
         </div>
     </div>

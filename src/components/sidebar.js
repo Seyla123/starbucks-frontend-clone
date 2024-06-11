@@ -24,6 +24,7 @@ export const renderNavbar = (sidebar)=>{
         // Return sideNavbar if sidebar is true, otherwise return navbar
         return sidebar ? sideNavbar : navbar
     }
+//function cretae sidebar
 const createSidebar = ()=>{
     return `
     <sidebar id="minMenuDropdown" class="bg-white duration-300 w-[80%] md:invisible h-screen fixed right-[-100%] z-40">
