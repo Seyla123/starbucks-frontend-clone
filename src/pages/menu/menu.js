@@ -20,7 +20,8 @@ import './category-product/wholeBean.js'
 
 
 // menuContent
-
+let contentArr = ["hello","myhea"]
+console.log(contentArr);
 const productBtns = document.querySelectorAll('.productBtn');
 const productComponents = document.querySelectorAll('.productComponent');
 
@@ -35,6 +36,8 @@ productComponents.forEach((component) => {
 productBtns.forEach((btn) => {
 	btn.addEventListener('click', () => {
 		const targetComponentId = btn.getAttribute('data-target');
+		contentArr = [targetComponentId]
+		console.log(contentArr);
 		showProductComponent(targetComponentId);
 		hideOtherProductComponents(targetComponentId);
 	});
