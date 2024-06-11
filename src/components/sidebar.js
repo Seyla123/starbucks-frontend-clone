@@ -36,7 +36,7 @@ const createSidebar = ()=>{
                 <div class="flex gap-4 items-center text-md font-bold">
                     <a href="../../pages/log-in/log-in.html" class="h-3 p-4 items-center flex justify-center rounded-full outline outline-1 hover:bg-gray-200 ">Sign in</a>
                     <a href="../../pages/join-now/join-now.html" class="h-3 p-4 items-center flex justify-center text-white  bg-black hover:bg-gray-600 rounded-full">Join now</a>
-            </div>
+                </div>
                 <div class="flex manrope-sans font-semibold text-md items-center mt-4">
                     <a class="flex items-center gap-2 hover:text-green-700  " href="../../pages/find-a-store/find-a-store.html">
                         <i class="fa-solid fa-location-dot"></i>
