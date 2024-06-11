@@ -15,6 +15,7 @@ const headerArr = [
         id : "myjobs-button"
     }
     ]
+// Function to render header array items
 const renderHeaderArr = ()=>{
     return headerArr.map((item)=>{
         return `
@@ -26,6 +27,7 @@ const renderHeaderArr = ()=>{
         </li>`
     }).join("")
 }
+// Function to render find a store items
 const renderFindAStore = ()=>{
     return findAStore.map((item)=>{
          return `
@@ -33,6 +35,7 @@ const renderFindAStore = ()=>{
         `
     }).join("")
 }
+// Function to render working array items
 const renderWorkingArr = ()=>{
     return working.map((item)=>{
          return `
@@ -40,6 +43,7 @@ const renderWorkingArr = ()=>{
         `
     }).join("")
 }
+// Function to render career array items
 const renderCareerArr = ()=>{
     return careerArr.map((item)=>{
          return `
@@ -50,6 +54,7 @@ const renderCareerArr = ()=>{
         `
     }).join("")
 }
+//function to create career Header
 const careerHeader = () => {
     return `
     <div class="bg-[#EDEBE9] drop-shadow-sm py-3 md:py-0 sticky top-0 z-30">
@@ -98,6 +103,7 @@ const careerHeader = () => {
     </div>
     `
 };
+// Creating CareerHeader class
 export class CareerHeader extends HTMLElement {
     constructor(){
         super()
@@ -107,6 +113,7 @@ export class CareerHeader extends HTMLElement {
         this.setUpEventListener()
     }
     setUpEventListener(){
+        // Selecting elements for dropdown functionality
         const findAJobDropdown = this.querySelector('#findajob-dropdown')
         const findAJobButton = this.querySelector('#findajob-button')
         const workingDropdown = this.querySelector('#working-dropdown')
@@ -114,34 +121,35 @@ export class CareerHeader extends HTMLElement {
         const myJobsDropdown = this.querySelector('#myjobs-dropdown')
         const myJobsButton = this.querySelector('#myjobs-button')
 
+        // Setting up dropdown functionality
         this.dropdownFunction(findAJobButton,findAJobDropdown)
         this.dropdownFunction(workingButton,workingDropdown)
         this.dropdownFunction(myJobsButton,myJobsDropdown)
-        // careers dropdown on small screen
+        // Handling careers dropdown on small screen
         const careersDropdown = this.querySelector("#careers-dropdown")
         const careersNav = this.querySelector("#careers-nav")
         const chevronButton = this.querySelector("#chevron-button") 
 
+        // Toggling visibility of careers dropdown
         careersNav.addEventListener("click", () => {
-        careersDropdown.classList.toggle("hidden");
-        })
-        careersNav.addEventListener("click", () => {
-        chevronButton.classList.toggle("rotate-180");
+            careersDropdown.classList.toggle("hidden");
+            chevronButton.classList.toggle("rotate-180");
         })
     }
+    // Function for dropdown event handling
     dropdownFunction(btn,content){
         btn.addEventListener("mouseover", ()=>{
             content.classList.remove("hidden");
-            })
-            content.addEventListener("mouseover", () => {
+        })
+        content.addEventListener("mouseover", () => {
             content.classList.remove("hidden");
-            })
-            btn.addEventListener("mouseout", () => {
+        })
+        btn.addEventListener("mouseout", () => {
             content.classList.add("hidden");
-            })
-            content.addEventListener("mouseout", () => {
+        })
+        content.addEventListener("mouseout", () => {
             content.classList.add("hidden");
-            })
+        })
     }
 }
 
