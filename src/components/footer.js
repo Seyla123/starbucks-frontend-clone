@@ -172,8 +172,7 @@ const footerPrivacyArr = [
 },
 ]
 
-
-//function to render footer arr small screen
+// Function to render the smaller version of the footer for mobile devices
 const renderFooterSmall = () => {
     let htmlContent = '';
     for (const [key, value] of Object.entries(footerArr)) {
@@ -199,7 +198,8 @@ const renderFooterSmall = () => {
     }
     return htmlContent;
 }
-//function to render footer arr big screen
+
+// Function to render the standard footer for larger screens
 const renderFooter = () => {
     let htmlContent = '';
     for (const [key, value] of Object.entries(footerArr)) {
@@ -219,7 +219,8 @@ const renderFooter = () => {
     }
     return htmlContent;
 }
-//function to render footer icon
+
+// Function to render icons in the footer
 const renderFooterIcon =()=>{
     return footerIconArr.map((item)=>{
          return `
@@ -231,6 +232,8 @@ const renderFooterIcon =()=>{
         `
     }).join("")
 } 
+
+// Function to render privacy array in the footer
 const renderFooterPrivacy = ()=>{
     return footerPrivacyArr.map((item)=>{
         return `
@@ -240,6 +243,8 @@ const renderFooterPrivacy = ()=>{
         `
     }).join("")
 }
+
+// Function to create the footer 
 const createFooter = (maxWidth, dropdown) => {
     return `
     <footer class="p-6  w-full ${maxWidth ?  `${maxWidth} 2xl:px-0` : '2xl:px-8'} mx-auto">
