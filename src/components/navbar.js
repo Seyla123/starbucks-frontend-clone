@@ -39,9 +39,7 @@ const createNavbar = (maxWidth, isMenuHidden, isRewardPage, isGiftCardPage, isMe
                 </li>
                 <li class="flex gap-4 items-center">
 
-                    <button-component
-                    btnLink = "../../pages/log-in/log-in.html"
-                    ></button-component>   
+                    <button-component btnLink = "../../pages/log-in/log-in.html"  ></button-component>   
                     <button-component
                     title = "Join now"
                     btnColor = "bg-black"

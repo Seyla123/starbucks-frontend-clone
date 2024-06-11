@@ -1,3 +1,25 @@
+const socialIcon = [
+{
+    title : "Instagram",
+    img:"instagram.svg",
+    link :"https://www.instagram.com/starbucksjobs"
+},
+{
+    title : "LinkedIn",
+    img:"linkedin.svg",
+    link :"https://www.linkedin.com/company/starbucks"
+},
+{
+    title : "Facebook",
+    img:"facebook.svg",
+    link :"http://www.facebook.com/Starbucks"
+},
+{
+    title : "Youtube",
+    img:"youtube.svg",
+    link :"https://www.youtube.com/user/Starbucks"
+}
+]
 const careerFooter = () => {
     return `
     <div class="bg-[#edebe9] lg:p-7 px-5 py-8">
@@ -21,22 +43,13 @@ const careerFooter = () => {
                 FOLLOW US TO FIND JOBS
                 </h1>
                 <div class="mt-4">
-                <a href="https://www.instagram.com/starbucksjobs" class="flex items-center gap-5 mb-2">
-                    <img class="w-4 h-4" src="../../images/careers/icon/instagram.svg" alt="" />
-                    <h1 class="roboto text-[#2c2c2b] text-[15px]">Instagram</h1>
-                </a>
-                <a href="https://www.linkedin.com/company/starbucks" class="flex items-center gap-5 mb-2">
-                    <img class="w-4 h-4" src="../../images/careers/icon/linkedin.svg" alt="" />
-                    <h1 class="roboto text-[#2c2c2b] text-[15px]">LinkedIn</h1>
-                </a>
-                <a href="http://www.facebook.com/Starbucks" class="flex items-center gap-5 mb-2">
-                    <img class="w-4 h-4" src="../../images/careers/icon/facebook.svg" alt="" />
-                    <h1 class="roboto text-[#2c2c2b] text-[15px]">Facebook</h1>
-                </a>
-                <a href="https://www.youtube.com/user/Starbucks" class="flex items-center gap-5 mb-2">
-                    <img class="w-4 h-4" src="../../images/careers/icon/youtube.svg" alt="" />
-                    <h1 class="roboto text-[#2c2c2b] text-[15px]">Youtube</h1>
-                </a>
+                ${socialIcon.map((item)=>{
+                    return `
+                    <a href="${item.link}" class="flex items-center gap-5 mb-2">
+                    <img class="w-4 h-4" src="../../images/careers/icon/${item.img}" alt="${item.title}" />
+                    <h1 class="roboto text-[#2c2c2b] text-[15px]">${item.title}</h1>
+                </a>`
+                }).join("")}
                 </div>
             </div>
             </div>
