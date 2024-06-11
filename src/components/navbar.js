@@ -1,17 +1,6 @@
 
-const navbarArr = [
-{
-    title: "MENU",
-    link: "menu/menu.html",
-}, 
-{
-    title: "REWARDS",
-    link: "reward/reward.html",
-},
-{
-    title: "GIFT CARDS",
-    link: "gift-card/gift-card.html",
-}]
+import { renderNavbar } from "./sidebar.js";
+// Function to create the navbar with various customization options
 const createNavbar = (maxWidth, isMenuHidden, isRewardPage, isGiftCardPage, isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
     <a href="../home/home.html" class="max-w-14 flex items-center">
@@ -20,9 +9,7 @@ const createNavbar = (maxWidth, isMenuHidden, isRewardPage, isGiftCardPage, isMe
     <div class="w-full ${maxWidth ? maxWidth : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
         <div>
             <ul class="flex gap-4 sodan font-bold tracking-widest text-sm">
-            ${navbarArr.map((item)=>{
-                return `<li><a class="hover:text-green-700"  href="../../pages/${item.link}">${item.title}</a></li>`
-            }).join("")}
+            ${renderNavbar()}
             </ul>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] absolute  left-[63px] ${!isRewardPage ? "hidden" : ""}"></span>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] left-[160px] absolute ${!isGiftCardPage ? "hidden" : ""}"></span>
@@ -87,7 +74,6 @@ export class Navbar extends HTMLElement {
     }
 
     //Adds a click event listener to the menu button to toggle the sidebar and menu icon.
-
     addMenuButtonListener() {
         const menuButton = this.querySelector('#menuButton');
         const minMenuDropdown = this.querySelector("#minMenuDropdown");
