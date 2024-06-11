@@ -33,8 +33,8 @@ export const createContentItem = (subId) =>{
                                                 </div>
                                                 <h4 class="text-lg lg:text-xl text-center">${item.item_name}</h4>
                                              </a>
-                                          `;
-                                }).join(' ')}
-                        </div>
-                    </div>`;}).join('')}
-            </div>`;}
+                                     `;
+                            }).join(' ')}
+                    </div>
+                </div>`;}).join('')}
+        </div>`;}

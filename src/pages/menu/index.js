@@ -1,5 +1,4 @@
 import { createContentItem } from "./itemCotent.js";
-
 // Selecting all elements with class 'btn'
 const btn = document.querySelectorAll('.btn');
 btn.forEach((item) => {
