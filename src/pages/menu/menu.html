@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +20,6 @@
     <!-- Linking Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
     <!--call navbar component -->
     <navbar-component
@@ -32,26 +30,23 @@
 	<section class="md:px-[102px] px-6 pt-10 pb-20 flex justify-start xl:gap-40 gap-20">
 		<!-- left sidebar-->
 		<sidebar-menu-component></sidebar-menu-component>
-
-		<!-- Product list component -->
+		<!-- content -->
 		<section class="w-full" id="content-main">
-			<!-- Hot Coffees -->
 			<main-category-component></main-category-component>
 		</section>
 	</section>
-
 	<hr class="m-8" />
 	<div class="lg:px-28 px-4">
+		<!-- footer -->
 		<footer-component></footer-component>
 	</div>
+	<!-- choose a store component -->
 	<choose-store-component></choose-store-component>
 </body>
 
-<!-- script link component home page -->
-
+<!-- script link component -->
 <script type="module" src="./mainCategoryContent.js"></script>
 <script type="module" src="./sidebarMenu.js"></script>
 <script type="module" src="../../components/layout.js"></script>
 <script type="module" src="./index.js"></script>
-
 </html>

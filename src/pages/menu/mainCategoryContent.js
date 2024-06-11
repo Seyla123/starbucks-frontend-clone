@@ -1,5 +1,7 @@
 import { category } from "./categoryArr.js"
 import { subCategory } from "./subCategoryArr.js"
+
+// Function to create the main category component
 const createMainCategory = ()=>{
     return `
     <div id="mainComponent" class="w-full lg:max-w-[80%] max-w-[100%] productComponent">

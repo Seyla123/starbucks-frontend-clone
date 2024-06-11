@@ -1,5 +1,6 @@
 import { category } from "./categoryArr.js"
 import { subCategory } from "./subCategoryArr.js"
+// Function to create the main category sidebar
 const createMainCategorySideBar = () =>{
     return `
     <aside class="max-w-[140px] flex-col gap-10 hidden lg:flex">
