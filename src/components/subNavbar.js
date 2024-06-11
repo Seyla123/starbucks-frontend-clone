@@ -15,7 +15,7 @@ const subNavbarArr = [
     title : "Favorites",
     link : "favorite/favorite.html"
 },]
-
+// Function to render the subNavbar Array based on the current page
 const renderSubNavbar = (page) =>{
     return subNavbarArr.map((item)=>{
         return `
@@ -42,7 +42,6 @@ export class SubNav extends HTMLElement {
     constructor() {
         super();
     }
-
     // Lifecycle method called when the element is added to the DOM
     connectedCallback() {
         // Retrieve the 'page' attribute value
