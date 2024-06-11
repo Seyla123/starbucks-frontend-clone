@@ -1,15 +1,28 @@
 
-const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuPage) => {
+const navbarArr = [
+{
+    title: "MENU",
+    link: "menu/menu.html",
+}, 
+{
+    title: "REWARDS",
+    link: "reward/reward.html",
+},
+{
+    title: "GIFT CARDS",
+    link: "gift-card/gift-card.html",
+}]
+const createNavbar = (maxWidth, isMenuHidden, isRewardPage, isGiftCardPage, isMenuPage) => {
     return `<nav class=" w-full flex justify-between gap-4 bg-white px-8 h-[83px] lg:h-[99px] shadow-lg p-4 ${isMenuHidden ? "md:justify-start" : "md:justify-center"} outline outline-1 outline-none relative z-50">
     <a href="../home/home.html" class="max-w-14 flex items-center">
         <img class="" src="../../images/layout/starkbuck-logo.png" alt="">
     </a>
-    <div class="w-full ${maxWidth ? maxWidth  : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
+    <div class="w-full ${maxWidth ? maxWidth : ""} justify-between items-center hidden relative ${isMenuHidden ? "md:hidden" : "md:flex"} ">
         <div>
             <ul class="flex gap-4 sodan font-bold tracking-widest text-sm">
-                <li><a class="hover:text-green-700"  href="../../pages/menu/menu.html">MENU</a></li>
-                <li><a class="hover:text-green-700"  href="../../pages/reward/reward.html">REWARDS</a></li>
-                <li><a class="hover:text-green-700"  href="../..//pages/gift-card/gift-card.html">GIFT CARDS</a></li>
+            ${navbarArr.map((item)=>{
+                return `<li><a class="hover:text-green-700"  href="../../pages/${item.link}">${item.title}</a></li>`
+            }).join("")}
             </ul>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] absolute  left-[63px] ${!isRewardPage ? "hidden" : ""}"></span>
             <span class="w-24 bottom-[-17px] bg-green-700 h-[6px] left-[160px] absolute ${!isGiftCardPage ? "hidden" : ""}"></span>
@@ -57,7 +70,7 @@ const createNavbar = (maxWidth, isMenuHidden,isRewardPage,isGiftCardPage,isMenuP
 }
 
 export class Navbar extends HTMLElement {
-    constructor(){
+    constructor() {
         super()
     }
     connectedCallback() {
@@ -74,15 +87,15 @@ export class Navbar extends HTMLElement {
         //call addMenuButtonListener
         this.addMenuButtonListener();
     }
-    
-     //Adds a click event listener to the menu button to toggle the sidebar and menu icon.
-     
+
+    //Adds a click event listener to the menu button to toggle the sidebar and menu icon.
+
     addMenuButtonListener() {
         const menuButton = this.querySelector('#menuButton');
         const minMenuDropdown = this.querySelector("#minMenuDropdown");
         menuButton?.addEventListener("click", () => {
             const isActive = menuButton.classList.toggle("active");
-            this.querySelector('#menuIcon').innerHTML = isActive ? '<img src="../../images/layout/close.png" alt="Close">' :'<img src="../../images/layout/menu.png" alt="Menu">';
+            this.querySelector('#menuIcon').innerHTML = isActive ? '<img src="../../images/layout/close.png" alt="Close">' : '<img src="../../images/layout/menu.png" alt="Menu">';
             minMenuDropdown.style.right = isActive ? "0%" : "-100%";
             isActive ? this.querySelector('#menuIcon').classList.add("rotate-90") : this.querySelector('#menuIcon').classList.remove("rotate-90");
             document.body.classList.toggle("overflow-hidden", isActive);
