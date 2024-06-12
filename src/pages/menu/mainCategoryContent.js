@@ -4,7 +4,7 @@ import { subCategory } from "./subCategoryArr.js"
 // Function to create the main category component
 const createMainCategory = ()=>{
     return `
-    <div id="mainComponent" class="w-full lg:max-w-[80%] max-w-[100%] productComponent">
+    <div class="w-full lg:max-w-[80%] max-w-[100%] ">
         <h2 class="mt-2 font-bold text-xl lg:text-3xl">Menu</h2>
         ${category.map((item)=>{
             return `

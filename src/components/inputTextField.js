@@ -72,7 +72,6 @@ class InputField extends HTMLElement {
 
         // Ensure elements are found
             showPassBtn.addEventListener("click", () => {
-                console.log('click')
                 isOpen = !isOpen; // Toggle the state
                 if (isOpen) {
                     inputField.setAttribute("type", "text");

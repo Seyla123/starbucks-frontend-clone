@@ -9,6 +9,5 @@ document.body.addEventListener("onload", moveSpan());
 
 let giftCard = window.location.href.split("?");
 giftCard = giftCard[1];
-console.log(giftCard);
 const giftCardImg = document.querySelector("#giftCardImg");
 giftCardImg.setAttribute("src",`../../images/gift-card/${giftCard}`)

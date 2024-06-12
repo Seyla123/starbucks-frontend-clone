@@ -90,7 +90,7 @@ export const subCategory = [
         "sub_category_img_path": "water.jpg",
     },
     {
-        "sub_category_id": 14,
+        "sub_category_id": 15,
         "category_id": 3,
         "sub_category_name": "Others",
         "sub_category_img_path": "other.jpg",
