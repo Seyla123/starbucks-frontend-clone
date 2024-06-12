@@ -21,3 +21,4 @@
         chevron.addEventListener("click", () => {
             chevron.classList.toggle("rotate-180");
         })
+

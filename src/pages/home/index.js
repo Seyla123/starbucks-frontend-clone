@@ -59,7 +59,7 @@ const product = [{
 ]
 
 // Define a custom web component for looping through product data and creating product cards
-class loopProductCard extends HTMLElement {
+class LoopProductCard extends HTMLElement {
   connectedCallback() {
     let html =''
     let isTrue = false;
@@ -87,4 +87,4 @@ class loopProductCard extends HTMLElement {
   }
 }
 // Define the custom element for the home page content product card
-customElements.define('home-content-product-card', loopProductCard);
+customElements.define('home-content-product-card', LoopProductCard);

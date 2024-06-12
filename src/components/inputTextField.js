@@ -1,3 +1,4 @@
+// Function to create an HTML string for a custom input field with label and optional password visibility toggle 
 const createInputField = (labelText, labelReq,customType) => {
     return `
     <div class="bt w-full min-w-max overflow-hidden relative flex items-center justify-center">
@@ -71,7 +72,6 @@ class InputField extends HTMLElement {
 
         // Ensure elements are found
             showPassBtn.addEventListener("click", () => {
-                console.log('click')
                 isOpen = !isOpen; // Toggle the state
                 if (isOpen) {
                     inputField.setAttribute("type", "text");
@@ -88,7 +88,7 @@ class InputField extends HTMLElement {
 
 // Define the custom element
 customElements.define("input-field-component", InputField);
-
+//Function ripple Effect
 function rippleEffect(event) {
     const btn = event.currentTarget;
     const circle = document.createElement("span");
