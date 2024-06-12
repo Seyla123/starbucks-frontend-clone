@@ -1166,10 +1166,111 @@ export const itemArr = [
     item_type: "Dark Roast",
   },
   {
-    item_id: 200,
+    item_id: 194,
     sub_category_id: 10,
     item_img_path: "via-instant-img/p5.jpg",
     item_name: "VIA® Instant Decaf Italian Roast",
     item_type: "Dark Roast",
+  },
+
+  // Cold Cups
+  {
+    item_id: 200,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p3.avif",
+    item_name: "White Siren Bling Plastic Cold Cup - 16 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 201,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p4.avif",
+    item_name: "White Siren Bling Plastic Cold Cup - 24 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 202,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p5.avif",
+    item_name: "UV Color-Changing Plastic Reusable Cold Cup with Straw - 24 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 203,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p6.avif",
+    item_name: "Sky Blue Soft-Touch Stainless-Steel Vacuum Cold Cup - 24 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 204,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p7.avif",
+    item_name: "Multicolor Plastic Reusable Cold Cup with Dome Lid, 5-Pack - 24 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 205,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p1.jpg",
+    item_name: "Plastic Reusable Cold Cup with Lid & Straw - 24 fl oz",
+    item_type: "",
+  },
+  {
+    item_id: 206,
+    sub_category_id: 11,
+    item_img_path: "cold-cup-img/p2.jpg",
+    item_name: "Siren Logo Plastic Cold Cup - 24 fl oz",
+    item_type: "",
+  },
+
+  // Tumblers
+  {
+    item_id: 207,
+    sub_category_id: 12,
+    item_img_path: "tumblers-img/tumblers.jpg",
+    item_name: "Siren Logo Plastic Hot Cup - 16 fl oz",
+    item_type: "",
+  },
+
+  // Mugs
+  {
+    item_id: 208,
+    sub_category_id: 13,
+    item_img_path: "mugs-img/mug.avif",
+    item_name: "Glass Mug - 16 fl oz",
+    item_type: "",
+  },
+
+  // Water Bottles
+  {
+    item_id: 209,
+    sub_category_id: 14,
+    item_img_path: "water-bottles-img/waterbottles.avif",
+    item_name: "Twist to Sip Stainless-Steel Water Bottle - 20 fl oz",
+    item_type: "",
+  },
+
+  // Other
+  {
+    item_id: 210,
+    sub_category_id: 15,
+    item_img_path: "other-img/p1.jpg",
+    item_name: "French Press",
+    item_type: "",
+  },
+  {
+    item_id: 211,
+    sub_category_id: 15,
+    item_img_path: "other-img/p2.jpg",
+    item_name: "Pour Over",
+    item_type: "",
+  },
+  {
+    item_id: 212,
+    sub_category_id: 15,
+    item_img_path: "other-img/p3.avif",
+    item_name: "Small Shopping Bag",
+    item_type: "",
   },
 ];
