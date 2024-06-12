@@ -1,6 +1,6 @@
 import * as card from './giftCard.js';
 
-var glide01 = new Glide('.glide-01', {
+let glide01 = new Glide('.glide-01', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -21,7 +21,7 @@ var glide01 = new Glide('.glide-01', {
 
 glide01.mount();
 
-var glide02 = new Glide('.glide-02', {
+let glide02 = new Glide('.glide-02', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -42,7 +42,7 @@ var glide02 = new Glide('.glide-02', {
 
 glide02.mount();
 
-var glide03 = new Glide('.glide-03', {
+let glide03 = new Glide('.glide-03', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -63,7 +63,7 @@ var glide03 = new Glide('.glide-03', {
 
 glide03.mount();
 
-var glide04 = new Glide('.glide-04', {
+let glide04 = new Glide('.glide-04', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -84,7 +84,7 @@ var glide04 = new Glide('.glide-04', {
 
 glide04.mount();
 
-var glide05 = new Glide('.glide-05', {
+let glide05 = new Glide('.glide-05', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -105,7 +105,7 @@ var glide05 = new Glide('.glide-05', {
 
 glide05.mount();
 
-var glide06 = new Glide('.glide-06', {
+let glide06 = new Glide('.glide-06', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -126,7 +126,7 @@ var glide06 = new Glide('.glide-06', {
 
 glide06.mount();
 
-var glide07 = new Glide('.glide-07', {
+let glide07 = new Glide('.glide-07', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -147,7 +147,7 @@ var glide07 = new Glide('.glide-07', {
 
 glide07.mount();
 
-var glide08 = new Glide('.glide-08', {
+let glide08 = new Glide('.glide-08', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,
@@ -168,7 +168,7 @@ var glide08 = new Glide('.glide-08', {
 
 glide08.mount();
 
-var glide09 = new Glide('.glide-09', {
+let glide09 = new Glide('.glide-09', {
 	type: 'carousel',
 	focusAt: 'center',
 	perView: 4,

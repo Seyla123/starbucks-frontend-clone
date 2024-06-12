@@ -1,18 +1,12 @@
+// Function to create a product card with customizable content
 export const createProductCard = (img, isRevers = false, backgroundColor, textColor, title, description, buttonTitle, buttonLink,customTitle,customDesc) => {
     // Determine the flex direction based on isRevers flag
     return `
     <div class="flex flex-col md:${isRevers} ${backgroundColor}">
     <div class="flex-1 flex items-center justify-center">
-      <img
-        class="max-w-full h-auto"
-        src="${img}"
-        alt="${title}"
-        loading="lazy"
-      />
+      <img  class="max-w-full h-auto" src="${img}"  alt="${title}" loading="lazy" />
     </div>
-    <div
-      class="w-full flex flex-1 justify-center items-center"
-    >
+    <div class="w-full flex flex-1 justify-center items-center">
       <div class="max-w-[80%] sodan flex flex-col justify-center items-center md:gap-8 text-center ${textColor} py-8 px-12">
         <h3 class="font-semibold text-3xl lg:text-5xl ${customTitle}">${title}</h3>
         <p class="text-base md:text-xl lg:text-2xl leading-10 font-medium ${customDesc}">

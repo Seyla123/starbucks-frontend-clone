@@ -1,3 +1,4 @@
+//function create choose Store 
 const createChooseStore = ()=>{
     return `
     <div class="bg-[#1e3932] w-full h-[74px] lg:h-[94px] sticky bottom-0 flex justify-center mt-10">
@@ -7,12 +8,10 @@ const createChooseStore = ()=>{
         <div class="flex justify-between w-60">
           <div class="flex flex-col items-stretch text-base">
             <span class="text-gray-300">For item availability</span>
-            <strong class="text-white">Choose a store</strong>
-            
+            <strong class="text-white">Choose a store</strong>     
           </div>
           <div class="flex items-center justify-end">
-            <i class="fa-solid fa-chevron-down text-white text-[10px]"></i>
-            
+            <i class="fa-solid fa-chevron-down text-white text-[10px]"></i>    
           </div>
         </div>
         <hr class="border-gray-400">
@@ -44,9 +43,7 @@ const createChooseStore = ()=>{
             </clipPath>
             </defs>
         </svg>
-         </span>
-        
-            
+         </span>  
       </button>
     </div>
   </div>
@@ -54,7 +51,6 @@ const createChooseStore = ()=>{
 
     `
 }
-
 export class ChooseStore extends HTMLElement{
     constructor(){
         super()

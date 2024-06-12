@@ -329,7 +329,7 @@ contentProductDetail.innerHTML = `
     ">Full nutrition & ingredients list</button>
 </div>
 </div>`;
-// window.onload = console.log(localStorage.getItem("productImg"));
+
 const spanInput = document.querySelectorAll(".spanInput");
 function loaded() {
   for (let i = 0; i < spanInput.length; i++) {
